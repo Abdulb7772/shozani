@@ -20,8 +20,8 @@ import { cn } from "@/lib/utils";
 import { useLanguage } from "@/lib/i18n/language-provider";
 
 const stats = [
-  { value: "20+", label: "Years of Expertise" },
-  { value: "10,000+", label: "Students Placed" },
+  { value: "5+", label: "Years of Expertise" },
+  { value: "100+", label: "Students Placed" },
   { value: "98%", label: "Visa Success Rate" },
   { value: "25+", label: "Partner Universities" },
 ];

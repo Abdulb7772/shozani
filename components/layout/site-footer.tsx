@@ -148,7 +148,7 @@ export function SiteFooter() {
           <div className="space-y-6">
             <Logo dark />
             <p className="max-w-sm text-sm leading-relaxed">
-              {t("Shozani Global Consultancy is your trusted global opportunities platform — helping you study, work, settle and invest across the world with transparency and 20+ years of expertise.")}
+              {t("Shozani Global Consultancy is your trusted global opportunities platform — helping you study, work, settle and invest across the world with transparency and 5+ years of expertise.")}
             </p>
             <div className="flex gap-2.5">
               {socials.map((s) => (

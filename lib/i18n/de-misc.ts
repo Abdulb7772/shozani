@@ -51,9 +51,9 @@ export const de: Record<string, string> = {
   "Germany desk launches": "Start des Deutschland-Desks",
   "Became one of the first agencies dedicated to the German market.":
     "Wir wurden eine der ersten Agenturen, die sich auf den deutschen Markt spezialisiert hat.",
-  "10,000th student placed": "10.000ster vermittelter Student",
-  "Crossed ten thousand successful visas across Europe, UK, Canada and Australia.":
-    "Über zehntausend erfolgreiche Visa in Europa, UK, Kanada und Australien.",
+  "100th student placed": "100. vermittelter Student",
+  "Reached 100 successful placements across Europe, the UK, Canada and Australia.":
+    "100 erfolgreiche Vermittlungen in Europa, dem UK, Kanada und Australien erreicht.",
   "Global Opportunities Platform": "Plattform für globale Chancen",
   "Digital-first tools — eligibility checks, calculators and live status tracking.":
     "Digital-first-Tools – Berechtigungschecks, Rechner und Live-Statusverfolgung.",

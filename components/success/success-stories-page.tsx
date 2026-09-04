@@ -201,7 +201,7 @@ function StoriesHero() {
 function StatsBand() {
   const { t } = useLanguage();
   const metrics = [
-    { value: "10,000+", label: t("Successful Placements") },
+    { value: "100+", label: t("Successful Placements") },
     { value: "96%", label: t("Visa Approval Rate") },
     { value: "40+", label: t("Countries Guided") },
     { value: "4.9/5", label: t("Average Client Rating") },

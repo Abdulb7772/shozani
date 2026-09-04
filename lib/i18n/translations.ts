@@ -115,8 +115,8 @@ export const de: Record<string, string> = {
   "Salary Calculator": "Gehaltsrechner",
   "Navigation menu": "Navigationsmenü",
   "Explore Services": "Leistungen entdecken",
-  "Shozani Global Consultancy is your trusted global opportunities platform — helping you study, work, settle and invest across the world with transparency and 20+ years of expertise.":
-    "Shozani Global Consultancy ist Ihre vertrauenswürdige Plattform für globale Chancen – mit über 20 Jahren Erfahrung begleiten wir Sie transparent beim Studium, Arbeiten, Niederlassen und Investieren weltweit.",
+  "Shozani Global Consultancy is your trusted global opportunities platform — helping you study, work, settle and invest across the world with transparency and 5+ years of expertise.":
+    "Shozani Global Consultancy ist Ihre vertrauenswürdige Plattform für globale Chancen – mit über 5 Jahren Erfahrung begleiten wir Sie transparent beim Studium, Arbeiten, Niederlassen und Investieren weltweit.",
   "Company": "Unternehmen",
   "Legal": "Rechtliches",
   "Privacy Policy": "Datenschutzrichtlinie",
@@ -149,8 +149,8 @@ export const de: Record<string, string> = {
   "Study, Work &": "Studieren, Arbeiten &",
   "Settle Anywhere": "Überall Niederlassen",
   "in the World": "in der Welt",
-  "From visa eligibility to university admissions, jobs, business setup and settlement — Shozani Global Consultancy guides you at every step with a 20+ year track record and a transparent, success-driven process.":
-    "Von der Visumberechtigung über Universitätszulassungen, Jobs, Unternehmensgründung bis zur Niederlassung – Shozani Global Consultancy begleitet Sie mit über 20 Jahren Erfahrung und einem transparenten, erfolgsorientierten Prozess bei jedem Schritt.",
+  "From visa eligibility to university admissions, jobs, business setup and settlement — Shozani Global Consultancy guides you at every step with a 5+ year track record and a transparent, success-driven process.":
+    "Von der Visumberechtigung über Universitätszulassungen, Jobs, Unternehmensgründung bis zur Niederlassung – Shozani Global Consultancy begleitet Sie mit über 5 Jahren Erfahrung und einem transparenten, erfolgsorientierten Prozess bei jedem Schritt.",
   "Book Free Counselling": "Kostenlose Beratung buchen",
   "Check Visa Eligibility": "Visumberechtigung prüfen",
   "Study at the World's": "Studieren an den",
@@ -312,8 +312,8 @@ export const de: Record<string, string> = {
   "Talk to a Counsellor": "Mit einem Berater sprechen",
 
   // ── Footer ────────────────────────────────────────────────
-  "Your gateway to global education, careers and migration — guided by 20+ years of trusted consultancy.":
-    "Ihr Tor zu globaler Bildung, Karriere und Migration – mit über 20 Jahren Beratungserfahrung.",
+  "Your gateway to global education, careers and migration — guided by 5+ years of trusted consultancy.":
+    "Ihr Tor zu globaler Bildung, Karriere und Migration – mit über 5 Jahren Beratungserfahrung.",
   "Quick Links": "Schnelle Links",
   "Popular Services": "Beliebte Leistungen",
   "Get in Touch": "Kontakt",

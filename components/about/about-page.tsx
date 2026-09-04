@@ -24,8 +24,8 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { useLanguage } from "@/lib/i18n/language-provider";
 
 const stats = [
-  { value: "20+", label: "Years of Expertise" },
-  { value: "10,000+", label: "Success Stories" },
+  { value: "5+", label: "Years of Expertise" },
+  { value: "100+", label: "Success Stories" },
   { value: "96%", label: "Visa Success Rate" },
   { value: "25+", label: "Partner Universities" },
 ];
@@ -87,7 +87,7 @@ const pillars = [
 const journey = [
   { year: "2004", title: "First office opens in Lahore", text: "Founded by a small team of advisors committed to ethical consultancy." },
   { year: "2010", title: "Germany desk launches", text: "Became one of the first agencies dedicated to the German market." },
-  { year: "2016", title: "10,000th student placed", text: "Crossed ten thousand successful visas across Europe, UK, Canada and Australia." },
+  { year: "2025", title: "100th student placed", text: "Reached 100 successful placements across Europe, the UK, Canada and Australia." },
   { year: "2022", title: "Global Opportunities Platform", text: "Digital-first tools — eligibility checks, calculators and live status tracking." },
   { year: "2025", title: "25+ partner institutions", text: "Deep partnerships with universities, employers and A1–C1 language centres." },
 ];

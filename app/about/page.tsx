@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Us | Shozani Global Consultancy",
     description:
-      "Learn about Shozani Global Consultancy — our story, mission and the values that drive 10,000+ success stories worldwide.",
+      "Learn about Shozani Global Consultancy — our story, mission and the values that drive 100+ success stories worldwide.",
   },
 };
 
