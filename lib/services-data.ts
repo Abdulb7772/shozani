@@ -24,8 +24,8 @@ export const services: Record<ServiceId, ServiceData> = {
   "study-abroad": {
     codecrumbs: [{ label: "Services", href: "/services" }, { label: "Study Abroad", href: "/services/study-abroad" }],
     eyebrow: "Study Abroad",
-    title: "World-class universities,",
-    highlight: "one guidance desk",
+    title: "World-Class Universities,",
+    highlight: "One Guidance Desk",
     intro:
       "From course selection and admission to visa letter, pre-departure briefing and settlement — our study abroad desk manages your complete journey across Germany, UK, Australia, Canada, USA and Europe.",
     stats: [
@@ -64,8 +64,8 @@ export const services: Record<ServiceId, ServiceData> = {
   "study-germany": {
     codecrumbs: [{ label: "Services", href: "/services/study-abroad" }, { label: "Study Germany", href: "/services/study-abroad/germany" }],
     eyebrow: "Study Abroad — Germany",
-    title: "Tuition-free education",
-    highlight: "with world-class careers",
+    title: "Tuition-Free Education",
+    highlight: "with World-Class Careers",
     intro:
       "Germany offers tuition-free degrees at 400+ public universities, a powerhouse engineering heritage, part-time work and generous post-study paths. We handle admission, APS and the full visa logistics.",
     stats: [
@@ -105,7 +105,7 @@ export const services: Record<ServiceId, ServiceData> = {
     codecrumbs: [{ label: "Services", href: "/services/study-abroad" }, { label: "Study Australia", href: "/services/study-abroad/australia" }],
     eyebrow: "Study Abroad — Australia",
     title: "A degree that",
-    highlight: "leads to a PR",
+    highlight: "Leads to a PR",
     intro:
       "Australia pairs world-class universities with a transparent skilled-migration pathway. Durable, safe campuses, generous post-study work rights and a clear route to permanent residence.",
     stats: [
@@ -144,8 +144,8 @@ export const services: Record<ServiceId, ServiceData> = {
   "study-canada": {
     codecrumbs: [{ label: "Services", href: "/services/study-abroad" }, { label: "Study Canada", href: "/services/study-abroad/canada" }],
     eyebrow: "Study Abroad — Canada",
-    title: "Study now,",
-    highlight: "stay as a Canadian",
+    title: "Study Now,",
+    highlight: "Stay as a Canadian",
     intro:
       "Canada's post-graduation work permit (up to 3 years) plus express entry CRS points make it the most transparent study-to-PR path in the world. Study today, and become a permanent resident tomorrow.",
     stats: [
@@ -184,8 +184,8 @@ export const services: Record<ServiceId, ServiceData> = {
   "study-usa": {
     codecrumbs: [{ label: "Services", href: "/services/study-abroad" }, { label: "Study USA", href: "/services/study-abroad/usa" }],
     eyebrow: "Study Abroad — USA",
-    title: "Top-ranked colleges,",
-    highlight: "unlimited possibilities",
+    title: "Top-Ranked Colleges,",
+    highlight: "Unlimited Possibilities",
     intro:
       "American universities dominate global rankings and open floors to OPT, STEM extension and global careers. We build a competitive profile, secure admission and coaching you in the F-1 interview.",
     stats: [
@@ -224,8 +224,8 @@ export const services: Record<ServiceId, ServiceData> = {
   "study-uk": {
     codecrumbs: [{ label: "Services", href: "/services/study-abroad" }, { label: "Study UK", href: "/services/study-abroad/uk" }],
     eyebrow: "Study Abroad — UK",
-    title: "Elite education,",
-    highlight: "two-year stay-back",
+    title: "Elite Education,",
+    highlight: "Two-Year Stay-Back",
     intro:
       "The UK's entry points among the world's best, and the Graduate Route lets you stay and work for 2 years after. We manage everything from strengthening your application to the CAS and visa.",
     stats: [
@@ -264,8 +264,8 @@ export const services: Record<ServiceId, ServiceData> = {
   "work-abroad": {
     codecrumbs: [{ label: "Services", href: "/services/work-abroad" }, { label: "Work Abroad", href: "/services/work-abroad" }],
     eyebrow: "Work Abroad",
-    title: "Take your career",
-    highlight: "across borders",
+    title: "Take Your Career",
+    highlight: "Across Borders",
     intro:
       "From EU Blue Cards to nursing in Germany and to Gulf contracts — we match your profile with real employers, prepare your language and handle the work visa from offer to landing.",
     stats: [
@@ -304,8 +304,8 @@ export const services: Record<ServiceId, ServiceData> = {
   "work-germany": {
     codecrumbs: [{ label: "Services", href: "/services/work-abroad" }, { label: "Work Germany", href: "/services/work-abroad/germany" }],
     eyebrow: "Work Abroad — Germany",
-    title: "A European career",
-    highlight: "at your fingertips",
+    title: "A European Career",
+    highlight: "at Your Fingertips",
     intro:
       "Germany is short of 900,000+ skilled workers. The EU Blue Card and Germany's new Opportunity Card turn that shortage into your card, we handle recognition, language and real employers.",
     stats: [
@@ -344,8 +344,8 @@ export const services: Record<ServiceId, ServiceData> = {
   immigration: {
     codecrumbs: [{ label: "Services", href: "/services/immigration" }, { label: "Immigration", href: "/services/immigration" }],
     eyebrow: "Immigration & PR",
-    title: "Build your future",
-    highlight: "in another land",
+    title: "Build Your Future",
+    highlight: "in Another Land",
     intro:
       "We turn eligible profiles into approved outcomes. Whether you're after permanent residence, family sponsorship or a business visa, we guide you end-to-end— with clear timeframes and zero guesswork.",
     stats: [
@@ -384,8 +384,8 @@ export const services: Record<ServiceId, ServiceData> = {
   "immigration-pr": {
     codecrumbs: [{ label: "Services", href: "/services/immigration" }, { label: "Permanent Residence", href: "/services/immigration/permanent-residence" }],
     eyebrow: "Permanent Residence",
-    title: "A permanent home,",
-    highlight: "not just a permit",
+    title: "A Permanent Home,",
+    highlight: "Not Just a Permit",
     intro:
       "Permanent residence means you retire on the country's land, work freely and eventually apply for citizenship. We keep the entire file — from your points audit through to your landing.",
     stats: [
@@ -424,8 +424,8 @@ export const services: Record<ServiceId, ServiceData> = {
   "immigration-family": {
     codecrumbs: [{ label: "Services", href: "/services/immigration" }, { label: "Family Immigration", href: "/services/immigration/family" }],
     eyebrow: "Family Immigration",
-    title: "Bring everyone",
-    highlight: "with you",
+    title: "Bring Everyone",
+    highlight: "with You",
     intro:
       "Spouse, children, even parents — we manage family/dependent visas that keep your whole travel plan together. No ghosts of a holiday home made to a family that arrives together.",
     stats: [
@@ -464,8 +464,8 @@ export const services: Record<ServiceId, ServiceData> = {
   "immigration-business": {
     codecrumbs: [{ label: "Services", href: "/services/immigration" }, { label: "Business Immigration", href: "/services/immigration/business" }],
     eyebrow: "Business & Investor",
-    title: "Found, incorporate,",
-    highlight: "and live in your market",
+    title: "Found, Incorporate,",
+    highlight: "and Live in Your Market",
     intro:
       "We turn a business idea into a legal entity abroad. Company registration, investor visa, business partner visa, EU or offshore — with a licensed network in UAE and Germany.",
     stats: [
@@ -504,8 +504,8 @@ export const services: Record<ServiceId, ServiceData> = {
   language: {
     codecrumbs: [{ label: "Services", href: "/services/language" }, { label: "Language", href: "/services/language" }],
     eyebrow: "Language Training",
-    title: "Learn the language",
-    highlight: "your visa is written in",
+    title: "Learn the Language",
+    highlight: "Your Visa Is Written In",
     intro:
       "German for Germany, IELTS and PTE for the English-speaking world. Small classes, certified trainers, and mock-exam focus that actually moves your score.",
     stats: [
@@ -545,7 +545,7 @@ export const services: Record<ServiceId, ServiceData> = {
     codecrumbs: [{ label: "Services", href: "/services/language" }, { label: "German", href: "/services/language/german" }],
     eyebrow: "German Language",
     title: "Master German,",
-    highlight: "master your move",
+    highlight: "Master Your Move",
     intro:
       "From A1 to B1+, a Goethe-certified French program with speaking-first and exam-focused training. The German you know becomes the Germany you walk into.",
     stats: [
@@ -584,8 +584,8 @@ export const services: Record<ServiceId, ServiceData> = {
   "language-ielts": {
     codecrumbs: [{ label: "Services", href: "/services/language" }, { label: "IELTS", href: "/services/language/ielts" }],
     eyebrow: "IELTS Preparation",
-    title: "IELTS is your",
-    highlight: "ticket to the world",
+    title: "IELTS Is Your",
+    highlight: "Ticket to the World",
     intro:
       "Target band 6.5 to 7.5 with IELTS coaching in all four modules, band-esque correction, mock test flow and a real speaking examiner's feedback.",
     stats: [
@@ -624,8 +624,8 @@ export const services: Record<ServiceId, ServiceData> = {
   "language-pte": {
     codecrumbs: [{ label: "Services", href: "/services/language" }, { label: "PTE", href: "/services/language/pte" }],
     eyebrow: "PTE Preparation",
-    title: "Score faster,",
-    highlight: "on Australian soil",
+    title: "Score Faster,",
+    highlight: "on Australian Soil",
     intro:
       "PTE is machine-scored, delivered in 48 hours and the common choice for the KE. Our PTE specialists train the question-sets — templates, intonation, and timing for a fast score to 65-70+.",
     stats: [
@@ -664,8 +664,8 @@ cta: { title: "", text: "The 48-hour PTE score could be the fastest yes in your 
   business: {
     codecrumbs: [{ label: "Services", href: "/services" }, { label: "Business & Investment", href: "/services/business" }],
     eyebrow: "Business & Investment",
-    title: "Set up, invest,",
-    highlight: "and grow abroad",
+    title: "Set Up, Invest,",
+    highlight: "and Grow Abroad",
     intro:
       "Company formation, business visas and investment advisory across UAE, Germany and Europe — incorporation, licensing, bank accounts, tax and relocation handled as one package.",
     stats: [
@@ -704,8 +704,8 @@ cta: { title: "", text: "The 48-hour PTE score could be the fastest yes in your 
   construction: {
     codecrumbs: [{ label: "Services", href: "/services" }, { label: "Construction", href: "/services/construction" }],
     eyebrow: "Construction Services",
-    title: "Design, build,",
-    highlight: "and hand over",
+    title: "Design, Build,",
+    highlight: "and Hand Over",
     intro:
       "Architecture, interior design, house building and project management — premium quality delivered on time and to budget, with a dedicated site supervisor on every project.",
     stats: [

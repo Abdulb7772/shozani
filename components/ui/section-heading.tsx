@@ -36,7 +36,7 @@ export function SectionHeading({
             "inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em]",
             dark
               ? "border-gold-400/40 bg-white/5 text-gold-300"
-              : "border-gold-500/30 bg-gold-50 text-gold-700 dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300"
+              : "border-gold-600 bg-gold-600 text-white dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300"
           )}
         >
           <span className="size-1.5 rounded-full bg-current" aria-hidden />

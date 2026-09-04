@@ -5,14 +5,14 @@ import { cn } from "@/lib/utils";
 
 const variants = {
   primary:
-    "bg-navy-900 text-white shadow-luxe hover:bg-navy-800 hover:shadow-lg dark:bg-white dark:text-navy-900 dark:hover:bg-gold-100",
-  gold: "bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 shadow-gold hover:from-gold-400 hover:to-gold-300",
+    "bg-navy-800 text-white shadow-luxe hover:bg-navy-700 hover:shadow-lg dark:bg-gold-600 dark:text-white dark:hover:bg-gold-500",
+  gold: "bg-gold-600 text-white shadow-gold hover:bg-gold-500",
   outline:
-    "border border-navy-200 bg-transparent text-navy-800 hover:border-gold-400 hover:text-gold-600 dark:border-white/20 dark:text-navy-100 dark:hover:border-gold-400 dark:hover:text-gold-300",
+    "border border-navy-200 bg-transparent text-navy-800 hover:border-gold-500 hover:text-gold-600 dark:border-white/20 dark:text-navy-100 dark:hover:border-gold-400 dark:hover:text-gold-300",
   ghost:
     "bg-transparent text-navy-700 hover:bg-navy-100 dark:text-navy-100 dark:hover:bg-white/10",
   glass:
-    "border border-white/25 bg-white/10 text-white backdrop-blur-md hover:bg-white/20",
+    "border border-white/40 bg-white/15 text-white hover:bg-white/30",
 } as const;
 
 const sizes = {

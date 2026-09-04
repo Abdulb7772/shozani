@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Calculator, Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/lib/i18n/language-provider";
 
 type Status = "marriedChildren" | "married" | "single";
 
@@ -40,6 +41,7 @@ const taxBrackets: Record<string, (gross: number, s: Status) => { net: number; n
 const countries = Object.keys(taxBrackets) as (keyof typeof taxBrackets)[];
 
 export default function SalaryCalculatorTool() {
+  const { t } = useLanguage();
   const [country, setCountry] = React.useState("Germany");
   const [gross, setGross] = React.useState<string>("4000");
   const [status, setStatus] = React.useState<Status>("single");
@@ -54,32 +56,31 @@ export default function SalaryCalculatorTool() {
   return (
     <section className="relative overflow-hidden bg-white py-28 sm:py-36 dark:bg-navy-950">
       <div className="pointer-events-none absolute inset-0 navy-radial opacity-0 dark:opacity-100" aria-hidden />
-      <div className="pointer-events-none absolute right-[-10%] top-0 size-[420px] rounded-full bg-gold-400/10 blur-[120px] dark:bg-gold-400/8" aria-hidden />
       <Container className="relative">
-        <span className="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-50 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-gold-700 dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
+        <span className="inline-flex items-center gap-2 rounded-full border border-gold-600 bg-gold-600 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
           <Sparkles className="size-3.5" />
-          AI Tool
+          {t("AI Tool")}
         </span>
         <h1 className="mt-6 max-w-3xl text-4xl font-bold leading-[1.1] text-navy-900 text-balance sm:text-5xl dark:text-white">
-          Germany <span className="text-gradient-gold">Salary Calculator</span>
+          {t("Germany")} <span className="text-gradient-gold">{t("Salary Calculator")}</span>
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-navy-600 dark:text-navy-100/75">
-          See how a gross offer translates into monthly net pay after tax and social security.
+          {t("See how a gross offer translates into monthly net pay after tax and social security.")}
         </p>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-3">
           <label className="block">
-            <span className="text-xs font-medium uppercase tracking-[0.12em] text-navy-500 dark:text-navy-200/60">Country</span>
+            <span className="text-xs font-medium uppercase tracking-[0.12em] text-navy-500 dark:text-navy-200/60">{t("Country")}</span>
             <select
               value={country}
               onChange={(e) => { setCountry(e.target.value); setResult(null); }}
               className="mt-2 w-full rounded-xl border border-navy-900/10 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition-colors focus:border-gold-400/60 dark:border-white/10 dark:bg-white/5 dark:text-white"
             >
-              {countries.map((c) => <option key={c} className="bg-white text-navy-900 dark:bg-navy-950 dark:text-white" value={c}>{c}</option>)}
+              {countries.map((c) => <option key={c} className="bg-white text-navy-900 dark:bg-navy-950 dark:text-white" value={c}>{t(c)}</option>)}
             </select>
           </label>
           <label className="block">
-            <span className="text-xs font-medium uppercase tracking-[0.12em] text-navy-500 dark:text-navy-200/60">Gross monthly (€)</span>
+            <span className="text-xs font-medium uppercase tracking-[0.12em] text-navy-500 dark:text-navy-200/60">{t("Gross monthly (€)")}</span>
             <input
               type="number"
               value={gross}
@@ -89,30 +90,30 @@ export default function SalaryCalculatorTool() {
             />
           </label>
           <label className="block">
-            <span className="text-xs font-medium uppercase tracking-[0.12em] text-navy-500 dark:text-navy-200/60">Family status</span>
+            <span className="text-xs font-medium uppercase tracking-[0.12em] text-navy-500 dark:text-navy-200/60">{t("Family status")}</span>
             <select
               value={status}
               onChange={(e) => { setStatus(e.target.value as Status); setResult(null); }}
               className="mt-2 w-full rounded-xl border border-navy-900/10 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition-colors focus:border-gold-400/60 dark:border-white/10 dark:bg-white/5 dark:text-white"
             >
-              {["single", "married", "marriedChildren"].map((o) => <option key={o} className="bg-white text-navy-900 dark:bg-navy-950 dark:text-white" value={o}>{o}</option>)}
+              {["single", "married", "marriedChildren"].map((o) => <option key={o} className="bg-white text-navy-900 dark:bg-navy-950 dark:text-white" value={o}>{t(o)}</option>)}
             </select>
           </label>
         </div>
 
         <div className="mt-8">
-          <Button variant="gold" onClick={calculate}>Calculate Net Salary</Button>
+          <Button variant="gold" onClick={calculate}>{t("Calculate Net Salary")}</Button>
         </div>
 
         {result && (
-          <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="mt-10 rounded-3xl border border-gold-500/30 bg-gold-50/30 p-8 backdrop-blur-md dark:border-gold-400/30 dark:bg-white/5">
-            <p className="flex items-center gap-2 font-display text-2xl font-bold text-navy-900 dark:text-white">
-              <Calculator className="size-6 text-gold-500 dark:text-gold-400" />
-              Estimated net: €{result.net.toLocaleString("de-DE", { maximumFractionDigits: 0 })} / month
+          <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="mt-10 rounded-3xl border border-gold-700 bg-gold-600 p-8 dark:border-gold-400/30 dark:bg-white/5">
+            <p className="flex items-center gap-2 font-display text-2xl font-bold text-white">
+              <Calculator className="size-6 text-white dark:text-gold-400" />
+              {result.net}
             </p>
-            <p className="mt-3 text-sm leading-relaxed text-navy-600 dark:text-navy-100/75">{result.note}</p>
+            <p className="mt-3 text-sm leading-relaxed text-white/90 dark:text-navy-100/75">{t(result.note)}</p>
             <div className="mt-6">
-              <Button variant="glass" href="/services/work-abroad/germany" withArrow>Explore Work in Germany</Button>
+              <Button variant="glass" href="/services/work-abroad/germany" withArrow>{t("Explore Work in Germany")}</Button>
             </div>
           </motion.div>
         )}

@@ -3,10 +3,12 @@
 import * as React from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ChevronDown, Globe, GraduationCap, Moon, Sun, LogIn, Bot } from "lucide-react";
+import { X, ChevronDown, Globe, GraduationCap, Moon, Sun, LogIn, CheckCircle2 } from "lucide-react";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
+import { useLanguage } from "@/lib/i18n/language-provider";
 
 const groups = [
   {
@@ -31,16 +33,17 @@ const groups = [
       { title: "United Kingdom", href: "/countries/uk" },
       { title: "USA", href: "/countries/usa" },
       { title: "Europe", href: "/countries/europe" },
+      { title: "Malaysia", href: "/countries/malaysia" },
+      { title: "Turkey", href: "/countries/turkey" },
+      { title: "Cyprus", href: "/countries/cyprus" },
+      { title: "Tajikistan", href: "/countries/tajikistan" },
     ],
   },
   {
-    label: "AI Tools",
-    icon: Bot,
+    label: "Free Assessment",
+    icon: CheckCircle2,
     links: [
-      { title: "Visa Eligibility", href: "/ai/visa-eligibility" },
-      { title: "IELTS Predictor", href: "/ai/ielts-predictor" },
-      { title: "Salary Calculator", href: "/ai/salary-calculator" },
-      { title: "Study Cost Calculator", href: "/ai/study-cost-calculator" },
+      { title: "Start Free Assessment", href: "/apply" },
     ],
   },
 ];
@@ -61,6 +64,7 @@ function Accordion({
   group: (typeof groups)[number];
   defaultOpen?: boolean;
 }) {
+  const { t } = useLanguage();
   const [open, setOpen] = React.useState(defaultOpen);
   return (
     <div className="border-b border-navy-900/10 dark:border-white/10">
@@ -72,7 +76,7 @@ function Accordion({
       >
         <span className="flex items-center gap-3">
           <group.icon className="size-4 text-gold-500" />
-          {group.label}
+          {t(group.label)}
         </span>
         <ChevronDown
           className={cn("size-4 text-navy-400 transition-transform duration-300", open && "rotate-180")}
@@ -92,9 +96,9 @@ function Accordion({
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="rounded-lg px-3 py-2 text-sm text-navy-600 transition-colors hover:bg-navy-900/5 hover:text-gold-600 dark:text-navy-100/70 dark:hover:bg-white/5 dark:hover:text-gold-300"
+                  className="rounded-lg px-3 py-2 text-sm text-navy-600 transition-colors hover:bg-navy-900/5 hover:text-gold-600 dark:text-navy-100/70 dark:hover:bg-white/5 dark:hover:text-gold-400"
                 >
-                  {link.title}
+                  {t(link.title)}
                 </Link>
               ))}
             </div>
@@ -107,6 +111,7 @@ function Accordion({
 
 export function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
   const { resolvedTheme, setTheme } = useTheme();
+  const { t } = useLanguage();
   const [mounted, setMounted] = React.useState(false);
   // eslint-disable-next-line react-hooks/set-state-in-effect -- hydration guard for next-themes
   React.useEffect(() => setMounted(true), []);
@@ -121,7 +126,7 @@ export function Sidebar({ open, onClose }: { open: boolean; onClose: () => void 
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 z-40 bg-navy-950/60 backdrop-blur-sm lg:hidden"
+            className="fixed inset-0 z-40 bg-navy-950/60 lg:hidden"
             aria-hidden
           />
           <motion.div
@@ -132,16 +137,16 @@ export function Sidebar({ open, onClose }: { open: boolean; onClose: () => void 
             className="fixed inset-y-0 right-0 z-50 flex w-full max-w-sm flex-col bg-white shadow-2xl lg:hidden dark:bg-navy-950"
             role="dialog"
             aria-modal="true"
-            aria-label="Navigation menu"
+            aria-label={t("Navigation menu")}
           >
             <div className="flex items-center justify-between border-b border-navy-900/10 px-6 py-5 dark:border-white/10">
               <span className="font-display text-lg font-semibold text-navy-900 dark:text-white">
-                Menu
+                {t("Menu")}
               </span>
               <button
                 type="button"
                 onClick={onClose}
-                aria-label="Close menu"
+                aria-label={t("Close menu")}
                 className="grid size-10 place-items-center rounded-full bg-navy-900/5 text-navy-900 transition-colors hover:bg-navy-900/10 dark:bg-white/10 dark:text-white"
               >
                 <X className="size-5" />
@@ -164,24 +169,25 @@ export function Sidebar({ open, onClose }: { open: boolean; onClose: () => void 
                   onClick={onClose}
                   className="flex border-b border-navy-900/10 py-4 font-display text-sm font-medium text-navy-900 dark:border-white/10 dark:text-white"
                 >
-                  {link.title}
+                  {t(link.title)}
                 </Link>
               ))}
             </motion.div>
 
             <div className="border-t border-navy-900/10 px-6 py-5 dark:border-white/10">
               <Button variant="gold" size="lg" href="/apply" className="w-full">
-                Apply Now
+                {t("Apply Now")}
               </Button>
               <div className="mt-3 flex items-center gap-3">
                 <Button variant="outline" size="md" href="/login" className="flex-1">
                   <LogIn className="size-4" />
-                  Login
+                  {t("Login")}
                 </Button>
+                <LanguageSwitcher className="flex" />
                 <button
                   type="button"
                   onClick={() => setTheme(isDark ? "light" : "dark")}
-                  aria-label="Toggle theme"
+                  aria-label={t("Toggle theme")}
                   className="grid size-11 place-items-center rounded-full border border-navy-200/70 text-navy-700 transition-colors hover:border-gold-400 hover:text-gold-500 dark:border-white/10 dark:text-navy-100"
                 >
                   {mounted && (isDark ? <Sun className="size-[18px]" /> : <Moon className="size-[18px]" />)}

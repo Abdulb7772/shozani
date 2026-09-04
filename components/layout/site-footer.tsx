@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Logo } from "@/components/ui/logo";
+import { useLanguage } from "@/lib/i18n/language-provider";
 
 type Social = { label: string; href: string; path: string };
 
@@ -64,8 +65,13 @@ const countryLinks = [
   { title: "Canada", href: "/countries/canada" },
   { title: "United Kingdom", href: "/countries/uk" },
   { title: "USA", href: "/countries/usa" },
+  { title: "Malaysia", href: "/countries/malaysia" },
+  { title: "Turkey", href: "/countries/turkey" },
+  { title: "Cyprus", href: "/countries/cyprus" },
+  { title: "Tajikistan", href: "/countries/tajikistan" },
   { title: "Saudi Arabia", href: "/countries/saudi-arabia" },
   { title: "UAE", href: "/countries/uae" },
+  { title: "Europe", href: "/countries/europe" },
 ];
 
 const companyLinks = [
@@ -85,21 +91,22 @@ const legalLinks = [
 ];
 
 function Newsletter() {
+  const { t } = useLanguage();
   const [email, setEmail] = React.useState("");
   const [state, setState] = React.useState<"idle" | "done">("idle");
 
   return (
-    <div className="rounded-3xl border border-gold-400/30 bg-gradient-to-br from-navy-800 to-navy-950 p-6 sm:p-8">
+    <div className="rounded-3xl border border-gold-400/30 bg-navy-900 p-6 sm:p-8">
       <h3 className="font-display text-lg font-semibold text-white">
-        Explore what&apos;s possible
+        {t("Explore what's possible")}
       </h3>
       <p className="mt-2 text-sm leading-relaxed text-navy-100/70">
-        Get early visa updates, scholarship alerts and deadline reminders. No spam, unsubscribe anytime.
+        {t("Get early visa updates, scholarship alerts and deadline reminders. No spam, unsubscribe anytime.")}
       </p>
       {state === "done" ? (
         <p className="mt-5 flex items-center gap-2 text-sm font-medium text-gold-300">
           <CheckCircle2 className="size-4" />
-          You&apos;re subscribed. Welcome aboard!
+          {t("You're subscribed. Welcome aboard!")}
         </p>
       ) : (
         <form
@@ -114,14 +121,14 @@ function Newsletter() {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Your email address"
+            placeholder={t("Your email address")}
             className="h-12 flex-1 rounded-full border border-white/15 bg-white/10 px-5 text-sm text-white placeholder:text-navy-100/50 focus:border-gold-400 focus:outline-none"
           />
           <button
             type="submit"
-            className="group inline-flex h-12 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold-500 to-gold-400 px-6 text-sm font-semibold text-navy-950 transition-all hover:from-gold-400 hover:to-gold-300"
+            className="group inline-flex h-12 items-center justify-center gap-2 rounded-full bg-gold-600 px-6 text-sm font-semibold text-white transition-colors hover:bg-gold-500"
           >
-            Subscribe
+            {t("Subscribe")}
             <Send className="size-4 transition-transform group-hover:translate-x-0.5" />
           </button>
         </form>
@@ -131,18 +138,17 @@ function Newsletter() {
 }
 
 export function SiteFooter() {
+  const { t } = useLanguage();
   return (
     <footer className="relative overflow-hidden bg-navy-950 text-navy-100/70">
       <div className="pointer-events-none absolute inset-0 grid-lines opacity-60" aria-hidden />
-      <div className="pointer-events-none absolute -top-40 right-0 size-[420px] rounded-full bg-gold-500/10 blur-[120px]" aria-hidden />
 
       <Container className="relative">
         <div className="grid gap-12 py-16 lg:grid-cols-[1.2fr_1fr_1fr_1fr] lg:py-20">
           <div className="space-y-6">
             <Logo dark />
             <p className="max-w-sm text-sm leading-relaxed">
-              Shozani Global Consultancy is your trusted global opportunities platform — helping you study,
-              work, settle and invest across the world with transparency and 20+ years of expertise.
+              {t("Shozani Global Consultancy is your trusted global opportunities platform — helping you study, work, settle and invest across the world with transparency and 20+ years of expertise.")}
             </p>
             <div className="flex gap-2.5">
               {socials.map((s) => (
@@ -160,34 +166,34 @@ export function SiteFooter() {
             </div>
           </div>
 
-          <FooterColumn title="Services">
+          <FooterColumn title={t("Services")}>
             {serviceLinks.map((l) => (
               <FooterLink key={l.href} href={l.href}>
-                {l.title}
+                {t(l.title)}
               </FooterLink>
             ))}
           </FooterColumn>
 
-          <FooterColumn title="Countries">
+          <FooterColumn title={t("Countries")}>
             {countryLinks.map((l) => (
               <FooterLink key={l.href} href={l.href}>
-                {l.title}
+                {t(l.title)}
               </FooterLink>
             ))}
           </FooterColumn>
 
           <div className="space-y-8">
-            <FooterColumn title="Company">
+            <FooterColumn title={t("Company")}>
               {companyLinks.map((l) => (
                 <FooterLink key={l.href} href={l.href}>
-                  {l.title}
+                  {t(l.title)}
                 </FooterLink>
               ))}
             </FooterColumn>
-            <FooterColumn title="Legal">
+            <FooterColumn title={t("Legal")}>
               {legalLinks.map((l) => (
                 <FooterLink key={l.href} href={l.href}>
-                  {l.title}
+                  {t(l.title)}
                 </FooterLink>
               ))}
             </FooterColumn>
@@ -198,25 +204,38 @@ export function SiteFooter() {
           <div className="flex items-start gap-3">
             <MapPin className="mt-0.5 size-4 shrink-0 text-gold-400" />
             <div>
-              <p className="font-medium text-white">Head Office</p>
-              <p className="text-sm">Office #12, Plaza 101, Gulberg III, Lahore, Pakistan</p>
+              <p className="font-medium text-white">{t("Head Office")}</p>
+              <p className="text-sm">{t("Main Soan Ave, Block D, Islamabad, Pakistan")}</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <Phone className="mt-0.5 size-4 shrink-0 text-gold-400" />
-            <div>
-              <p className="font-medium text-white">Call us</p>
-              <a href="tel:+924235321234" className="text-sm hover:text-gold-300">
-                +92 42 3532 1234
+            <div className="flex flex-col gap-1">
+              <p className="font-medium text-white">{t("Call us")}</p>
+              <a href="tel:+923206506990" className="inline-flex items-center gap-2 text-sm hover:text-gold-300">
+                <img
+                  src="/pk.png"
+                  alt="Pakistan"
+                  className="h-4 w-auto rounded-[2px] shadow-sm ring-1 ring-white/10"
+                />
+                +92 320 650 6990
+              </a>
+              <a href="tel:+491634757909" className="inline-flex items-center gap-2 text-sm hover:text-gold-300">
+                <img
+                  src="/ger.png"
+                  alt="Germany"
+                  className="h-4 w-auto rounded-[2px] shadow-sm ring-1 ring-white/10"
+                />
+                +49 163 4757909
               </a>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <Mail className="mt-0.5 size-4 shrink-0 text-gold-400" />
             <div>
-              <p className="font-medium text-white">Email</p>
-              <a href="mailto:info@shozani.com" className="text-sm hover:text-gold-300">
-                info@shozani.com
+              <p className="font-medium text-white">{t("Email")}</p>
+              <a href="mailto:shozani.group@gmail.com" className="text-sm hover:text-gold-300">
+                shozani.group@gmail.com
               </a>
             </div>
           </div>
@@ -227,10 +246,10 @@ export function SiteFooter() {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-8 text-xs text-navy-100/50 sm:flex-row">
-          <p>© {new Date().getFullYear()} Shozani Global Consultancy. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Shozani Global Consultancy. {t("All rights reserved.")}</p>
           <div className="flex items-center gap-4">
             <Clock className="size-3.5" aria-hidden />
-            <span>Mon – Sat: 10:00 AM – 7:00 PM (PKT)</span>
+            <span>{t("Mon – Sat: 10:00 AM – 7:00 PM (PKT)")}</span>
           </div>
         </div>
       </Container>

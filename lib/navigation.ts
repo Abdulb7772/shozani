@@ -90,7 +90,10 @@ export const aiTools: NavChild[] = [
 ];
 
 export const links = {
-  whatsapp: "https://wa.me/923000000000",
-  phone: "+92 300 0000000",
-  email: "info@shozani.com",
+  whatsapp: "https://wa.me/923206506990",
+  phone: "+92 320 650 6990",
+  phoneGermany: "+49 163 4757909",
+  email: "shozani.group@gmail.com",
+  maps: "https://www.google.com/maps/place/Paris+Business+Center/@33.5676894,73.1521039,17z/data=!3m1!4b1!4m6!3m5!1s0x38dfed6fb9ff0845:0x4f988c7333919fe0!8m2!3d33.567685!4d73.1546788!16s%2Fg%2F11g0mhmzjl",
+  mapsEmbed: "https://www.google.com/maps?q=33.567685,73.1546788&hl=en&z=16&output=embed",
 };

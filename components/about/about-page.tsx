@@ -21,6 +21,7 @@ import {
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { useLanguage } from "@/lib/i18n/language-provider";
 
 const stats = [
   { value: "20+", label: "Years of Expertise" },
@@ -106,22 +107,22 @@ export function AboutPage() {
 }
 
 function AboutHero() {
+  const { t } = useLanguage();
   return (
-    <section className="relative overflow-hidden bg-gold-50/40 pt-36 pb-20 sm:pt-44 sm:pb-28 dark:bg-navy-950">
+    <section className="relative overflow-hidden bg-white pt-36 pb-20 sm:pt-44 sm:pb-28 dark:bg-navy-950">
       <div className="pointer-events-none absolute inset-0 navy-radial opacity-0 dark:opacity-100" aria-hidden />
       <div className="pointer-events-none absolute inset-0 grid-lines opacity-40 dark:opacity-0" aria-hidden />
-      <div className="pointer-events-none absolute right-[-10%] top-0 size-[520px] rounded-full bg-gold-400/15 blur-[130px]" aria-hidden />
       <Container className="relative">
         <motion.nav
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          aria-label="Breadcrumb"
+          aria-label={t("Breadcrumb")}
           className="flex items-center gap-2 text-sm text-navy-500 dark:text-navy-100/60"
         >
-          <Link href="/" className="transition-colors hover:text-gold-600 dark:hover:text-gold-300">Home</Link>
+          <Link href="/" className="transition-colors hover:text-gold-600 dark:hover:text-gold-300">{t("Home")}</Link>
           <ChevronRight className="size-4" />
-          <span className="text-gold-700 dark:text-gold-300">About Us</span>
+          <span className="text-gold-700 dark:text-gold-300">{t("About Us")}</span>
         </motion.nav>
 
         <motion.div
@@ -130,17 +131,15 @@ function AboutHero() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="mt-8 max-w-3xl"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-50 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-gold-700 dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
+          <span className="inline-flex items-center gap-2 rounded-full border border-gold-600 bg-gold-600 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
             <Compass className="size-3.5" />
-            About Shozani
+            {t("About Shozani")}
           </span>
           <h1 className="mt-6 text-4xl font-bold leading-[1.1] text-navy-900 text-balance sm:text-5xl lg:text-6xl dark:text-white">
-            Your global journey, <span className="text-gradient-gold">guided with integrity</span>
+            {t("Your global journey,")}{" "}<span className="text-gradient-gold">{t("guided with integrity")}</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-navy-600 sm:text-lg dark:text-navy-100/75">
-            Shozani Global Consultancy is more than an education and immigration agency. We are a global
-            opportunities platform built on one belief: everyone deserves a transparent path to study, work
-            and settle abroad — without guesswork or hidden agendas.
+            {t("Shozani Global Consultancy is more than an education and immigration agency. We are a global opportunities platform built on one belief: everyone deserves a transparent path to study, work and settle abroad — without guesswork or hidden agendas.")}
           </p>
         </motion.div>
       </Container>
@@ -149,6 +148,7 @@ function AboutHero() {
 }
 
 function StatsBand() {
+  const { t } = useLanguage();
   return (
     <section className="relative z-10 -mt-8">
       <Container>
@@ -164,7 +164,7 @@ function StatsBand() {
                 {stat.value}
               </p>
               <p className="mt-1.5 text-xs font-medium uppercase tracking-[0.12em] text-navy-500 dark:text-navy-200/60">
-                {stat.label}
+                {t(stat.label)}
               </p>
             </div>
           ))}
@@ -175,14 +175,15 @@ function StatsBand() {
 }
 
 function Story() {
+  const { t } = useLanguage();
   return (
     <section className="bg-white py-20 sm:py-28 dark:bg-navy-950">
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <SectionHeading
             align="left"
-            eyebrow="Our Story"
-            title={<>From a single desk to a <span className="text-gradient-gold">global platform</span></>}
+            eyebrow={t("Our Story")}
+            title={<>{t("From a single desk to a")}{" "}<span className="text-gradient-gold">{t("global platform")}</span></>}
           />
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -192,14 +193,10 @@ function Story() {
             className="space-y-5 text-base leading-relaxed text-navy-600 dark:text-navy-200/70"
           >
             <p>
-              Shozani began in 2004 with a single desk in Lahore and a simple idea: that world-class guidance
-              should never come with fine print. Two decades later, we have helped more than 10,000 students
-              and professionals begin new chapters in Germany, the UK, Canada, Australia, the USA and across Europe.
+              {t("Shozani began in 2004 with a single desk in Lahore and a simple idea: that world-class guidance should never come with fine print. Two decades later, we have helped more than 10,000 students and professionals begin new chapters in Germany, the UK, Canada, Australia, the USA and across Europe.")}
             </p>
             <p>
-              We grew the way trust grows — slowly, carefully and on the strength of client referrals. Today our
-              specialists, counsellors and trainers work as one team across study, work, immigration, business and
-              settlement, supported by technology that puts your entire application in your own hands.
+              {t("We grew the way trust grows — slowly, carefully and on the strength of client referrals. Today our specialists, counsellors and trainers work as one team across study, work, immigration, business and settlement, supported by technology that puts your entire application in your own hands.")}
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
               {["Licensed & Regulated", "Fix-Priced Services", "Local & On-Ground Support"].map((item) => (
@@ -208,7 +205,7 @@ function Story() {
                   className="inline-flex items-center gap-1.5 rounded-full bg-navy-900/5 px-3.5 py-1.5 text-xs font-medium text-navy-700 dark:bg-white/10 dark:text-navy-100"
                 >
                   <CheckCircle2 className="size-3.5 text-gold-500" />
-                  {item}
+                  {t(item)}
                 </span>
               ))}
             </div>
@@ -220,12 +217,13 @@ function Story() {
 }
 
 function ValuesSection() {
+  const { t } = useLanguage();
   return (
-    <section className="bg-gold-50/40 py-20 sm:py-28 dark:bg-navy-900/30">
+    <section className="bg-navy-50/60 py-20 sm:py-28 dark:bg-navy-900/30">
       <Container>
         <SectionHeading
-          eyebrow="What We Stand For"
-          title={<>The values behind <span className="text-gradient-gold">every decision</span></>}
+          eyebrow={t("What We Stand For")}
+          title={<>{t("The values behind")}{" "}<span className="text-gradient-gold">{t("every decision")}</span></>}
         />
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {values.map((value, i) => (
@@ -237,14 +235,14 @@ function ValuesSection() {
               transition={{ duration: 0.55, delay: (i % 4) * 0.1 }}
               className="group rounded-3xl border border-navy-900/10 bg-white p-7 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold-400/60 hover:shadow-luxe dark:border-white/10 dark:bg-navy-900/40"
             >
-              <span className="grid size-12 place-items-center rounded-2xl bg-gradient-to-br from-gold-500 to-gold-400 text-navy-950 transition-transform duration-300 group-hover:scale-110">
+              <span className="grid size-12 place-items-center rounded-2xl bg-gold-600 text-white transition-transform duration-300 group-hover:scale-110">
                 <value.icon className="size-6" />
               </span>
               <h3 className="mt-5 font-display text-lg font-semibold text-navy-900 dark:text-white">
-                {value.title}
+                {t(value.title)}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-navy-600 dark:text-navy-200/70">
-                {value.description}
+                {t(value.description)}
               </p>
             </motion.div>
           ))}
@@ -255,13 +253,14 @@ function ValuesSection() {
 }
 
 function PillarsSection() {
+  const { t } = useLanguage();
   return (
     <section className="bg-white py-20 sm:py-28 dark:bg-navy-950">
       <Container>
         <SectionHeading
-          eyebrow="What We Do"
-          title={<>Four pillars, <span className="text-gradient-gold">one mission</span></>}
-          description="Everything we do exists to move you from where you are to where you want to be."
+          eyebrow={t("What We Do")}
+          title={<>{t("Four pillars,")}{" "}<span className="text-gradient-gold">{t("one mission")}</span></>}
+          description={t("Everything we do exists to move you from where you are to where you want to be.")}
         />
         <div className="grid gap-6 md:grid-cols-2">
           {pillars.map((pillar, i) => (
@@ -273,15 +272,15 @@ function PillarsSection() {
               transition={{ duration: 0.6, delay: (i % 2) * 0.12 }}
               className="flex gap-5 rounded-3xl border border-navy-900/10 bg-white p-8 transition-all duration-500 hover:-translate-y-1 hover:border-gold-400/60 hover:shadow-luxe dark:border-white/10 dark:bg-navy-900/40"
             >
-              <span className="grid size-13 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-navy-800 to-navy-950 text-gold-400 dark:from-gold-400 dark:to-gold-600 dark:text-navy-950">
+              <span className="grid size-13 shrink-0 place-items-center rounded-2xl bg-navy-800 text-gold-400 dark:bg-gold-600 dark:text-white">
                 <pillar.icon className="size-6" />
               </span>
               <div>
                 <h3 className="font-display text-lg font-semibold text-navy-900 dark:text-white">
-                  {pillar.title}
+                  {t(pillar.title)}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-navy-600 dark:text-navy-200/70">
-                  {pillar.description}
+                  {t(pillar.description)}
                 </p>
               </div>
             </motion.div>
@@ -293,16 +292,17 @@ function PillarsSection() {
 }
 
 function JourneySection() {
+  const { t } = useLanguage();
   return (
     <section className="relative overflow-hidden bg-white py-20 sm:py-28 dark:bg-navy-950">
       <div className="pointer-events-none absolute inset-0 grid-lines opacity-40 dark:opacity-0" aria-hidden />
       <Container className="relative">
         <SectionHeading
-          eyebrow="Our Journey"
-          title={<>Two decades of <span className="text-gradient-gold">moving forward</span></>}
+          eyebrow={t("Our Journey")}
+          title={<>{t("Two decades of")}{" "}<span className="text-gradient-gold">{t("moving forward")}</span></>}
         />
         <div className="relative mx-auto max-w-3xl">
-          <div className="absolute left-[19px] top-2 bottom-2 w-px bg-gradient-to-b from-gold-400/40 via-gold-400/20 to-transparent sm:left-1/2" aria-hidden />
+          <div className="absolute left-[19px] top-2 bottom-2 w-px bg-gold-400/40 sm:left-1/2" aria-hidden />
           <ol className="space-y-10">
             {journey.map((step, i) => (
               <motion.li
@@ -327,8 +327,8 @@ function JourneySection() {
                   <Award className="size-4" />
                 </span>
                 <p className="font-display text-sm font-bold text-gradient-gold">{step.year}</p>
-                <h3 className="mt-1 font-display text-lg font-semibold text-navy-900 dark:text-white">{step.title}</h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-navy-600 dark:text-navy-100/60">{step.text}</p>
+                <h3 className="mt-1 font-display text-lg font-semibold text-navy-900 dark:text-white">{t(step.title)}</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-navy-600 dark:text-navy-100/60">{t(step.text)}</p>
               </motion.li>
             ))}
           </ol>
@@ -339,6 +339,7 @@ function JourneySection() {
 }
 
 function AboutCta() {
+  const { t } = useLanguage();
   return (
     <section className="bg-white py-20 sm:py-28 dark:bg-navy-950">
       <Container>
@@ -347,24 +348,23 @@ function AboutCta() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.7 }}
-          className="relative overflow-hidden rounded-[2.5rem] border border-gold-400/30 bg-gradient-to-br from-navy-800 via-navy-900 to-navy-950 p-10 text-center sm:p-16"
+          className="relative overflow-hidden rounded-[2.5rem] border border-gold-400/30 bg-navy-900 p-10 text-center sm:p-16"
         >
-          <div className="pointer-events-none absolute -top-24 left-1/2 size-72 -translate-x-1/2 rounded-full bg-gold-400/20 blur-[90px]" aria-hidden />
           <span className="mx-auto grid size-14 place-items-center rounded-2xl bg-white/10 text-gold-300">
             <Target className="size-7" />
           </span>
           <h2 className="mt-6 text-3xl font-semibold text-white text-balance sm:text-4xl lg:text-5xl">
-            Ready to begin <span className="text-gradient-gold">your story?</span>
+            {t("Ready to begin")}{" "}<span className="text-gradient-gold">{t("your story?")}</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-navy-100/70">
-            Book a free consultation and let us map your options across study, work and immigration in a single honest conversation.
+            {t("Book a free consultation and let us map your options across study, work and immigration in a single honest conversation.")}
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button variant="gold" size="lg" href="/apply" withArrow>
-              Book Free Consultation
+              {t("Book Free Consultation")}
             </Button>
             <Button variant="glass" size="lg" href="/why-shozani">
-              Why Shozani
+              {t("Why Shozani")}
             </Button>
           </div>
         </motion.div>

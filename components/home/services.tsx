@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { useLanguage } from "@/lib/i18n/language-provider";
 
 const services = [
   {
@@ -65,14 +66,14 @@ const services = [
 ];
 
 export function Services() {
+  const { t } = useLanguage();
   return (
     <section className="relative overflow-hidden bg-white py-20 sm:py-28 dark:bg-navy-950">
-      <div className="pointer-events-none absolute right-[-10%] top-0 size-[420px] rounded-full bg-gold-400/8 blur-[120px]" aria-hidden />
       <Container>
         <SectionHeading
-          eyebrow="Our Services"
-          title={<>Complete solutions for your <span className="text-gradient-gold">global journey</span></>}
-          description="From your first consultation to landing and settlement — every service is delivered by specialised experts who have done it themselves."
+          eyebrow={t("Our Services")}
+          title={<>{t("Complete solutions for your")} <span className="text-gradient-gold">{t("global journey")}</span></>}
+          description={t("From your first consultation to landing and settlement — every service is delivered by specialised experts who have done it themselves.")}
         />
 
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -88,22 +89,22 @@ export function Services() {
                 href={service.href}
                 className="group relative block h-full overflow-hidden rounded-3xl border border-navy-900/10 bg-white p-8 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-luxe dark:border-white/10 dark:bg-navy-900/40"
               >
-                <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-400/70 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" aria-hidden />
-                <span className="grid size-14 place-items-center rounded-2xl bg-gradient-to-br from-navy-800 to-navy-950 text-gold-400 transition-all duration-500 group-hover:from-gold-500 group-hover:to-gold-400 group-hover:text-navy-950 dark:from-gold-400 dark:to-gold-600 dark:text-navy-950">
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-0.5 bg-gold-500 opacity-0 transition-opacity duration-500 group-hover:opacity-100" aria-hidden />
+                <span className="grid size-14 place-items-center rounded-2xl bg-navy-800 text-gold-400 transition-colors duration-500 group-hover:bg-gold-600 group-hover:text-white dark:bg-gold-600 dark:text-white">
                   <service.icon className="size-7" />
                 </span>
                 <h3 className="mt-6 font-display text-xl font-semibold text-navy-900 dark:text-white">
-                  {service.title}
+                  {t(service.title)}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-navy-600 dark:text-navy-200/70">
-                  {service.description}
+                  {t(service.description)}
                 </p>
                 <div className="mt-6 flex items-center justify-between">
                   <span className="rounded-full bg-navy-900/5 px-3 py-1 text-xs font-medium text-navy-500 dark:bg-white/10 dark:text-navy-200/70">
-                    {service.tag}
+                    {t(service.tag)}
                   </span>
                   <span className="flex items-center gap-1 text-sm font-semibold text-gold-600 transition-all duration-300 group-hover:gap-2 dark:text-gold-300">
-                    Explore
+                    {t("Explore")}
                     <ArrowRight className="size-4" />
                   </span>
                 </div>

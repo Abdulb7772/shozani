@@ -6,22 +6,21 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { countryList } from "@/lib/countries-data";
 
 export const metadata: Metadata = {
-  title: "Destinations",
+  title: "Countries",
   description:
-    "Explore all destinations served by Shozani Global Consultancy — Germany, Australia, UK, USA, Canada, Europe, Saudi Arabia, UAE and Pakistan.",
+    "Explore all countries served by Shozani Global Consultancy — Germany, Australia, UK, USA, Canada, Europe, Saudi Arabia, UAE, Pakistan, Malaysia, Turkey, Tajikistan and Cyprus.",
   alternates: { canonical: "/countries" },
 };
 
 export default function CountriesIndex() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gold-50/40 pt-36 pb-20 sm:pt-44 sm:pb-28 dark:bg-navy-950">
+      <section className="relative overflow-hidden bg-white pt-36 pb-20 sm:pt-44 sm:pb-28 dark:bg-navy-950">
         <div className="pointer-events-none absolute inset-0 navy-radial opacity-0 dark:opacity-100" aria-hidden />
         <div className="pointer-events-none absolute inset-0 grid-lines opacity-40 dark:opacity-0" aria-hidden />
-        <div className="pointer-events-none absolute right-[-10%] top-0 size-[520px] rounded-full bg-gold-400/15 blur-[130px]" aria-hidden />
         <Container className="relative">
-          <span className="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-50 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-gold-700 dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
-            Destinations
+          <span className="inline-flex items-center gap-2 rounded-full border border-gold-600 bg-gold-600 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
+            Countries
           </span>
           <h1 className="mt-6 max-w-3xl text-4xl font-bold leading-[1.1] text-navy-900 text-balance sm:text-5xl lg:text-6xl dark:text-white">
             One platform, <span className="text-gradient-gold">every destination</span>
@@ -39,7 +38,7 @@ export default function CountriesIndex() {
               <Link
                 key={country.id}
                 href={country.href}
-                className="group relative block overflow-hidden rounded-3xl border border-navy-900/10 bg-white p-6 transition-all duration-500 hover:-translate-y-1 hover:border-gold-400/60 hover:shadow-luxe dark:border-white/10 dark:bg-white/5 dark:backdrop-blur-md dark:hover:bg-white/10"
+                className="group relative block overflow-hidden rounded-3xl border border-navy-900/10 bg-white p-6 transition-all duration-500 hover:-translate-y-1 hover:border-gold-400/60 hover:shadow-luxe dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10"
               >
                 <div className="flex items-start justify-between">
                   <span

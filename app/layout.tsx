@@ -1,8 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Poppins } from "next/font/google";
 import { ThemeProvider } from "@/components/providers/theme-provider";
+import { LanguageProvider } from "@/lib/i18n/language-provider";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
+import { WhatsAppPopup } from "@/components/ui/whatsapp-popup";
+import { CommunityPopup } from "@/components/ui/community-popup";
 import "./globals.css";
 
 const inter = Inter({
@@ -57,7 +60,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#041023",
+  themeColor: "#12294c",
   width: "device-width",
   initialScale: 1,
 };
@@ -69,9 +72,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${poppins.variable}`}>
       <body className="font-sans">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <SiteHeader />
-          <main>{children}</main>
-          <SiteFooter />
+          <LanguageProvider>
+            <SiteHeader />
+            <main>{children}</main>
+            <SiteFooter />
+            <WhatsAppPopup />
+            <CommunityPopup />
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

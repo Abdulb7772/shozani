@@ -12,26 +12,23 @@ export function Logo({
     <Link
       href="/"
       aria-label="Shozani Global Consultancy — Home"
-      className={cn("group inline-flex items-center gap-2.5", className)}
+      className={cn("group inline-flex shrink-0 items-center gap-2.5", className)}
     >
+      <img
+        src="/logo.png"
+        alt="Shozani Global Consultancy"
+        className="h-11 w-auto shrink-0 object-contain transition-shadow duration-300 group-hover:shadow-gold xl:h-10"
+      />
       <span
         className={cn(
-          "grid size-10 place-items-center rounded-xl font-display text-lg font-bold transition-shadow duration-300 group-hover:shadow-gold",
-          dark
-            ? "bg-gradient-to-br from-gold-400 to-gold-600 text-navy-950"
-            : "bg-gradient-to-br from-navy-800 to-navy-950 text-gold-400 dark:from-gold-400 dark:to-gold-600 dark:text-navy-950"
-        )}
-      >
-        S
-      </span>
-      <span
-        className={cn(
-          "font-display text-lg font-semibold tracking-tight",
+          "flex items-baseline gap-1.5 whitespace-nowrap font-display text-[17px] font-semibold leading-none tracking-tight",
           dark ? "text-white" : "text-navy-900 dark:text-white"
         )}
       >
         Shozani
-        <span className="ml-1 text-gold-500">Global</span>
+        <span className="hidden text-[13px] leading-none text-gold-500 2xl:inline-block">
+          Global Consultancy
+        </span>
       </span>
     </Link>
   );

@@ -11,13 +11,15 @@ import {
   ChevronRight,
   ArrowRight,
   GraduationCap,
-  Bot,
+  CheckCircle2,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/ui/logo";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
+import { useLanguage } from "@/lib/i18n/language-provider";
 
 type MegaGroup = {
   label: string;
@@ -55,7 +57,7 @@ const MEGA: MegaGroup[] = [
     ],
   },
   {
-    label: "Destinations",
+    label: "Countries",
     icon: Globe,
     viewAll: "/countries",
     sections: [
@@ -64,17 +66,18 @@ const MEGA: MegaGroup[] = [
       { title: "Canada", href: "/countries/canada", description: "Express Entry & study" },
       { title: "United Kingdom", href: "/countries/uk", description: "Elite universities" },
       { title: "USA", href: "/countries/usa", description: "STEM & top colleges" },
+      { title: "Malaysia", href: "/countries/malaysia", description: "Affordable degrees" },
+      { title: "Turkey", href: "/countries/turkey", description: "Scholarships & study" },
+      { title: "Cyprus", href: "/countries/cyprus", description: "EU base, English degrees" },
+      { title: "Tajikistan", href: "/countries/tajikistan", description: "Affordable education" },
     ],
   },
   {
-    label: "AI Tools",
-    icon: Bot,
-    viewAll: "/ai",
+    label: "Free Assessment",
+    icon: CheckCircle2,
+    viewAll: "/apply",
     sections: [
-      { title: "Visa Eligibility", href: "/ai/visa-eligibility", description: "2-min free check" },
-      { title: "IELTS Predictor", href: "/ai/ielts-predictor", description: "Estimate your band" },
-      { title: "Germany Salary", href: "/ai/salary-calculator", description: "Live net salary" },
-      { title: "Study Cost", href: "/ai/study-cost-calculator", description: "Plan your budget" },
+      { title: "Start Free Assessment", href: "/apply", description: "Find your best route" },
     ],
   },
 ];
@@ -94,6 +97,7 @@ export function Navbar({
   onOpenSidebar: () => void;
 }) {
   const pathname = usePathname();
+  const { t } = useLanguage();
   const [active, setActive] = React.useState<string | null>(null);
   const closeTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -121,15 +125,15 @@ export function Navbar({
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-500",
         scrolled
-          ? "border-b border-navy-900/5 bg-white/85 py-2 shadow-[0_8px_30px_rgb(4,16,35,0.06)] backdrop-blur-xl dark:border-white/10 dark:bg-navy-950/80"
+          ? "border-b border-navy-900/5 bg-white py-2 shadow-[0_8px_30px_rgb(23,37,84,0.08)] dark:border-white/10 dark:bg-navy-950"
           : "bg-transparent py-4"
       )}
     >
-      <Container className="flex items-center justify-between gap-6">
+      <Container className="flex items-center justify-between gap-2">
         <Logo />
 
         <nav
-          className="hidden items-center gap-1 lg:flex"
+          className="hidden items-center gap-0 whitespace-nowrap xl:flex"
           aria-label="Primary"
           onMouseLeave={scheduleClose}
         >
@@ -149,37 +153,38 @@ export function Navbar({
               key={link.href}
               href={link.href}
               className={cn(
-                "rounded-full px-4 py-2 font-display text-sm font-medium tracking-tight text-gold-500 transition-all duration-500 ease-out-gold hover:delay-300 hover:bg-gold-500/10 hover:text-gold-600 dark:text-gold-300 dark:hover:bg-gold-400/10 dark:hover:text-gold-200",
-                pathname === link.href && "text-gold-700 dark:text-gold-200"
+                "flex items-center rounded-full px-2.5 py-2 font-display text-[13px] font-bold leading-none tracking-tight text-gold-500 transition-all duration-500 ease-out-gold hover:delay-300 hover:bg-gold-500/10 hover:text-gold-600 dark:text-gold-400 dark:hover:bg-gold-400/10 dark:hover:text-gold-300",
+                pathname === link.href && "text-gold-700 dark:text-gold-300"
               )}
             >
-              {link.label}
+              {t(link.label)}
             </Link>
           ))}
         </nav>
 
-        <div className="flex items-center gap-2.5">
+        <div className="flex shrink-0 items-center gap-1.5 whitespace-nowrap">
           <button
             type="button"
-            aria-label="Search"
-            className="hidden size-10 place-items-center rounded-full border border-gold-500/50 text-gold-500 transition-all duration-500 ease-out-gold hover:delay-300 hover:border-gold-500 hover:bg-gold-500/10 hover:text-gold-600 sm:grid dark:border-gold-400/40 dark:text-gold-300 dark:hover:border-gold-400 dark:hover:bg-gold-400/10 dark:hover:text-gold-200"
+            aria-label={t("Search")}
+            className="hidden size-8 place-items-center rounded-full border border-gold-500/50 text-gold-500 transition-all duration-500 ease-out-gold hover:delay-300 hover:border-gold-500 hover:bg-gold-500/10 hover:text-gold-600 sm:grid dark:border-gold-400/40 dark:text-gold-400 dark:hover:border-gold-400 dark:hover:bg-gold-400/10 dark:hover:text-gold-300"
           >
-            <Search className="size-[18px]" />
+            <Search className="size-4" />
           </button>
-          <ThemeToggle className="hidden sm:grid" />
+          <LanguageSwitcher className="hidden text-[11px] sm:flex" />
+          <ThemeToggle className="hidden size-8 sm:grid [&_svg]:size-4" />
           <div className="hidden xl:block">
-            <Button variant="outline" size="sm" href="/login" className="border-gold-500/50 text-gold-500 hover:border-gold-500 hover:bg-gold-500/10 hover:text-gold-600 dark:border-gold-400/40 dark:text-gold-300 dark:hover:border-gold-400 dark:hover:bg-gold-400/10 dark:hover:text-gold-200">
-              Login
+            <Button variant="outline" size="sm" href="/login" className="border-gold-500/50 text-gold-500 hover:border-gold-500 hover:bg-gold-500/10 hover:text-gold-600 dark:border-gold-400/40 dark:text-gold-400 dark:hover:border-gold-400 dark:hover:bg-gold-400/10 dark:hover:text-gold-300">
+              {t("Login")}
             </Button>
           </div>
           <Button variant="gold" size="sm" href="/apply" className="hidden sm:inline-flex">
-            Apply Now
+            {t("Apply Now")}
           </Button>
           <button
             type="button"
             onClick={onOpenSidebar}
-            aria-label="Open menu"
-            className="grid size-10 place-items-center rounded-full bg-navy-900 text-white transition-transform active:scale-95 lg:hidden dark:bg-white/10"
+            aria-label={t("Open menu")}
+            className="grid size-9 place-items-center rounded-full bg-navy-900 text-white transition-transform active:scale-95 xl:hidden dark:bg-white/10"
           >
             <Menu className="size-[18px]" />
           </button>
@@ -193,7 +198,7 @@ export function Navbar({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute inset-x-0 top-full hidden lg:block"
+            className="absolute inset-x-0 top-full hidden xl:block"
             onMouseEnter={cancelClose}
             onMouseLeave={scheduleClose}
             aria-label={active}
@@ -208,7 +213,7 @@ export function Navbar({
                     className={cn(
                       "flex w-full items-center gap-3 rounded-2xl px-4 py-3 text-left transition-colors",
                       active === m.label
-                        ? "bg-gold-50 text-navy-950 dark:bg-white/5 dark:text-white"
+                        ? "bg-gold-600 text-white dark:bg-white/5 dark:text-white"
                         : "text-navy-600 hover:text-navy-950 dark:text-navy-100/70 dark:hover:text-white"
                     )}
                   >
@@ -216,7 +221,7 @@ export function Navbar({
                       <m.icon className="size-4" />
                     </span>
                     <div className="flex items-center justify-between gap-6">
-                      <span className="font-display text-sm font-medium">{m.label}</span>
+                      <span className="font-display text-sm font-medium">{t(m.label)}</span>
                       <ChevronRight className="size-4 opacity-40" />
                     </div>
                   </button>
@@ -231,19 +236,19 @@ export function Navbar({
                     className="group rounded-2xl p-4 transition-colors hover:bg-navy-900/5 dark:hover:bg-white/5"
                   >
                     <span className="flex items-center justify-between font-display text-sm font-medium text-navy-950 transition-colors group-hover:text-gold-600 dark:text-white">
-                      {s.title}
+                      {t(s.title)}
                       <ArrowRight className="size-3.5 -translate-x-1 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
                     </span>
                     <span className="mt-1 block text-xs leading-relaxed text-navy-500 dark:text-navy-200/60">
-                      {s.description}
+                      {t(s.description)}
                     </span>
                   </Link>
                 ))}
                 <Link
                   href={MEGA.find((m) => m.label === active)?.viewAll ?? "/"}
-                  className="mt-1 inline-flex items-center gap-1.5 self-end rounded-2xl px-4 py-3 text-sm font-medium text-gold-600 transition-colors hover:bg-gold-50 dark:text-gold-300 dark:hover:bg-white/5"
+                  className="mt-1 inline-flex items-center gap-1.5 self-end rounded-2xl px-4 py-3 text-sm font-medium text-gold-600 transition-colors hover:bg-gold-500/10 dark:text-gold-300 dark:hover:bg-white/5"
                 >
-                  View all {active}
+                  {t("View all")} {t(active ?? "")}
                   <ArrowRight className="size-4" />
                 </Link>
               </div>
@@ -269,8 +274,8 @@ function MegaTrigger({
       type="button"
       onMouseEnter={onOpen}
       className={cn(
-        "flex items-center gap-1 rounded-full px-4 py-2 font-display text-sm font-medium tracking-tight text-gold-500 transition-all duration-500 ease-out-gold hover:delay-300 hover:bg-gold-500/10 hover:text-gold-600 dark:text-gold-300 dark:hover:bg-gold-400/10 dark:hover:text-gold-200",
-        active && "text-gold-700 hover:text-gold-700 dark:text-gold-200 dark:hover:text-gold-200"
+        "flex items-center gap-1 rounded-full px-2.5 py-2 font-display text-[13px] font-bold leading-none tracking-tight text-gold-500 transition-all duration-500 ease-out-gold hover:delay-300 hover:bg-gold-500/10 hover:text-gold-600 dark:text-gold-400 dark:hover:bg-gold-400/10 dark:hover:text-gold-300",
+        active && "text-gold-700 hover:text-gold-700 dark:text-gold-300 dark:hover:text-gold-300"
       )}
     >
       {mega.label}

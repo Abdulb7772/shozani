@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/lib/i18n/language-provider";
 
 const faqs = [
   {
@@ -76,13 +77,14 @@ function FaqItem({ q, a, defaultOpen }: { q: string; a: string; defaultOpen?: bo
 }
 
 export function Faq() {
+  const { t } = useLanguage();
   return (
     <section className="bg-white py-20 sm:py-28 dark:bg-navy-950">
       <Container>
         <SectionHeading
-          eyebrow="FAQs"
-          title={<>Answers to <span className="text-gradient-gold">the questions you ask most</span></>}
-          description="Still have a question? Talk to a real consultant — your first consultation is free."
+          eyebrow={t("FAQs")}
+          title={<>{t("Answers to")} <span className="text-gradient-gold">{t("the questions you ask most")}</span></>}
+          description={t("Still have a question? Talk to a real consultant — your first consultation is free.")}
         />
         <div className="grid gap-10 lg:grid-cols-[1fr_360px]">
           <div className="space-y-3">
@@ -94,7 +96,7 @@ export function Faq() {
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, delay: (i % 4) * 0.06 }}
               >
-                <FaqItem q={f.q} a={f.a} defaultOpen={i === 0} />
+                <FaqItem q={t(f.q)} a={t(f.a)} defaultOpen={i === 0} />
               </motion.div>
             ))}
           </div>
@@ -105,22 +107,22 @@ export function Faq() {
             transition={{ duration: 0.6 }}
             className="lg:sticky lg:top-32 lg:self-start"
           >
-            <div className="rounded-3xl border border-gold-400/30 bg-gradient-to-br from-navy-800 to-navy-950 p-8 text-center">
+            <div className="rounded-3xl border border-gold-400/30 bg-navy-900 p-8 text-center">
               <span className="mx-auto grid size-14 place-items-center rounded-2xl bg-white/10 text-gold-300">
                 <MessageCircle className="size-7" />
               </span>
               <h3 className="mt-5 font-display text-xl font-semibold text-white">
-                Talk to an expert
+                {t("Talk to an expert")}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-navy-100/70">
-                Get a free, no-obligation consultation with a certified counsellor specialising in your country.
+                {t("Get a free, no-obligation consultation with a certified counsellor specialising in your country.")}
               </p>
               <Button variant="gold" size="lg" href="/contact" className="mt-6 w-full">
-                Book a Consultation
+                {t("Book a Consultation")}
               </Button>
               <div className="mt-4 flex items-center justify-center gap-2 text-xs text-navy-100/60">
                 <Phone className="size-3.5" />
-                Or call: +92 42 3532 1234
+                {t("Or call:")} +92 320 650 6990
               </div>
             </div>
           </motion.div>

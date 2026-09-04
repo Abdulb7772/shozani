@@ -18,6 +18,7 @@ import { cn } from "@/lib/utils";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { useLanguage } from "@/lib/i18n/language-provider";
 
 type Story = {
   name: string;
@@ -157,22 +158,22 @@ export function SuccessStoriesPage() {
 }
 
 function StoriesHero() {
+  const { t } = useLanguage();
   return (
-    <section className="relative overflow-hidden bg-gold-50/60 pt-36 pb-20 sm:pt-44 sm:pb-24 dark:bg-navy-950">
+    <section className="relative overflow-hidden bg-white pt-36 pb-20 sm:pt-44 sm:pb-24 dark:bg-navy-950">
       <div className="pointer-events-none absolute inset-0 navy-radial opacity-0 dark:opacity-100" aria-hidden />
       <div className="pointer-events-none absolute inset-0 grid-lines opacity-40 dark:opacity-0" aria-hidden />
-      <div className="pointer-events-none absolute right-[-10%] top-0 size-[520px] rounded-full bg-gold-400/15 blur-[130px]" aria-hidden />
       <Container className="relative">
         <motion.nav
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          aria-label="Breadcrumb"
+          aria-label={t("Breadcrumb")}
           className="flex items-center gap-2 text-sm text-navy-500 dark:text-navy-100/60"
         >
-          <Link href="/" className="transition-colors hover:text-gold-600 dark:hover:text-gold-300">Home</Link>
+          <Link href="/" className="transition-colors hover:text-gold-600 dark:hover:text-gold-300">{t("Home")}</Link>
           <ChevronRight className="size-4" />
-          <span className="text-gold-700 dark:text-gold-300">Success Stories</span>
+          <span className="text-gold-700 dark:text-gold-300">{t("Success Stories")}</span>
         </motion.nav>
 
         <motion.div
@@ -181,16 +182,15 @@ function StoriesHero() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="mt-8 max-w-3xl"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-50 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-gold-700 dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
+          <span className="inline-flex items-center gap-2 rounded-full border border-gold-600 bg-gold-600 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
             <Award className="size-3.5" />
-            Real Stories, Real Results
+            {t("Real Stories, Real Results")}
           </span>
           <h1 className="mt-6 text-4xl font-bold leading-[1.1] text-navy-900 text-balance sm:text-5xl lg:text-6xl dark:text-white">
-            Journeys that started <span className="text-gradient-gold">with one conversation</span>
+            {t("Journeys that started")} <span className="text-gradient-gold">{t("with one conversation")}</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-navy-600 sm:text-lg dark:text-navy-100/75">
-            Every profile here is a genuine client who chose to study, work or settle abroad with Shozani.
-            These are the outcomes — their words, their journeys, their next chapters.
+            {t("Every profile here is a genuine client who chose to study, work or settle abroad with Shozani. These are the outcomes — their words, their journeys, their next chapters.")}
           </p>
         </motion.div>
       </Container>
@@ -199,11 +199,12 @@ function StoriesHero() {
 }
 
 function StatsBand() {
+  const { t } = useLanguage();
   const metrics = [
-    { value: "10,000+", label: "Successful Placements" },
-    { value: "96%", label: "Visa Approval Rate" },
-    { value: "40+", label: "Countries Guided" },
-    { value: "4.9/5", label: "Average Client Rating" },
+    { value: "10,000+", label: t("Successful Placements") },
+    { value: "96%", label: t("Visa Approval Rate") },
+    { value: "40+", label: t("Countries Guided") },
+    { value: "4.9/5", label: t("Average Client Rating") },
   ];
   return (
     <section className="relative z-10 -mt-8">
@@ -237,13 +238,14 @@ function StoriesGrid({
   setFilter: (f: string) => void;
   filtered: Story[];
 }) {
+  const { t } = useLanguage();
   return (
     <section className="bg-white py-20 sm:py-28 dark:bg-navy-950">
       <Container>
         <SectionHeading
-          eyebrow="Client Outcomes"
-          title={<>Success stories across <span className="text-gradient-gold">every path</span></>}
-          description="Filter by journey type to see the results most relevant to your own goals."
+          eyebrow={t("Client Outcomes")}
+          title={<>{t("Success stories across")} <span className="text-gradient-gold">{t("every path")}</span></>}
+          description={t("Filter by journey type to see the results most relevant to your own goals.")}
         />
 
         <motion.div
@@ -262,11 +264,11 @@ function StoriesGrid({
               className={cn(
                 "rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-500 ease-out-gold hover:delay-200",
                 filter === f.value
-                  ? "bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 shadow-gold"
+                  ? "bg-gold-600 text-white shadow-gold"
                   : "border border-navy-200/70 text-navy-600 hover:border-gold-400 hover:text-gold-600 dark:border-white/15 dark:text-navy-200/70 dark:hover:text-gold-300"
               )}
             >
-              {f.label}
+              {t(f.label)}
             </button>
           ))}
         </motion.div>
@@ -289,7 +291,7 @@ function StoriesGrid({
                       const Icon = typeMeta[story.type].icon;
                       return <Icon className="size-3.5" />;
                     })()}
-                    {typeMeta[story.type].label}
+                    {t(typeMeta[story.type].label)}
                   </span>
                   <span className="inline-flex items-center gap-1 rounded-full border border-white/10 bg-navy-900/5 px-2.5 py-1 font-display text-[10px] font-bold tracking-widest text-navy-500 dark:bg-white/5 dark:text-navy-100/60">
                     {story.code}
@@ -301,10 +303,10 @@ function StoriesGrid({
                 </span>
 
                 <blockquote className="mt-4 font-display text-base font-medium leading-relaxed text-navy-900 dark:text-white">
-                  &ldquo;{story.quote}&rdquo;
+                  &ldquo;{t(story.quote)}&rdquo;
                 </blockquote>
                 <p className="mt-3 text-sm leading-relaxed text-navy-600 dark:text-navy-200/70">
-                  {story.detail}
+                  {t(story.detail)}
                 </p>
 
                 <div className="mt-6 flex items-center gap-1 border-t border-navy-900/10 pt-5 dark:border-white/10">
@@ -321,13 +323,13 @@ function StoriesGrid({
                 <div className="mt-3 flex items-center justify-between">
                   <div>
                     <p className="font-display text-sm font-semibold text-navy-900 dark:text-white">{story.name}</p>
-                    <p className="text-xs text-navy-500 dark:text-navy-200/60">{story.role}</p>
+                    <p className="text-xs text-navy-500 dark:text-navy-200/60">{t(story.role)}</p>
                   </div>
                   <Link
                     href="/contact"
                     className="flex items-center gap-1 text-xs font-semibold text-gold-600 transition-colors hover:text-gold-500 dark:text-gold-300"
                   >
-                    Share similar
+                    {t("Share similar")}
                     <ArrowRight className="size-3.5" />
                   </Link>
                 </div>
@@ -341,15 +343,16 @@ function StoriesGrid({
 }
 
 function VideoSection() {
+  const { t } = useLanguage();
   return (
     <section className="relative overflow-hidden bg-navy-950 py-20 sm:py-28">
       <div className="pointer-events-none absolute inset-0 grid-lines opacity-40" aria-hidden />
       <Container className="relative">
         <SectionHeading
           dark
-          eyebrow="Video Testimonials"
-          title={<>Hear it <span className="text-gradient-gold">in their own words</span></>}
-          description="Students and professionals share their journeys — from the first consultation to landing abroad."
+          eyebrow={t("Video Testimonials")}
+          title={<>{t("Hear it")} <span className="text-gradient-gold">{t("in their own words")}</span></>}
+          description={t("Students and professionals share their journeys — from the first consultation to landing abroad.")}
         />
         <div className="grid gap-6 md:grid-cols-3">
           {[1, 2, 3].map((v, i) => (
@@ -359,20 +362,20 @@ function VideoSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.6, delay: i * 0.12 }}
-              className="group relative aspect-video overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-navy-800 to-navy-950"
+              className="group relative aspect-video overflow-hidden rounded-3xl border border-white/10 bg-navy-900"
             >
               <button
                 type="button"
-                aria-label={`Play testimonial ${v}`}
+                aria-label={`${t("Play testimonial")} ${v}`}
                 className="absolute inset-0 grid place-items-center"
               >
-                <span className="relative grid size-16 place-items-center rounded-full bg-white/10 backdrop-blur-md transition-transform duration-300 group-hover:scale-110">
+                <span className="relative grid size-16 place-items-center rounded-full bg-white/10 transition-transform duration-300 group-hover:scale-110">
                   <span className="absolute inset-0 rounded-full bg-gold-400/40 animate-pulse-ring" aria-hidden />
                   <PlayCircle className="size-8 text-gold-300" />
                 </span>
               </button>
               <p className="absolute bottom-4 left-4 font-display text-sm font-semibold text-white">
-                {["Ayesha — Germany Study", "Bilal — Germany IT", "Usman — Australia PR"][i]}
+                {t(["Ayesha — Germany Study", "Bilal — Germany IT", "Usman — Australia PR"][i])}
               </p>
             </motion.div>
           ))}
@@ -383,6 +386,7 @@ function VideoSection() {
 }
 
 function StoriesCta() {
+  const { t } = useLanguage();
   return (
     <section className="bg-white py-20 sm:py-28 dark:bg-navy-950">
       <Container>
@@ -391,21 +395,20 @@ function StoriesCta() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.7 }}
-          className="relative overflow-hidden rounded-[2.5rem] border border-gold-400/30 bg-gradient-to-br from-navy-800 via-navy-900 to-navy-950 p-10 text-center sm:p-16"
+          className="relative overflow-hidden rounded-[2.5rem] border border-gold-400/30 bg-navy-900 p-10 text-center sm:p-16"
         >
-          <div className="pointer-events-none absolute -top-24 left-1/2 size-72 -translate-x-1/2 rounded-full bg-gold-400/20 blur-[90px]" aria-hidden />
           <h2 className="text-3xl font-semibold text-white text-balance sm:text-4xl lg:text-5xl">
-            The next success story <span className="text-gradient-gold">could be yours</span>
+            {t("The next success story")} <span className="text-gradient-gold">{t("could be yours")}</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-navy-100/70">
-            Take the first step. A free consultation is a whole lot of progress toward where you want to be.
+            {t("Take the first step. A free consultation is a whole lot of progress toward where you want to be.")}
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button variant="gold" size="lg" href="/apply" withArrow>
-              Start Your Free Consultation
+              {t("Start Your Free Consultation")}
             </Button>
             <Button variant="glass" size="lg" href="/why-shozani">
-              Why Choose Shozani
+              {t("Why Choose Shozani")}
             </Button>
           </div>
         </motion.div>

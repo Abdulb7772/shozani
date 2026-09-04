@@ -1,4 +1,4 @@
-import type { ServiceData } from "@/components/service/service-page";
+﻿import type { ServiceData } from "@/components/service/service-page";
 
 export type CountryId =
   | "germany"
@@ -9,14 +9,18 @@ export type CountryId =
   | "europe"
   | "saudi-arabia"
   | "uae"
-  | "pakistan";
+  | "pakistan"
+  | "malaysia"
+  | "turkey"
+  | "tajikistan"
+  | "cyprus";
 
 export const countries: Record<CountryId, ServiceData> = {
   germany: {
-    codecrumbs: [{ label: "Destinations", href: "/countries" }, { label: "Germany", href: "/countries/germany" }],
+    codecrumbs: [{ label: "Countries", href: "/countries" }, { label: "Germany", href: "/countries/germany" }],
     eyebrow: "Destination — Germany",
-    title: "Germany: tuition-free",
-    highlight: "degrees & a real PR path",
+    title: "Germany: Tuition-Free",
+    highlight: "Degrees & a Real PR Path",
     intro:
       "Germany pairs tuition-free university education with the EU's strongest job market, a post-study residence permit and a transparent permanent residency route. Engineers, nurses and skilled workers are in constant demand.",
     stats: [
@@ -53,10 +57,10 @@ export const countries: Record<CountryId, ServiceData> = {
   },
 
   australia: {
-    codecrumbs: [{ label: "Destinations", href: "/countries" }, { label: "Australia", href: "/countries/australia" }],
+    codecrumbs: [{ label: "Countries", href: "/countries" }, { label: "Australia", href: "/countries/australia" }],
     eyebrow: "Destination — Australia",
-    title: "Study, work & settle",
-    highlight: "on one proactive path",
+    title: "Study, Work & Settle",
+    highlight: "on One Proactive Path",
     intro:
       "Australia links quality education directly to skilled migration — post-study work visas, employer sponsorship and points-tested migration make Australia one of the strongest study-to-PR destinations.",
     stats: [
@@ -93,10 +97,10 @@ export const countries: Record<CountryId, ServiceData> = {
   },
 
   uk: {
-    codecrumbs: [{ label: "Destinations", href: "/countries" }, { label: "United Kingdom", href: "/countries/uk" }],
+    codecrumbs: [{ label: "Countries", href: "/countries" }, { label: "United Kingdom", href: "/countries/uk" }],
     eyebrow: "Destination — United Kingdom",
-    title: "Elite universities,",
-    highlight: "a 2-year stay-back",
+    title: "Elite Universities,",
+    highlight: "a 2-Year Stay-Back",
     intro:
       "The UK's world-class universities economic, legal and STEM programs are matched by a two-year Graduate Visa that powers a fast path into skilled work.",
     stats: [
@@ -133,10 +137,10 @@ export const countries: Record<CountryId, ServiceData> = {
   },
 
   usa: {
-    codecrumbs: [{ label: "Destinations", href: "/countries" }, { label: "USA", href: "/countries/usa" }],
+    codecrumbs: [{ label: "Countries", href: "/countries" }, { label: "USA", href: "/countries/usa" }],
     eyebrow: "Destination — United States",
-    title: "Top-ranked education,",
-    highlight: "STEM & scholarship-driven",
+    title: "Top-Ranked Education,",
+    highlight: "STEM & Scholarship-Driven",
     intro:
       "US universities, colleges and the STEM OPT extension offer global employability. We select affordable, scholarship-friendly institutions aligned to your F-1 journey.",
     stats: [
@@ -173,10 +177,10 @@ export const countries: Record<CountryId, ServiceData> = {
   },
 
   canada: {
-    codecrumbs: [{ label: "Destinations", href: "/countries" }, { label: "Canada", href: "/countries/canada" }],
+    codecrumbs: [{ label: "Countries", href: "/countries" }, { label: "Canada", href: "/countries/canada" }],
     eyebrow: "Destination — Canada",
-    title: "Study, earn &",
-    highlight: "qualify for PR",
+    title: "Study, Earn &",
+    highlight: "Qualify for PR",
     intro:
       "Canada's post-graduation work permit and Express Entry let international students convert education into permanent residence faster than almost any large study market.",
     stats: [
@@ -213,10 +217,10 @@ export const countries: Record<CountryId, ServiceData> = {
   },
 
   europe: {
-    codecrumbs: [{ label: "Destinations", href: "/countries" }, { label: "Europe", href: "/countries/europe" }],
+    codecrumbs: [{ label: "Countries", href: "/countries" }, { label: "Europe", href: "/countries/europe" }],
     eyebrow: "Destination — Europe",
-    title: "EU-wide mobility,",
-    highlight: "one chosen base",
+    title: "EU-Wide Mobility,",
+    highlight: "One Chosen Base",
     intro:
       "Across the Schengen region — Netherlands, France, Ireland, Poland and more — public and affordable education, high salaries and intra-EU movement create options Germany alone cannot.",
     stats: [
@@ -253,10 +257,10 @@ export const countries: Record<CountryId, ServiceData> = {
   },
 
   "saudi-arabia": {
-    codecrumbs: [{ label: "Destinations", href: "/countries" }, { label: "Saudi Arabia", href: "/countries/saudi-arabia" }],
+    codecrumbs: [{ label: "Countries", href: "/countries" }, { label: "Saudi Arabia", href: "/countries/saudi-arabia" }],
     eyebrow: "Destination — Saudi Arabia",
-    title: "Gulf careers with",
-    highlight: "work, salary & stability",
+    title: "Gulf Careers with",
+    highlight: "Work, Salary & Stability",
     intro:
       "With Vision 2030 adding millions of jobs and professional giga-projects, Saudi Arabia is the fastest-growing Gulf market for skilled workers across construction, healthcare, IT and oil industries.",
     stats: [
@@ -293,10 +297,10 @@ export const countries: Record<CountryId, ServiceData> = {
   },
 
   uae: {
-    codecrumbs: [{ label: "Destinations", href: "/countries" }, { label: "UAE", href: "/countries/uae" }],
+    codecrumbs: [{ label: "Countries", href: "/countries" }, { label: "UAE", href: "/countries/uae" }],
     eyebrow: "Destination — UAE",
-    title: "Gulf money,",
-    highlight: "plus global stature",
+    title: "Gulf Money,",
+    highlight: "Plus Global Stature",
     intro:
       "The UAE combines tax-free income, a global business hub and golden residency — from job-seeker and freelance visas to investor residency and company formation.",
     stats: [
@@ -333,10 +337,10 @@ export const countries: Record<CountryId, ServiceData> = {
   },
 
   pakistan: {
-    codecrumbs: [{ label: "Destinations", href: "/countries" }, { label: "Pakistan", href: "/countries/pakistan" }],
+    codecrumbs: [{ label: "Countries", href: "/countries" }, { label: "Pakistan", href: "/countries/pakistan" }],
     eyebrow: "Is Home — Pakistan",
-    title: "Train here,",
-    highlight: "frame the move out",
+    title: "Train Here,",
+    highlight: "Frame the Move Out",
     intro:
       "We support the Pakistan side of your journey — visa document preparation, language training, GIC and finance structuring, and family support back home so your move abroad becomes permanent.",
     stats: [
@@ -371,6 +375,166 @@ export const countries: Record<CountryId, ServiceData> = {
     ],
     cta: { title: "", text: "Every successful abroad story starts with the documents at home. Let's start your pack.", link: "/contact", linkLabel: "Start Your Pakistan File" },
   },
+
+  malaysia: {
+    codecrumbs: [{ label: "Countries", href: "/countries" }, { label: "Malaysia", href: "/countries/malaysia" }],
+    eyebrow: "Destination — Malaysia",
+    title: "World-Class Degrees,",
+    highlight: "at a Fraction of the Cost",
+    intro:
+      "Malaysia blends English-medium university education with tuition 60–80% below Western benchmarks. Twinning programs award UK, Australian and US degrees on Malaysian campuses, with an open post-study job market in Kuala Lumpur and beyond.",
+    stats: [
+      { value: "USD 3–5k", label: "Tuition Per Year" },
+      { value: "1–2 yrs", label: "Post-Study Work" },
+      { value: "60–80%", label: "Cost Below the West" },
+      { value: "EN", label: "Medium of Instruction" },
+    ],
+    requirements: [
+      { title: "Passport & Offer", text: "Valid passport plus a confirmed admission offer from a registered institution." },
+      { title: "Visa Approval", text: "Education Malaysia Global Services (EMGS) student visa application." },
+      { title: "Finances", text: "Proof of funds covering tuition and living costs for the first year." },
+      { title: "Medical & Insurance", text: "Medical screening abroad and mandatory student health cover." },
+    ],
+    process: [
+      { step: "01", title: "Route Check", text: "We shortlist English-taught programs against your budget and goals." },
+      { step: "02", title: "Admission", text: "University application until the offer letter and VAL arrive." },
+      { step: "03", title: "EMGS Visa", text: "Student visa processing with medical and finance files completed." },
+      { step: "04", title: "Arrival & Study", text: "Accommodation, registration and post-study work planning." },
+    ],
+    timeline: [
+      { step: "1", title: "Offer", text: "2–4 weeks" },
+      { step: "2", title: "Visa (EMGS)", text: "4–8 weeks" },
+      { step: "3", title: "Intake", text: "Feb / Sep" },
+      { step: "4", title: "Settlement", text: "1–2 weeks" },
+    ],
+    faqs: [
+      { q: "Is Malaysia really that affordable?", a: "Yes — annual tuition at top private universities usually lands between USD 3,000 and 5,000, with living costs around USD 500 a month." },
+      { q: "Can I work after graduating?", a: "Graduates can work in Malaysia under the Skilled Pass holder categories, and twinning graduates hold globally recognised degrees." },
+      { q: "Are the degrees recognised back home?", a: "Degrees from HEI-registered universities are widely recognised, including HEC attestation routes in Pakistan." },
+      { q: "Do I need IELTS?", a: "Most programs accept IELTS 5.5–6.0 or equivalent; English-medium schools can waive it with a medium-of-instruction letter." },
+    ],
+    cta: { title: "", text: "A recognised degree without the Western price tag — let's find your Malaysian campus.", link: "/apply", linkLabel: "Check Malaysia Eligibility" },
+  },
+
+  turkey: {
+    codecrumbs: [{ label: "Countries", href: "/countries" }, { label: "Turkey", href: "/countries/turkey" }],
+    eyebrow: "Destination — Turkey",
+    title: "European Quality,",
+    highlight: "Backed by Global Scholarships",
+    intro:
+      "Turkey pairs strong universities with the Türkiye Bursları scholarship system and tuition far below Western Europe. Engineering, medicine and aviation programs are taught in English and Turkish, with a regional job market that keeps growing.",
+    stats: [
+      { value: "500+", label: "Partner Universities" },
+      { value: "0–USD 2k", label: "Tuition With Scholarships" },
+      { value: "4–6 wks", label: "Visa Processing" },
+      { value: "5 yrs", label: "Residence Route" },
+    ],
+    requirements: [
+      { title: "Admission Offer", text: "University acceptance letter for the program and semester applied." },
+      { title: "Visa & Residence", text: "Student visa at the consulate then ikamet (residence permit) on arrival." },
+      { title: "Finances", text: "Proof of funds for living costs and tuition instalments." },
+      { title: "English / Turkish", text: "English-taught programs need IELTS; Turkish programs follow a prep year." },
+    ],
+    process: [
+      { step: "01", title: "University & Scholarship", text: "Program shortlist and Türkiye Bursları or university fee applications." },
+      { step: "02", title: "Offer & Documents", text: "Admission letter and notarised document packs for the consulate." },
+      { step: "03", title: "Visa & Ikamet", text: "Student visa approval followed by residence permit registration." },
+      { step: "04", title: "Settle & Study", text: "Arrival support, housing and part-time work registration." },
+    ],
+    timeline: [
+      { step: "1", title: "Admission", text: "4–8 weeks" },
+      { step: "2", title: "Visa", text: "3–6 weeks" },
+      { step: "3", title: "Ikamet", text: "2–4 weeks" },
+      { step: "4", title: "Intake", text: "Sep / Feb" },
+    ],
+    faqs: [
+      { q: "How do Turkish scholarships work?", a: "Türkiye Bursları covers tuition, monthly stipend, accommodation and flights for qualifying students; applications open once a year." },
+      { q: "Can I work while studying?", a: "Students can work part-time with a residence permit, and internships are strongly supported by faculty." },
+      { q: "Is the degree recognised?", a: "Turkish degrees, especially from public universities, are recognised through HEC attestation for Pakistan." },
+      { q: "Do I need Turkish language?", a: "English programs don't need it; for Turkish-medium degrees you complete a funded prep year first." },
+    ],
+    cta: { title: "", text: "A European-quality degree with scholarship backing — let's map your Turkish route.", link: "/apply", linkLabel: "Check Turkey Eligibility" },
+  },
+
+  tajikistan: {
+    codecrumbs: [{ label: "Countries", href: "/countries" }, { label: "Tajikistan", href: "/countries/tajikistan" }],
+    eyebrow: "Destination — Tajikistan",
+    title: "Central Asia's",
+    highlight: "Affordable Education Corridor",
+    intro:
+      "Tajikistan is emerging as an affordable education and business corridor in Central Asia — low-cost medical, engineering and language programs with growing trade links through Pakistan's northern routes.",
+    stats: [
+      { value: "USD 1–3k", label: "Tuition Per Year" },
+      { value: "30+", label: "Partner Institutions" },
+      { value: "6–8 wks", label: "Visa Processing" },
+      { value: "RUS", label: "Widely Used Medium" },
+    ],
+    requirements: [
+      { title: "Passport & Invitation", text: "Valid passport plus the university invitation letter for the visa." },
+      { title: "Admission", text: "Enrolment confirmation and document attestation for consular use." },
+      { title: "Finances", text: "Proof of funds for tuition and the first months of living costs." },
+      { title: "Medical Check", text: "Medical certificate issued ahead of the visa application." },
+    ],
+    process: [
+      { step: "01", title: "Route Check", text: "We confirm the program and university against your budget and goals." },
+      { step: "02", title: "Admission & Invitation", text: "University acceptance and the official invitation letter." },
+      { step: "03", title: "Visa", text: "Consular visa processing with attestation and medical files." },
+      { step: "04", title: "Arrival", text: "Enrolment, housing registration and student life support." },
+    ],
+    timeline: [
+      { step: "1", title: "Invitation", text: "3–6 weeks" },
+      { step: "2", title: "Visa", text: "2–4 weeks" },
+      { step: "3", title: "Enrolment", text: "1–2 weeks" },
+      { step: "4", title: "Intake", text: "Sep / Feb" },
+    ],
+    faqs: [
+      { q: "Is education in Tajikistan recognised?", a: "Degrees from accredited public universities are attestable through HEC channels for Pakistan." },
+      { q: "What language are programs in?", a: "Most programs run in Russian or Tajik with preparatory language years; English programs exist at partner institutions." },
+      { q: "Is it safe for international students?", a: "Yes — international students enjoy protected campus status and local student support networks." },
+      { q: "Can I transfer credits later?", a: "Yes, several partner programs are structured for later transfer to Russian and European universities." },
+    ],
+    cta: { title: "", text: "A new education corridor opening up — let's check if Tajikistan fits your plan.", link: "/apply", linkLabel: "Check Tajikistan Eligibility" },
+  },
+
+  cyprus: {
+    codecrumbs: [{ label: "Countries", href: "/countries" }, { label: "Cyprus", href: "/countries/cyprus" }],
+    eyebrow: "Destination — Cyprus",
+    title: "An EU Base,",
+    highlight: "Taught in English",
+    intro:
+      "Cyprus is the EU's most accessible English-medium study hub — private universities with European accreditation, tuition below Western EU averages, post-study stay options and a clear path to long-term EU residence.",
+    stats: [
+      { value: "EUR 5–8k", label: "Tuition Per Year" },
+      { value: "1 yr", label: "Post-Study Stay" },
+      { value: "3 yrs", label: "Work → Residence Route" },
+      { value: "EN", label: "Medium of Instruction" },
+    ],
+    requirements: [
+      { title: "Admission & Visa", text: "University offer letter plus the student visa at the Cyprus consulate." },
+      { title: "Finances", text: "Funds covering tuition and living costs of roughly EUR 12,000 a year." },
+      { title: "English", text: "IELTS 5.5–6.0 or an equivalent English proficiency certificate." },
+      { title: "Insurance", text: "Health insurance valid for the full study period in Cyprus." },
+    ],
+    process: [
+      { step: "01", title: "Route Check", text: "Program shortlist and budget mapping against the EU option." },
+      { step: "02", title: "Admission", text: "University application until the acceptance letter arrives." },
+      { step: "03", title: "Visa & Pink Slip", text: "Visa approval then alien registration (pink slip) on arrival." },
+      { step: "04", title: "Settle & Work", text: "Accommodation, banking and post-study work registration." },
+    ],
+    timeline: [
+      { step: "1", title: "Offer", text: "2–5 weeks" },
+      { step: "2", title: "Visa", text: "4–8 weeks" },
+      { step: "3", title: "Pink Slip", text: "2–3 weeks" },
+      { step: "4", title: "Intake", text: "Sep / Feb" },
+    ],
+    faqs: [
+      { q: "Is a Cyprus degree accepted in the EU?", a: "Degrees from accredited private universities are officially recognised across the EU and widely accepted internationally." },
+      { q: "Can I stay after graduation?", a: "Yes — graduates can remain to work, and consecutive residence builds toward long-term EU status." },
+      { q: "Are tuition fees really lower?", a: "Compared to the UK or US they are roughly half, with living costs around EUR 700–900 per month." },
+      { q: "Do I need Schengen for Cyprus?", a: "Cyprus issues its own student visas; once you hold residence, the Schengen area is freely accessible for travel." },
+    ],
+    cta: { title: "", text: "An EU degree in English at half the price — let's open your Cyprus file.", link: "/apply", linkLabel: "Check Cyprus Eligibility" },
+  },
 };
 
 export const countryList: { id: CountryId; name: string; href: string }[] = [
@@ -383,4 +547,8 @@ export const countryList: { id: CountryId; name: string; href: string }[] = [
   { id: "saudi-arabia", name: "Saudi Arabia", href: "/countries/saudi-arabia" },
   { id: "uae", name: "UAE", href: "/countries/uae" },
   { id: "pakistan", name: "Pakistan", href: "/countries/pakistan" },
+  { id: "malaysia", name: "Malaysia", href: "/countries/malaysia" },
+  { id: "turkey", name: "Turkey", href: "/countries/turkey" },
+  { id: "tajikistan", name: "Tajikistan", href: "/countries/tajikistan" },
+  { id: "cyprus", name: "Cyprus", href: "/countries/cyprus" },
 ];
