@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Menu,
-  Search,
   Globe,
   ChevronRight,
   ArrowRight,
@@ -19,6 +18,7 @@ import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/ui/logo";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
+import { SearchOverlay } from "@/components/layout/search-overlay";
 import { useLanguage } from "@/lib/i18n/language-provider";
 
 type MegaGroup = {
@@ -163,13 +163,7 @@ export function Navbar({
         </nav>
 
         <div className="flex shrink-0 items-center gap-1.5 whitespace-nowrap">
-          <button
-            type="button"
-            aria-label={t("Search")}
-            className="hidden size-8 place-items-center rounded-full border border-gold-500/50 text-gold-500 transition-all duration-500 ease-out-gold hover:delay-300 hover:border-gold-500 hover:bg-gold-500/10 hover:text-gold-600 sm:grid dark:border-gold-400/40 dark:text-gold-400 dark:hover:border-gold-400 dark:hover:bg-gold-400/10 dark:hover:text-gold-300"
-          >
-            <Search className="size-4" />
-          </button>
+          <SearchOverlay />
           <LanguageSwitcher className="hidden text-[11px] sm:flex" />
           <ThemeToggle className="hidden size-8 sm:grid [&_svg]:size-4" />
           <div className="hidden xl:block">
