@@ -217,8 +217,18 @@ export function Navbar({
                         : "text-navy-600 hover:text-navy-950 dark:text-navy-100/70 dark:hover:text-white"
                     )}
                   >
-                    <span className="grid size-9 place-items-center rounded-xl bg-navy-900/5 text-gold-600 dark:bg-white/10 dark:text-gold-300">
-                      <m.icon className="size-4" />
+                    <span
+                      className={cn(
+                        "relative grid size-11 shrink-0 place-items-center rounded-2xl transition-all duration-300",
+                        active === m.label
+                          ? "bg-gradient-to-br from-gold-400 via-gold-500 to-gold-600 text-white shadow-gold ring-2 ring-gold-400/50 dark:from-gold-300 dark:via-gold-400 dark:to-gold-500 dark:text-navy-950 dark:shadow-gold dark:ring-gold-300/40"
+                          : "bg-gradient-to-br from-gold-500/10 via-gold-500/5 to-transparent text-gold-600 ring-1 ring-gold-500/25 group-hover:from-gold-500/20 group-hover:to-gold-500/10 dark:text-gold-300 dark:ring-gold-300/20 dark:group-hover:from-gold-300/20 dark:group-hover:to-gold-300/5"
+                      )}
+                    >
+                      <m.icon className="size-[22px] drop-shadow-sm" strokeWidth={2.2} />
+                      {active === m.label && (
+                        <span className="absolute inset-0 -z-10 rounded-2xl bg-gold-500/50 blur-md opacity-60 transition-opacity group-hover:opacity-100 dark:bg-gold-400/40" />
+                      )}
                     </span>
                     <div className="flex items-center justify-between gap-6">
                       <span className="font-display text-sm font-medium">{t(m.label)}</span>
