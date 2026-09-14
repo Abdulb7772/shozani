@@ -175,13 +175,13 @@ export function Hero() {
   const slide = slides[index];
 
   return (
-    <section className="relative overflow-hidden bg-white pt-32 pb-20 sm:pt-40 sm:pb-28 lg:pt-48 dark:bg-navy-950">
+    <section className="relative overflow-hidden bg-white pt-16 pb-20 sm:pt-24 sm:pb-28 lg:pt-28 dark:bg-navy-950">
       <div className="pointer-events-none absolute inset-0 grid-lines-light" aria-hidden />
 
       <Container className="relative">
         <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
-            <div className="relative flex min-h-[560px] items-center sm:min-h-[640px] lg:min-h-[600px] xl:min-h-[660px]">
+            <div className="relative flex h-[600px] items-center sm:h-[660px] lg:h-[640px] xl:h-[680px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={index}
