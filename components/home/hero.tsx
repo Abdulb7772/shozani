@@ -62,6 +62,7 @@ type Slide = {
   services: string[];
   primary: { label: string; href: string };
   secondary: { label: string; href: string };
+  image: string;
 };
 
 const slides: Slide[] = [
@@ -74,6 +75,7 @@ const slides: Slide[] = [
     services: ["University Admissions", "APS & Blocked Account", "Ausbildung Placement", "German A1–C1 Training", "Nursing & Work Visas"],
     primary: { label: "Explore Germany", href: "/countries/germany" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
+    image: "/GERMANY.png",
   },
   {
     badge: "Destination · United Kingdom",
@@ -84,6 +86,7 @@ const slides: Slide[] = [
     services: ["Admissions & CAS", "Scholarship Guidance", "IELTS / PTE Preparation", "Student Visa Filing"],
     primary: { label: "Explore the UK", href: "/countries/uk" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
+    image: "/UK.png",
   },
   {
     badge: "Destination · USA",
@@ -94,6 +97,7 @@ const slides: Slide[] = [
     services: ["University Shortlisting", "Scholarship Applications", "F-1 Visa Interview Prep", "OPT / CPT Guidance"],
     primary: { label: "Explore the USA", href: "/countries/usa" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
+    image: "/USA.png",
   },
   {
     badge: "Destination · Canada",
@@ -104,6 +108,7 @@ const slides: Slide[] = [
     services: ["College & University Admissions", "GIC & Financial Proof", "Study Permit Filing", "PR Pathway Planning"],
     primary: { label: "Explore Canada", href: "/countries/canada" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
+    image: "/CANADA.png",
   },
   {
     badge: "Destination · Australia",
@@ -114,6 +119,7 @@ const slides: Slide[] = [
     services: ["Course & PR Mapping", "Skills Assessment", "Visa Lodgement", "Settlement Support"],
     primary: { label: "Explore Australia", href: "/countries/australia" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
+    image: "/AUS.png",
   },
   {
     badge: "Destination · Europe",
@@ -124,6 +130,7 @@ const slides: Slide[] = [
     services: ["Admissions Processing", "Visa Filing", "Accommodation Support", "Airport Pickup"],
     primary: { label: "Explore Europe", href: "/countries/europe" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
+    image: "/CYPRUS.png",
   },
   {
     badge: "Destination · UAE & Gulf",
@@ -134,6 +141,7 @@ const slides: Slide[] = [
     services: ["Work Permits", "Golden Visa", "Business Setup", "Family Sponsorship"],
     primary: { label: "Explore the UAE", href: "/countries/uae" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
+    image: "/SA,UAE.png",
   },
   {
     badge: "Destination · Turkey",
@@ -144,6 +152,7 @@ const slides: Slide[] = [
     services: ["University Admissions", "Scholarship Guidance", "Residence Permits", "Travel & Settlement"],
     primary: { label: "Explore Turkey", href: "/countries/turkey" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
+    image: "/turkey.png",
   },
   {
     badge: "Destination · Malaysia",
@@ -154,6 +163,7 @@ const slides: Slide[] = [
     services: ["Admissions & Twinning Programs", "EMGS Visa Processing", "Scholarships", "On-Arrival Support"],
     primary: { label: "Explore Malaysia", href: "/countries/malaysia" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
+    image: "/malaysia.png",
   },
 ];
 
@@ -185,24 +195,32 @@ export function Hero() {
               <AnimatePresence mode="wait">
                 <motion.div
                   key={index}
-                  initial={{ x: 90 }}
-                  animate={{ x: 0 }}
-                  exit={{ x: -90 }}
+                  initial={{ x: 90, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  exit={{ x: -90, opacity: 0 }}
                   transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-                  className="w-full"
+                  className="relative h-full w-full overflow-hidden rounded-3xl"
                 >
+                  <img
+                    src={slide.image}
+                    alt=""
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/70 to-transparent" />
+
+                  <div className="relative z-10 flex h-full flex-col justify-center p-8 sm:p-10 lg:p-12">
                   <span className="inline-flex items-center gap-2 rounded-full border border-gold-600 bg-gold-600 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
                     <Sparkles className="size-3.5" />
                     {t(slide.badge)}
                   </span>
 
-                  <h1 className="mt-6 text-4xl font-bold leading-[1.08] tracking-tight text-navy-900 text-balance sm:text-5xl lg:text-6xl xl:text-7xl dark:text-white">
+                  <h1 className="mt-6 text-4xl font-bold leading-[1.08] tracking-tight text-white text-balance sm:text-5xl lg:text-6xl xl:text-7xl">
                     {t(slide.titleA)}{" "}
                     {slide.titleB && <span className="block text-gradient-gold">{t(slide.titleB)}</span>}
                     {slide.titleC && <> {t(slide.titleC)}</>}
                   </h1>
 
-                  <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-600 sm:text-lg dark:text-navy-100/80">
+                  <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
                     {t(slide.description)}
                   </p>
 
@@ -210,7 +228,7 @@ export function Hero() {
                     {slide.services.map((service) => (
                       <span
                         key={service}
-                        className="rounded-full border border-navy-200 bg-navy-50 px-3 py-1 text-xs font-medium text-navy-700 dark:border-white/10 dark:bg-white/5 dark:text-navy-100"
+                        className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm"
                       >
                         {t(service)}
                       </span>
@@ -224,6 +242,7 @@ export function Hero() {
                     <Button variant="outline" size="lg" href={slide.secondary.href}>
                       {t(slide.secondary.label)}
                     </Button>
+                  </div>
                   </div>
                 </motion.div>
               </AnimatePresence>
