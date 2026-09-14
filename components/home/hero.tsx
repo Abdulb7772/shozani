@@ -63,6 +63,7 @@ type Slide = {
   primary: { label: string; href: string };
   secondary: { label: string; href: string };
   image: string;
+  imagePosition: string;
 };
 
 const slides: Slide[] = [
@@ -76,6 +77,7 @@ const slides: Slide[] = [
     primary: { label: "Explore Germany", href: "/countries/germany" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
     image: "/GERMANY.png",
+    imagePosition: "object-right",
   },
   {
     badge: "Destination · United Kingdom",
@@ -87,6 +89,7 @@ const slides: Slide[] = [
     primary: { label: "Explore the UK", href: "/countries/uk" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
     image: "/UK.png",
+    imagePosition: "object-right",
   },
   {
     badge: "Destination · USA",
@@ -98,6 +101,7 @@ const slides: Slide[] = [
     primary: { label: "Explore the USA", href: "/countries/usa" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
     image: "/USA.png",
+    imagePosition: "object-right",
   },
   {
     badge: "Destination · Canada",
@@ -109,6 +113,7 @@ const slides: Slide[] = [
     primary: { label: "Explore Canada", href: "/countries/canada" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
     image: "/CANADA.png",
+    imagePosition: "object-right",
   },
   {
     badge: "Destination · Australia",
@@ -120,6 +125,7 @@ const slides: Slide[] = [
     primary: { label: "Explore Australia", href: "/countries/australia" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
     image: "/AUS.png",
+    imagePosition: "object-right",
   },
   {
     badge: "Destination · Europe",
@@ -131,6 +137,7 @@ const slides: Slide[] = [
     primary: { label: "Explore Europe", href: "/countries/europe" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
     image: "/CYPRUS.png",
+    imagePosition: "object-right",
   },
   {
     badge: "Destination · UAE & Gulf",
@@ -142,6 +149,7 @@ const slides: Slide[] = [
     primary: { label: "Explore the UAE", href: "/countries/uae" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
     image: "/SA,UAE.png",
+    imagePosition: "object-left",
   },
   {
     badge: "Destination · Turkey",
@@ -153,6 +161,7 @@ const slides: Slide[] = [
     primary: { label: "Explore Turkey", href: "/countries/turkey" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
     image: "/turkey.png",
+    imagePosition: "object-right",
   },
   {
     badge: "Destination · Malaysia",
@@ -164,6 +173,7 @@ const slides: Slide[] = [
     primary: { label: "Explore Malaysia", href: "/countries/malaysia" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
     image: "/malaysia.png",
+    imagePosition: "object-right",
   },
 ];
 
@@ -185,13 +195,27 @@ export function Hero() {
   const slide = slides[index];
 
   return (
-    <section className="relative overflow-hidden bg-white pt-16 pb-20 sm:pt-24 sm:pb-28 lg:pt-28 dark:bg-navy-950">
-      <div className="pointer-events-none absolute inset-0 grid-lines-light" aria-hidden />
+    <section className="relative overflow-hidden bg-white pt-12 pb-16 sm:pt-16 sm:pb-20 lg:pt-16 dark:bg-navy-950">
+      <AnimatePresence initial={false}>
+        <motion.div
+          key={index}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.6 }}
+          className="absolute inset-0"
+        >
+          <img src={slide.image} alt="" className={cn("size-full object-cover", slide.imagePosition)} />
+        </motion.div>
+      </AnimatePresence>
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950/95 via-navy-950/80 to-navy-950/50" aria-hidden />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-950/70 to-transparent" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 grid-lines-light opacity-40" aria-hidden />
 
       <Container className="relative">
         <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
-            <div className="relative flex h-[600px] items-center sm:h-[660px] lg:h-[640px] xl:h-[680px]">
+            <div className="relative flex h-[520px] items-center sm:h-[560px] lg:h-[540px] xl:h-[580px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={index}
@@ -199,16 +223,8 @@ export function Hero() {
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: -90, opacity: 0 }}
                   transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-                  className="relative h-full w-full overflow-hidden rounded-3xl"
+                  className="w-full"
                 >
-                  <img
-                    src={slide.image}
-                    alt=""
-                    className="absolute inset-0 size-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/70 to-transparent" />
-
-                  <div className="relative z-10 flex h-full flex-col justify-center p-8 sm:p-10 lg:p-12">
                   <span className="inline-flex items-center gap-2 rounded-full border border-gold-600 bg-gold-600 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
                     <Sparkles className="size-3.5" />
                     {t(slide.badge)}
@@ -243,7 +259,6 @@ export function Hero() {
                       {t(slide.secondary.label)}
                     </Button>
                   </div>
-                  </div>
                 </motion.div>
               </AnimatePresence>
             </div>
@@ -260,7 +275,7 @@ export function Hero() {
                       "h-2.5 rounded-full transition-all duration-300",
                       i === index
                         ? "w-8 bg-gold-500"
-                        : "w-2.5 bg-navy-300 hover:bg-navy-500 dark:bg-white/25 dark:hover:bg-white/50"
+                        : "w-2.5 bg-white/40 hover:bg-white/70"
                     )}
                   />
                 ))}
@@ -270,7 +285,7 @@ export function Hero() {
                   type="button"
                   onClick={goPrev}
                   aria-label={t("Previous slide")}
-                  className="grid size-10 place-items-center rounded-full border border-navy-200 text-navy-700 transition-colors hover:border-gold-500 hover:bg-gold-500/10 hover:text-gold-600 dark:border-white/25 dark:text-white dark:hover:border-gold-400 dark:hover:text-gold-300"
+                  className="grid size-10 place-items-center rounded-full border border-white/30 text-white transition-colors hover:border-gold-400 hover:bg-gold-500/20 hover:text-gold-300"
                 >
                   <ChevronLeft className="size-5" />
                 </button>
@@ -278,22 +293,22 @@ export function Hero() {
                   type="button"
                   onClick={goNext}
                   aria-label={t("Next slide")}
-                  className="grid size-10 place-items-center rounded-full border border-navy-200 text-navy-700 transition-colors hover:border-gold-500 hover:bg-gold-500/10 hover:text-gold-600 dark:border-white/25 dark:text-white dark:hover:border-gold-400 dark:hover:text-gold-300"
+                  className="grid size-10 place-items-center rounded-full border border-white/30 text-white transition-colors hover:border-gold-400 hover:bg-gold-500/20 hover:text-gold-300"
                 >
                   <ChevronRight className="size-5" />
                 </button>
-                <span className="ml-1 font-display text-sm tracking-[0.2em] text-navy-500 dark:text-navy-100/70">
+                <span className="ml-1 font-display text-sm tracking-[0.2em] text-white/70">
                   {String(index + 1).padStart(2, "0")} / {String(count).padStart(2, "0")}
                 </span>
               </div>
             </div>
 
-            <div className="mt-6 flex items-center gap-4 text-sm text-navy-600 dark:text-navy-100/70">
+            <div className="mt-6 flex items-center gap-4 text-sm text-white/80">
               <span className="flex items-center gap-1.5">
-                <ShieldCheck className="size-4 text-gold-500 dark:text-gold-400" />
+                <ShieldCheck className="size-4 text-gold-300" />
                 {t("Licensed & Regulated")}
               </span>
-              <span className="size-1 rounded-full bg-navy-300 dark:bg-navy-100/30" aria-hidden />
+              <span className="size-1 rounded-full bg-white/40" aria-hidden />
               <span>{t("Free Initial Consultation")}</span>
             </div>
           </div>
@@ -367,14 +382,14 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-16 grid grid-cols-2 gap-y-8 border-t border-navy-900/10 pt-10 md:grid-cols-4 dark:border-white/10"
+          className="mt-16 grid grid-cols-2 gap-y-8 border-t border-white/20 pt-10 md:grid-cols-4"
         >
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="font-display text-3xl font-bold text-navy-900 sm:text-4xl dark:text-white">
-                <span className="text-gold-600 dark:text-gold-400">{stat.value}</span>
+              <p className="font-display text-3xl font-bold text-white sm:text-4xl">
+                <span className="text-gold-300">{stat.value}</span>
               </p>
-              <p className="mt-1 text-xs font-medium uppercase tracking-[0.12em] text-navy-500 dark:text-navy-200/60">
+              <p className="mt-1 text-xs font-medium uppercase tracking-[0.12em] text-white/60">
                 {t(stat.label)}
               </p>
             </div>
