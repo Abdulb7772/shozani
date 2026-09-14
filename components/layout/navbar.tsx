@@ -130,7 +130,7 @@ export function Navbar({
       )}
     >
       <Container className="flex items-center justify-between gap-2">
-        <Logo />
+        <Logo dark={!scrolled && pathname === "/"} />
 
         <nav
           className="hidden items-center gap-0 whitespace-nowrap xl:flex"
