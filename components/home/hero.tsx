@@ -195,7 +195,7 @@ export function Hero() {
   const slide = slides[index];
 
   return (
-    <section className="relative overflow-hidden bg-white pt-12 pb-16 sm:pt-16 sm:pb-20 lg:pt-16 dark:bg-navy-950">
+    <section className="relative overflow-hidden bg-white pt-14 pb-16 sm:pt-20 sm:pb-24 lg:pt-20 dark:bg-navy-950">
       <AnimatePresence initial={false}>
         <motion.div
           key={index}
@@ -215,7 +215,7 @@ export function Hero() {
       <Container className="relative">
         <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
-            <div className="relative flex h-[520px] items-center sm:h-[560px] lg:h-[540px] xl:h-[580px]">
+            <div className="relative flex h-[560px] items-center sm:h-[600px] lg:h-[580px] xl:h-[620px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={index}
