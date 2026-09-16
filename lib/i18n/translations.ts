@@ -46,8 +46,6 @@ export const de: Record<string, string> = {
   "Reunite with dependent visas": "Zusammenführung per Familienvisum",
   "Business & Investment": "Business & Investition",
   "Company formation & business visas": "Firmengründung & Geschäftsvisa",
-  "Construction Services": "Bauleistungen",
-  "Architecture, design & house building": "Architektur, Design & Hausbau",
   "German Language": "Deutsche Sprache",
   "A1 – C1 with exam prep & visa-ready": "A1 – C1 mit Prüfungsvorbereitung & visatauglich",
   "IELTS Preparation": "IELTS-Vorbereitung",
@@ -111,7 +109,6 @@ export const de: Record<string, string> = {
   "Close menu": "Menü schließen",
   "Toggle theme": "Design wechseln",
   "Business Setup": "Unternehmensgründung",
-  "Construction": "Bauleistungen",
   "Salary Calculator": "Gehaltsrechner",
   "Navigation menu": "Navigationsmenü",
   "Explore Services": "Leistungen entdecken",
@@ -175,7 +172,7 @@ export const de: Record<string, string> = {
   "Partner Universities": "Partneruniversitäten",
   "Immigration & PR": "Einwanderung & PR",
   "Permanent residence & family sponsorship": "Daueraufenthalt & Familiensponsoring",
-  "German, IELTS & PTE with exam prep": "Deutsch, IELTS & PTE mit Prüfungsvorbereitung",
+  "German, IELTS & PTE — online or in-person classes": "Deutsch, IELTS & PTE – Online- oder Präsenzkurse",
   "Germany, UK, USA, Canada, Australia": "Deutschland, UK, USA, Kanada, Australien",
   "Germany jobs, healthcare, IT & engineering": "Jobs in Deutschland, Gesundheit, IT & Ingenieurwesen",
   "Licensed & Regulated": "Lizenziert & reguliert",
@@ -205,12 +202,9 @@ export const de: Record<string, string> = {
   "Company formation, business visas and investment advisory to establish and grow your business abroad.":
     "Firmengründung, Geschäftsvisa und Investitionsberatung, um Ihr Unternehmen im Ausland aufzubauen und zu wachsen.",
   "Company Formation": "Firmengründung",
-  "German (A1–C1), IELTS and PTE coaching with certified trainers, mock exams and proven band results.":
-    "Deutsch (A1–C1), IELTS- und PTE-Training mit zertifizierten Trainern, Probeprüfungen und nachgewiesenen Ergebnissen.",
+  "German (A1–C1), IELTS and PTE coaching with certified trainers, mock exams and proven band results — online or in-person sessions.":
+    "Deutsch (A1–C1), IELTS- und PTE-Training mit zertifizierten Trainern, Probeprüfungen und nachgewiesenen Ergebnissen – in Online- oder Präsenzkursen.",
   "German, IELTS, PTE": "Deutsch, IELTS, PTE",
-  "Architecture, interior design, house building and project management with premium quality standards.":
-    "Architektur, Innenarchitektur, Hausbau und Projektmanagement mit höchsten Qualitätsstandards.",
-  "Design & Build": "Design & Bau",
   "Explore": "Entdecken",
 
   // ── Home: process ─────────────────────────────────────────

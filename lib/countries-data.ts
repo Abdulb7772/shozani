@@ -357,7 +357,7 @@ export const countries: Record<CountryId, ServiceData> = {
     ],
     process: [
       { step: "01", title: "Document House", text: "Attestation, translation, apostille and PDF packs." },
-      { step: "02", title: "Language & Tests", text: "IELTS/PTE/German prep and bookings." },
+      { step: "02", title: "Language & Tests", text: "IELTS/PTE/German prep and bookings — online or on-site." },
       { step: "03", title: "Finances", text: "GIC, blocked accounts and proof-of-funds structuring." },
       { step: "04", title: "Visa & Departure", text: "Office interviews, pre-departure and family logistic coordination." },
     ],

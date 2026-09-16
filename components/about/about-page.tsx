@@ -101,7 +101,18 @@ export function AboutPage() {
       <ValuesSection />
       <PillarsSection />
       <JourneySection />
-      <AboutCta />
+<div className="mt-12">
+  <div className="grid grid-cols-3 gap-4">
+    <img src="/images/GERMANY.png" alt="Shozani in Germany" className="rounded-lg w-full h-48 object-cover" />
+    <img src="/images/UK.png" alt="Shozani in the UK" className="rounded-lg w-full h-48 object-cover" />
+    <img src="/images/CANADA.png" alt="Shozani in Canada" className="rounded-lg w-full h-48 object-cover" />
+  </div>
+  <div className="mt-10 flex justify-center">
+    <Button variant="gold" size="lg" href="/gallery" withArrow>
+      View More Pictures
+    </Button>
+  </div>
+</div>
     </>
   );
 }
@@ -306,7 +317,7 @@ function JourneySection() {
           <ol className="space-y-10">
             {journey.map((step, i) => (
               <motion.li
-                key={step.year}
+                key={`${step.year}-${i}`}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}

@@ -18,7 +18,7 @@ export type ServiceId =
   | "language-ielts"
   | "language-pte"
   | "business"
-  | "construction";
+  | "attestation-testing";
 
 export const services: Record<ServiceId, ServiceData> = {
   "study-abroad": {
@@ -70,7 +70,7 @@ export const services: Record<ServiceId, ServiceData> = {
       "Germany offers tuition-free degrees at 400+ public universities, a powerhouse engineering heritage, part-time work and generous post-study paths. We handle admission, APS and the full visa logistics.",
     stats: [
       { value: "Tuition-free", label: "Public Universities" },
-      { value: "â‚¬934", label: "Blocked Account" },
+      { value: "€934", label: "Blocked Account" },
       { value: "18 mo", label: "Post-Study Visa" },
       { value: "110+", label: "English Programs" },
     ],
@@ -93,8 +93,8 @@ export const services: Record<ServiceId, ServiceData> = {
       { step: "4", title: "Intake", text: "Oct / April" },
     ],
     faqs: [
-      { q: "Is Germany really tuition-free?", a: "Yes — public universities charge only an administration fee of about â‚¬250–400 per semester. Some states have evaded private institution fees, but the public system remains heavily subsidised." },
-      { q: "What does employment you need?", a: "For 2026 you need about â‚¬13,200 in a blocked account. Part-time jobs (~â‚¬12–15/hour) cover the monthly costs comfortably." },
+      { q: "Is Germany really tuition-free?", a: "Yes — public universities charge only an administration fee of about €250–400 per semester. Some states have introduced private institution fees, but the public system remains heavily subsidised." },
+      { q: "How much do I need in a blocked account?", a: "For 2026 you need about €13,200 in a blocked account. Part-time jobs (~€12–15/hour) cover the monthly costs comfortably." },
       { q: "Do I need IELTS?", a: "Only for English-taught programs. Many universities also accept a medium-of-instruction certificate or offshore German tests." },
       { q: "How hard is APS?", a: "APS is document- and verification-based for Pakistan. Our team prepares the complete file so you get your certificate smoothly." },
     ],
@@ -118,7 +118,7 @@ export const services: Record<ServiceId, ServiceData> = {
       { title: "Academic Record", text: "Year 12 for undergraduate; Bachelor's for postgraduate." },
       { title: "English Test", text: "IELTS Academic 6.5 or PTE / TOEFL equivalent." },
       { title: "Financial Evidence", text: "Tuition + living costs in audited evidence— AU$29,710/year." },
-      { title: "Geniune Student Check", text: "Satisfy the real-student verification for your GS assessment." },
+      { title: "Genuine Student Check", text: "Satisfy the real-student verification for your GS assessment." },
     ],
     process: [
       { step: "01", title: "Course & University", text: "Shortlist from our partner universities with scholarship codes." },
@@ -164,7 +164,7 @@ export const services: Record<ServiceId, ServiceData> = {
       { step: "01", title: "Program Selection", text: "Diploma, bachelor's or postgraduate — matched to PR goals." },
       { step: "02", title: "Offer & LOA", text: "Secure a recognised program and letter of acceptance." },
       { step: "03", title: "Visa (SDS)", text: "Apply under SDS for faster processing where eligible." },
-      { step: "04", title: "Work & PR", text: "PGWP â†’ Canadian work experience â†’ Express Entry PR." },
+      { step: "04", title: "Work & PR", text: "PGWP → Canadian work experience → Express Entry PR." },
     ],
     timeline: [
       { step: "1", title: "Offer & LOA", text: "2–5 weeks" },
@@ -232,7 +232,7 @@ export const services: Record<ServiceId, ServiceData> = {
       { value: "2 yr", label: "Graduate Route" },
       { value: "15+", label: "Partner Universities" },
       { value: "Top-20", label: "Global Ranking" },
-      { value: "Â£26k", label: "Starting Salary" },
+      { value: "£26k", label: "Starting Salary" },
     ],
     requirements: [
       { title: "Academic Grades", text: "Strong first or 2.1 equivalent for Master's; good high school for undergrad." },
@@ -243,7 +243,7 @@ export const services: Record<ServiceId, ServiceData> = {
     process: [
       { step: "01", title: "Course Selection", text: "Choose a University + course that fits your brand goals." },
       { step: "02", title: "Application", text: "Personal statement, references and documents." },
-      { step: "03", title: "Offers & CAS", text: "Acceptance â†’ Confirmation of Acceptance." },
+      { step: "03", title: "Offers & CAS", text: "Acceptance → Confirmation of Acceptance." },
       { step: "04", title: "Student Visa", text: "Visa application, priority track and arrival." },
     ],
     timeline: [
@@ -255,7 +255,7 @@ export const services: Record<ServiceId, ServiceData> = {
     faqs: [
       { q: "How does the graduate right work?", a: "Graduate Route visa allows you to work for 2 years (PhD opens 3) after finishing, then switch to a Skilled Worker visa for a PR route." },
       { q: "Can my family join?", a: "Depends on the program — dependants may join on postgraduate sides and can work full-time." },
-      { q: "Realistic budget?", a: "Â£12–25k tuition depending on school, plus Â£1,200–1,500 monthly living in the city. Scholarships cut this a lot." },
+      { q: "Realistic budget?", a: "£12–25k tuition depending on school, plus £1,200–1,500 monthly living in the city. Scholarships cut this a lot." },
       { q: "Do universities offer scholarships?", a: "Yes — Chevening, university merit, and international bursaries. We map those you qualify for." },
     ],
     cta: { title: "", text: "A UK degree plus two-year stay-back is one of the highest ROI paths abroad today.", link: "/apply", linkLabel: "Check UK Eligibility" },
@@ -269,10 +269,10 @@ export const services: Record<ServiceId, ServiceData> = {
     intro:
       "From EU Blue Cards to nursing in Germany and to Gulf contracts — we match your profile with real employers, prepare your language and handle the work visa from offer to landing.",
     stats: [
-      { value: "3,000+", label: "Professionals Placed" },
+      { value: "80+", label: "Professionals Placed" },
       { value: "90%", label: "Offer Secured" },
-      { value: "40+", label: "Industries" },
-      { value: "500+", label: "Active Employers" },
+      { value: "20", label: "Industries" },
+      { value: "50", label: "Active Employers" },
     ],
     requirements: [
       { title: "Passport", text: "Valid with 6+ months for most Gulf/Europe countries." },
@@ -295,7 +295,7 @@ export const services: Record<ServiceId, ServiceData> = {
     faqs: [
       { q: "Can I move abroad without a degree?", a: "Absolutely — many trade and technical roles accept years of experience and certified certifications instead of a degree." },
       { q: "Which sectors hire most?", a: "Healthcare & nursing, IT and software, engineering, logistics, hospitality and construction consistently sponsor most." },
-      { q: "How much will I earn?", a: "Germany IT: â‚¬65–80k/yr; nursing: â‚¬3,600/month; Gulf engineering: $90k+. We go through the real numbers first." },
+      { q: "How much will I earn?", a: "Germany IT: €65–80k/yr; nursing: €3,600/month; Gulf engineering: $90k+. We go through the real numbers first." },
       { q: "Can my family come?", a: "Germany Blue Card, UAE and many Gulf roles allow family residency, within specific rules. Family visas are prepared in the same file." },
     ],
     cta: { title: "", text: "Your experience is exactly what another country is hiring for. Let's get you in front of it.", link: "/apply", linkLabel: "See My Opportunities" },
@@ -310,14 +310,14 @@ export const services: Record<ServiceId, ServiceData> = {
       "Germany is short of 900,000+ skilled workers. The EU Blue Card and Germany's new Opportunity Card turn that shortage into your card, we handle recognition, language and real employers.",
     stats: [
       { value: "900k", label: "Open Roles" },
-      { value: "â‚¬80k", label: "Company Salary" },
+      { value: "€80k", label: "Company Salary" },
       { value: "21 mo", label: "PR with Blue Card" },
       { value: "B1", label: "Typical Language" },
     ],
     requirements: [
       { title: "Recognized Degree", text: "Academic recognition (ZAB) or 3+ years comparable experience." },
       { title: "Job Offer", text: "A genuine employment contract with a German payroll." },
-      { title: "Salary", text: "Blue Card threshold ~â‚¬55k (â‚¬43k for shortage roles) 2026." },
+      { title: "Salary", text: "Blue Card threshold ~€55k (€43k for shortage roles) 2026." },
       { title: "Language", text: "A1–B1 for integration; B1 + for care and hands-on roles." },
     ],
     process: [
@@ -334,7 +334,7 @@ export const services: Record<ServiceId, ServiceData> = {
     ],
     faqs: [
       { q: "What is the EU Blue Card?", a: "A residence + work permit for skilled professionals with a degree and salary threshold. Unlocks expedited PR (21 months with integration)." },
-      { q: "Do I need B German?", a: "For IT, software and tech, English is usually accepted. For healthcare, nursing and administration, B1–B2 German is dealbreaker." },
+      { q: "Do I need B German?", a: "For IT, software and tech, English is usually accepted. For healthcare, nursing and administration, B1–B2 German is decisive." },
       { q: "What is the Opportunity Card?", a: "A points-based jobseeker visa enabling 12 months to search for a job in Germany without any prior offer — perfect for skilled younger professionals." },
       { q: "Can my family move too?", a: "Yes — spouses and children join with the Blue Card and can work holiday in Germany immediately." },
     ],
@@ -404,7 +404,7 @@ export const services: Record<ServiceId, ServiceData> = {
       { step: "01", title: "Scorecard", text: "Point audit of six different assessments." },
       { step: "02", title: "Strategy", text: "Optional route: PNP, Express, family, or investor." },
       { step: "03", title: "EOI & filing", text: "Profile creation, IELTS-driven invites, full filing." },
-      { step: "04", title: "Approval", text: "Aland co-existing, provide emails, and landing." },
+      { step: "04", title: "Approval", text: "Coordination of ancillary provisions, ongoing communication and landing." },
     ],
     timeline: [
       { step: "1", title: "Assessment", text: "24 hr" },
@@ -413,10 +413,10 @@ export const services: Record<ServiceId, ServiceData> = {
       { step: "4", title: "Approval", text: "6–20 months" },
     ],
     faqs: [
-      { q: "Can I get PR without a job?", a: "Yes for Express-Entry / skilled migration office. A job offer only moves you higher in a scoring system." },
+      { q: "Can I get PR without a job?", a: "Yes for Express-Entry / skilled migration routes. A job offer only moves you higher in a scoring system." },
       { q: "Is my family included?", a: "Yes — spouse and dependent children are on the same application, so the whole family arrives together." },
       { q: "How do I keep my PR?", a: "Meeting residency times (e.g. Canada 730 days, Australia 12 months) and keeping taxes in order." },
-      { q: "Can I become a citizen after PR?", a: "Yes — after 3 (Canada) or 4 (Germany) + of residence and language requirement, we guide that path too." },
+      { q: "Can I become a citizen after PR?", a: "Yes — after 3 (Canada) or 4 (Germany) or more years of residence and language requirement, we guide that path too." },
     ],
     cta: { title: "", text: "Your permanent home is 15 minutes away — if we assess you honestly.", link: "/apply", linkLabel: "Get PR Assessment" },
   },
@@ -427,7 +427,7 @@ export const services: Record<ServiceId, ServiceData> = {
     title: "Bring Everyone",
     highlight: "with You",
     intro:
-      "Spouse, children, even parents — we manage family/dependent visas that keep your whole travel plan together. No ghosts of a holiday home made to a family that arrives together.",
+      "Spouse, children, even parents — we manage family/dependent visas that keep your whole travel plan together. No empty promises for a family that arrives together.",
     stats: [
       { value: "95%", label: "Family Approval" },
       { value: "1", label: "Application" },
@@ -471,7 +471,7 @@ export const services: Record<ServiceId, ServiceData> = {
     stats: [
       { value: "1,200+", label: "Companies formed" },
       { value: "7–10", label: "Days UAE LLC" },
-      { value: "â‚¬50k", label: "German company capital" },
+      { value: "€50k", label: "German company capital" },
       { value: "1", label: "End-to-end package" },
     ],
     requirements: [
@@ -495,7 +495,7 @@ export const services: Record<ServiceId, ServiceData> = {
     faqs: [
       { q: "Germany self-sponsoring?", a: "The German free-lance visa is based on your concept — a founder visa gives residents + business. We guide both." },
       { q: "How to open a UAE company?", a: "LLC license with residence generally in 7–10 days through our licenced partner — same package each." },
-      { q: "What is the investment need?", a: "Germany seeks business footing from ~â‚¬50k; UAE Dubai uses sector licenses. We calculate the true cost upfront." },
+      { q: "What is the investment need?", a: "Germany requires business establishment from ~€50k; UAE Dubai uses sector licenses. We calculate the true cost upfront." },
       { q: "Can my family stay with me?", a: "Owner and investor visas extend family residency in both markets best for school and businesses." },
     ],
     cta: { title: "", text: "Your growth plan won't grow forever at home — and your market can be incorporated tomorrow.", link: "/apply", linkLabel: "Talk to a Business Advisor" },
@@ -507,7 +507,7 @@ export const services: Record<ServiceId, ServiceData> = {
     title: "Learn the Language",
     highlight: "Your Visa Is Written In",
     intro:
-      "German for Germany, IELTS and PTE for the English-speaking world. Small classes, certified trainers, and mock-exam focus that actually moves your score.",
+      "German for Germany, IELTS and PTE for the English-speaking world. Small classes, certified trainers, and mock-exam focus that actually moves your score — available as in-person and live online sessions.",
     stats: [
       { value: "B1–C1", label: "German Track" },
       { value: "7.5", label: "IELTS Target" },
@@ -517,25 +517,25 @@ export const services: Record<ServiceId, ServiceData> = {
     requirements: [
       { title: "Placement", text: "A free 10-min grades your current level." },
       { title: "Goal date", text: "Your visa or application target a course calendar." },
-      { title: "Schedule", text: "Evening, weekend or intensive batches." },
+      { title: "Schedule", text: "Evening, weekend or intensive batches — on-site or online." },
       { title: "Motivation", text: "A study plan to stay consistent." },
     ],
     process: [
       { step: "01", title: "Free placement test", text: "Diagnose where you start." },
       { step: "02", title: "Course plan", text: "Level, pace and exam-feature mapping." },
-      { step: "03", title: "Live classes", text: "Small groups and weekly mock." },
+      { step: "03", title: "Live classes", text: "Small groups and weekly mock, in class or online." },
       { step: "04", title: "Exam + score", text: "Slot booking and score validation." },
     ],
     timeline: [
       { step: "1", title: "Placement", text: "Day 1" },
-      { step: "2", title: "German 0 â†’ B1", text: "4–6 months" },
+      { step: "2", title: "German 0 → B1", text: "4–6 months" },
       { step: "3", title: "IELTS 6.5–7", text: "8–10 weeks" },
       { step: "4", title: "Exam score", text: "1–2 weeks" },
     ],
     faqs: [
-      { q: "What looks fastest?", a: "German A1–B1 realistically 4–6 months with intensive hours. IELTS from a 6â†’7 is a targeted 8-week block." },
+      { q: "What looks fastest?", a: "German A1–B1 realistically 4–6 months with intensive hours. IELTS from a 6→7 is a targeted 8-week block." },
       { q: "Goethe or Telc?", a: "For German visa sure — Goethe; for business B2 — Telc. We align to what your file needs." },
-      { q: "Can I try it online?", a: "Yes — live online classes that mirror in-person, with the same teacher and mocks." },
+      { q: "Are classes online or in person?", a: "Both — live online and in-person sessions use the same teachers, syllabus and mocks, so you pick whichever fits your schedule and location." },
       { q: "Do you book the exam?", a: "We book Goethe, Telc or IELTS slots both domestic and offshore centers." },
     ],
     cta: { title: "", text: "A language is a visa's real document. Start the level your case needs.", link: "/apply", linkLabel: "Book Free Placement" },
@@ -547,7 +547,7 @@ export const services: Record<ServiceId, ServiceData> = {
     title: "Master German,",
     highlight: "Master Your Move",
     intro:
-      "From A1 to B1+, a Goethe-certified French program with speaking-first and exam-focused training. The German you know becomes the Germany you walk into.",
+      "From A1 to B1+, a Goethe-certified German program with speaking-first and exam-focused training. The German you know becomes the Germany you walk into.",
     stats: [
       { value: "A1–B1+", label: "Full track" },
       { value: "99%", label: "Pass rate B1" },
@@ -557,12 +557,12 @@ export const services: Record<ServiceId, ServiceData> = {
     requirements: [
       { title: "No experience", text: "Start from A1. Zero German needed." },
       { title: "Consistency", text: "3–5 hours per week bestcase." },
-      { title: "Textbook", text: "We provide Goethe coral material." },
+      { title: "Textbook", text: "We provide certified Goethe material." },
       { title: "Goal level", text: "B1 family reunification, B2 for work." },
     ],
     process: [
       { step: "01", title: "Placement", text: "Find your current speaking-level." },
-      { step: "02", title: "Course", text: "A1â†’B1 through live classes + work." },
+      { step: "02", title: "Course", text: "A1→B1 through live in-person or online classes + practice work." },
       { step: "03", title: "Mocks", text: "Goethe-format full papers." },
       { step: "04", title: "Exam date", text: "Goethe exam booking." },
     ],
@@ -575,7 +575,7 @@ export const services: Record<ServiceId, ServiceData> = {
     faqs: [
       { q: "I can't attend daily — still possible?", a: "Absolutely. Weekend and evening cohorts exist; they just stretch each level a few extra weeks." },
       { q: "Do I need B1 or B2?", a: "B1: family & work permission; B2: many blue works and nursing. We plan exactly to your country's rules." },
-      { q: "Can I do it fully online?", a: "Yes — live synchronous German classes run exactly the same. Mock optional in-style." },
+      { q: "Can I study online or in person?", a: "Both — our German courses run live online and in person at our centres, with the same teachers, materials and mock exams." },
       { q: "What is your B1 pass rate?", a: "99% of our students who reached the exam prep passed Goethe / Telc at B1." },
     ],
     cta: { title: "", text: "German B1 is the most leveraged 6 months of your move. Start this month.", link: "/apply", linkLabel: "Start German Today" },
@@ -587,7 +587,7 @@ export const services: Record<ServiceId, ServiceData> = {
     title: "IELTS Is Your",
     highlight: "Ticket to the World",
     intro:
-      "Target band 6.5 to 7.5 with IELTS coaching in all four modules, band-esque correction, mock test flow and a real speaking examiner's feedback.",
+      "Target band 6.5 to 7.5 with IELTS coaching in all four modules, band-accurate correction, mock test flow and a real speaking examiner's feedback — delivered in class or live online.",
     stats: [
       { value: "7.5", label: "Top band" },
       { value: "12+", label: "Mock tests" },
@@ -614,7 +614,7 @@ export const services: Record<ServiceId, ServiceData> = {
     ],
     faqs: [
       { q: "How long to raise a 6 to 7?", a: "8 weeks of focused work raises one band — providing you do the personal writing feedback each week." },
-      { q: "Paper or c right?", a: "Computer IELTS (CD) scores faster, and we coach on the essentials: highlight, word-count and the screen." },
+      { q: "Paper or computer?", a: "Computer IELTS (CD) scores faster, and we coach on the essentials: highlight, word-count and the screen." },
       { q: "How do I conquer speaking?", a: "It's not fluency-only; task response is half of 4. Authentic interviews weekly do you the 7.5." },
       { q: "Which exam do I even need?", a: "We map your destination's requirement to either IELTS, PTE or OET from the very start." },
     ],
@@ -627,16 +627,16 @@ export const services: Record<ServiceId, ServiceData> = {
     title: "Score Faster,",
     highlight: "on Australian Soil",
     intro:
-      "PTE is machine-scored, delivered in 48 hours and the common choice for the KE. Our PTE specialists train the question-sets — templates, intonation, and timing for a fast score to 65-70+.",
+      "PTE is machine-scored, delivered in 48 hours and the common choice for skilled migration. Our PTE specialists train the question-sets — templates, intonation, and timing for a fast score to 65-70+ — in person or online.",
     stats: [
       { value: "48 hr", label: "Result time" },
-      { value: "65+", label: "Ty / AU target" },
+      { value: "65+", label: "AU / NZ target" },
       { value: "20", label: "Question profiles" },
       { value: "100%", label: "Computer-tested" },
     ],
     requirements: [
-      { title: "Start level", text: "Any where from B1 upward." },
-      { title: "Target score", text: "Report per country/university." },
+      { title: "Start level", text: "Anywhere from B1 upward." },
+      { title: "Target score", text: "Requirement per country/university." },
       { title: "Template work", text: "Structure for essays and repeat-sentence." },
       { title: "Speaking practice", text: "Full recorded mock of the machine format." },
     ],
@@ -701,43 +701,43 @@ cta: { title: "", text: "The 48-hour PTE score could be the fastest yes in your 
     cta: { title: "", text: "Your market can be incorporated tomorrow — let's structure the fastest compliant route.", link: "/apply", linkLabel: "Book a Business Advisory" },
   },
 
-  construction: {
-    codecrumbs: [{ label: "Services", href: "/services" }, { label: "Construction", href: "/services/construction" }],
-    eyebrow: "Construction Services",
-    title: "Design, Build,",
-    highlight: "and Hand Over",
+  "attestation-testing": {
+    codecrumbs: [{ label: "Services", href: "/services" }, { label: "Attestation & Testing", href: "/services/attestation-testing" }],
+    eyebrow: "Attestation & Testing",
+    title: "Document Attestation,",
+    highlight: "Testing & Verification",
     intro:
-      "Architecture, interior design, house building and project management — premium quality delivered on time and to budget, with a dedicated site supervisor on every project.",
+      "Degree attestation, HEC verification, apostille, certified translation and language testing — we handle every document our clients need for university admission, employment and visa filing.",
     stats: [
-      { value: "150+", label: "Projects Delivered" },
-      { value: "98%", label: "On-Time Handovers" },
-      { value: "15+", label: "Years Experience" },
-      { value: "In-house", label: "Design & Engineering" },
+      { value: "10,000+", label: "Documents Verified" },
+      { value: "2–5 days", label: "Standard Turnaround" },
+      { value: "100%", label: "Authentic & Legal" },
+      { value: "30+", label: "Approved Institutions" },
     ],
     requirements: [
-      { title: "Plot & Title Documents", text: "Site ownership or approved lease documents." },
-      { title: "Design Approval", text: "Concept plans, municipal approvals and structural design." },
-      { title: "Budget Confirmation", text: "Agreed scope and payment schedule before any work begins." },
-      { title: "Permits", text: "Construction and zoning permits secured by our team." },
+      { title: "Original Documents", text: "Degree certificates, transcripts and other originals for verification." },
+      { title: "ID & Photographs", text: "CNIC/passport copies and passport-size photos where required." },
+      { title: "Authority Details", text: "Name of the university, board or institution for each document." },
+      { title: "Purpose Clarity", text: "Whether it's for HEC, apostille, immigration or embassy submission." },
     ],
     process: [
-      { step: "01", title: "Consultation & Survey", text: "Site survey, requirements and budget discovery." },
-      { step: "02", title: "Design & Approvals", text: "Architectural plans, engineering and municipality approvals." },
-      { step: "03", title: "Construction", text: "Structural work, finishes and interiors with site supervision." },
-      { step: "04", title: "Handover", text: "Snagging, certificates and final walkthrough." },
+      { step: "01", title: "Document Review", text: "Submit documents digitally — we verify completeness and requirements." },
+      { step: "02", title: "Attestation & Verification", text: "HEC, embassy, MOFA and apostille processing at every required level." },
+      { step: "03", title: "Certified Translation", text: "English and German translations where the destination requires." },
+      { step: "04", title: "Delivery", text: "Tracked collection or dispatch of your attested, ready-to-use files." },
     ],
     timeline: [
-      { step: "1", title: "Survey & Design", text: "3–8 weeks" },
-      { step: "2", title: "Approvals", text: "2–6 weeks" },
-      { step: "3", title: "Construction", text: "6–14 months" },
-      { step: "4", title: "Handover", text: "2–4 weeks" },
+      { step: "1", title: "Submission", text: "Same day" },
+      { step: "2", title: "Attestation", text: "2–5 days" },
+      { step: "3", title: "Embassy / HEC", text: "1–3 weeks" },
+      { step: "4", title: "Delivery", text: "1–3 days" },
     ],
     faqs: [
-      { q: "Do you handle both design and construction?", a: "Yes — architecture, interiors and building run under one contract, so you deal with a single accountable team." },
-      { q: "Can you work with my architect?", a: "We work with your own architect too, or manage the full design-build if you prefer." },
-      { q: "How are payments structured?", a: "Milestone based — linked to visible completion stages, never one large upfront payment." },
-      { q: "Do you provide warranty?", a: "Yes — structural warranties and aftercare periods are included in the contract." },
+      { q: "Which documents need attestation?", a: "Usually degrees, transcripts, marriage certificates, police clearances and birth certificates — depending on the destination country." },
+      { q: "Do you handle HEC verification?", a: "Yes — we manage the full HEC attestation chain for Pakistani degrees, including embassy and MOFA steps." },
+      { q: "How long does it take?", a: "Basic verification is 2–5 working days. Embassy-level attestation with MOFA can take 1–3 weeks depending on the country." },
+      { q: "Do you provide translations too?", a: "Yes — certified English and German translations of all documents needed for university and visa applications." },
     ],
-    cta: { title: "", text: "From plot to handover, one accountable team. Let's structure your build.", link: "/contact", linkLabel: "Discuss Your Project" },
+    cta: { title: "", text: "Your documents are the foundation of every application. Let's get them attested, verified and ready.", link: "/apply", linkLabel: "Start Attestation" },
   },
 };

@@ -258,9 +258,9 @@ export default function ApplyPage() {
                   {t("Call or write to our counselling desk — Urdu, English and German speakers available.")}
                 </p>
                 <div className="mt-5 space-y-3 text-sm">
-                  <a href="tel:+923001234567" className="flex items-center gap-3 text-navy-700 transition-colors hover:text-gold-600 dark:text-navy-100 dark:hover:text-gold-300">
+                  <a href="tel:+923206506990" className="flex items-center gap-3 text-navy-700 transition-colors hover:text-gold-600 dark:text-navy-100 dark:hover:text-gold-300">
                     <Phone className="size-4 text-gold-600 dark:text-gold-400" />
-                    +92 300 1234567
+                    +92 320 650 6990
                   </a>
                   <a href="mailto:shozani.group@gmail.com" className="flex items-center gap-3 text-navy-700 transition-colors hover:text-gold-600 dark:text-navy-100 dark:hover:text-gold-300">
                     <MessageCircle className="size-4 text-gold-600 dark:text-gold-400" />

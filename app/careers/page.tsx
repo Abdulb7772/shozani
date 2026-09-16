@@ -8,7 +8,7 @@ import {
   GraduationCap,
   Handshake,
   HeartHandshake,
-  Languages,
+  BookOpen,
   MapPin,
   Sparkles,
   Users,
@@ -99,7 +99,7 @@ const values = [
     deText: "Jede Akte wird so vorbereitet, als wäre es unser eigener Antrag — vollständig, korrekt, botschaftsfertig.",
   },
   {
-    icon: Languages,
+    icon: BookOpen,
     title: "Language is the unlock",
     deTitle: "Sprache ist der Schlüssel",
     text: "Real outcomes depend on real German and English skills. We train in-house, not outsourced.",

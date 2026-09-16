@@ -1,6 +1,6 @@
 "use client";
 
-import { Sparkles, ArrowRight, GraduationCap, Briefcase, Building2, Languages } from "lucide-react";
+import { Sparkles, ArrowRight, GraduationCap, Briefcase, Building2, BookOpen, HeartPulse, FileCheck } from "lucide-react";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
@@ -41,7 +41,7 @@ const groups = [
     ],
   },
   {
-    icon: Languages,
+    icon: BookOpen,
     label: "Language & Tests",
     href: "/services/language",
     items: [
@@ -49,6 +49,23 @@ const groups = [
       { title: "German Language", href: "/services/language/german" },
       { title: "IELTS Preparation", href: "/services/language/ielts" },
       { title: "PTE Preparation", href: "/services/language/pte" },
+    ],
+  },
+  {
+    icon: HeartPulse,
+    label: "Germany Career Tracks",
+    href: "/countries/germany",
+    items: [
+      { title: "Nursing in Germany", href: "/countries/germany/nursing" },
+      { title: "Ausbildung in Germany", href: "/countries/germany/ausbildung" },
+    ],
+  },
+  {
+    icon: FileCheck,
+    label: "Attestation & Testing",
+    href: "/services/attestation-testing",
+    items: [
+      { title: "Attestation & Testing", href: "/services/attestation-testing" },
     ],
   },
 ];

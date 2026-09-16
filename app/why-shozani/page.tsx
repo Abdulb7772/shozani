@@ -8,7 +8,7 @@ import {
   Globe2,
   HeartHandshake,
   Landmark,
-  Languages,
+  BookOpen,
   LineChart,
   ShieldCheck,
   Sparkles,
@@ -36,11 +36,11 @@ const pillars = [
     deText: "Wenn ein Weg für Ihr Profil unwahrscheinlich ist, sagen wir es im ersten Anruf. Unser Umsatz hängt nicht davon ab, Ihnen einen Traum zu verkaufen.",
   },
   {
-    icon: Languages,
+    icon: BookOpen,
     title: "In-house language school",
     deTitle: "Eigene Sprachschule",
-    text: "German from A1 to B2, plus IELTS and PTE training, delivered by our own trainers with weekly progress tracking — not outsourced to third parties.",
-    deText: "Deutsch von A1 bis B2 sowie IELTS- und PTE-Training von eigenen Trainern mit wöchentlicher Fortschrittskontrolle — nicht an Dritte ausgelagert.",
+    text: "German from A1 to B2, plus IELTS and PTE training, delivered by our own trainers in online and in-person sessions with weekly progress tracking — not outsourced to third parties.",
+    deText: "Deutsch von A1 bis B2 sowie IELTS- und PTE-Training von eigenen Trainern in Online- und Präsenzkursen mit wöchentlicher Fortschrittskontrolle — nicht an Dritte ausgelagert.",
   },
   {
     icon: Landmark,

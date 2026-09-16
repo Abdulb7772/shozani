@@ -7,7 +7,9 @@ import {
   Briefcase,
   Globe2,
   Building2,
-  Languages,
+  BookOpen,
+  HeartPulse,
+  FileCheck,
   ArrowRight,
 } from "lucide-react";
 import { Container } from "@/components/ui/container";
@@ -48,20 +50,36 @@ const services = [
     tag: "Company Formation",
   },
   {
-    icon: Languages,
+    icon: BookOpen,
     title: "Language Training",
     description:
-      "German (A1–C1), IELTS and PTE coaching with certified trainers, mock exams and proven band results.",
+      "German (A1–C1), IELTS and PTE coaching with certified trainers, mock exams and proven band results — online or in-person sessions.",
     href: "/services/language",
     tag: "German, IELTS, PTE",
   },
   {
-    icon: Building2,
-    title: "Construction Services",
+    icon: HeartPulse,
+    title: "Nursing in Germany",
     description:
-      "Architecture, interior design, house building and project management with premium quality standards.",
-    href: "/services/construction",
-    tag: "Design & Build",
+      "Fast-track German nursing visas with recognition, state-covered language courses and hospital placement — one of the most reliable paths to Europe.",
+    href: "/countries/germany/nursing",
+    tag: "Recognition, €3,000+ Salary",
+  },
+  {
+    icon: GraduationCap,
+    title: "Ausbildung in Germany",
+    description:
+      "Paid dual vocational training in Germany — earn from day one while you learn a trade that leads to permanent residence.",
+    href: "/countries/germany/ausbildung",
+    tag: "Paid Training, 330+ Trades",
+  },
+  {
+    icon: FileCheck,
+    title: "Attestation & Testing",
+    description:
+      "Degree attestation, HEC verification, apostille, certified translations and language testing for every admission and visa application.",
+    href: "/services/attestation-testing",
+    tag: "HEC, Apostille, IELTS & PTE",
   },
 ];
 

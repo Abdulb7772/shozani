@@ -98,11 +98,11 @@
   "Oct / April": "Okt. / April",
   "Is Germany really tuition-free?":
     "Ist ein Studium in Deutschland wirklich gebührenfrei?",
-  "Yes — public universities charge only an administration fee of about â‚¬250–400 per semester. Some states have evaded private institution fees, but the public system remains heavily subsidised.":
+  "Yes — public universities charge only an administration fee of about €250–400 per semester. Some states have introduced private institution fees, but the public system remains heavily subsidised.":
     "Ja – staatliche Universitäten erheben nur eine Verwaltungsgebühr von etwa 250–400 € pro Semester. Einige Bundesländer haben private Hochschulgebühren eingeführt, das staatliche System bleibt jedoch stark subventioniert.",
-  "What does employment you need?":
+  "How much do I need in a blocked account?":
     "Welche Arbeitsnachweise benötigen Sie?",
-  "For 2026 you need about â‚¬13,200 in a blocked account. Part-time jobs (~â‚¬12–15/hour) cover the monthly costs comfortably.":
+  "For 2026 you need about €13,200 in a blocked account. Part-time jobs (~€12–15/hour) cover the monthly costs comfortably.":
     "Für 2026 benötigen Sie etwa 13.200 € auf einem Sperrkonto. Teilzeitjobs (ca. 12–15 €/Stunde) decken die monatlichen Kosten bequem.",
   "Do I need IELTS?":
     "Brauche ich IELTS?",
@@ -135,7 +135,7 @@
   "Financial Evidence": "Finanznachweise",
   "Tuition + living costs in audited evidence— AU$29,710/year.":
     "Studiengebühren + Lebenshaltungskosten in geprüften Nachweisen – 29.710 AU$/Jahr.",
-  "Geniune Student Check": "Genuine-Student-Prüfung",
+  "Genuine Student Check": "Genuine-Student-Prüfung",
   "Satisfy the real-student verification for your GS assessment.":
     "Erfüllen Sie die Real-Student-Prüfung für Ihre GS-Einschätzung.",
   "Course & University": "Kurs & Universität",
@@ -207,8 +207,8 @@
   "Apply under SDS for faster processing where eligible.":
     "Beantragen Sie das Visum wo möglich über SDS für eine schnellere Bearbeitung.",
   "Work & PR": "Arbeit & PR",
-  "PGWP â†’ Canadian work experience â†’ Express Entry PR.":
-    "PGWP â†’ kanadische Berufserfahrung â†’ PR über Express Entry.",
+  "PGWP → Canadian work experience → Express Entry PR.":
+    "PGWP → kanadische Berufserfahrung → PR über Express Entry.",
   "SDS Visa": "SDS-Visum",
   "PGWP (after study)": "PGWP (nach dem Studium)",
   "Up to 3 years": "Bis zu 3 Jahre",
@@ -316,8 +316,8 @@
   "Personal statement, references and documents.":
     "Persönliche Erklärung, Referenzen und Unterlagen.",
   "Offers & CAS": "Zusagen & CAS",
-  "Acceptance â†’ Confirmation of Acceptance.":
-    "Zusage â†’ Confirmation of Acceptance.",
+  "Acceptance → Confirmation of Acceptance.":
+    "Zusage → Confirmation of Acceptance.",
   "Visa application, priority track and arrival.":
     "Visumantrag, Priority-Track und Ankunft.",
   "Offer & CAS": "Zusage & CAS",
@@ -333,7 +333,7 @@
     "Hängt vom Programm ab – Angehörige können bei Postgraduierten-Programmen nachkommen und in Vollzeit arbeiten.",
   "Realistic budget?":
     "Realistisches Budget?",
-  "Â£12–25k tuition depending on school, plus Â£1,200–1,500 monthly living in the city. Scholarships cut this a lot.":
+  "£12–25k tuition depending on school, plus £1,200–1,500 monthly living in the city. Scholarships cut this a lot.":
     "12–25k £ Studiengebühren je nach Hochschule, plus 1.200–1.500 £ monatliche Lebenshaltung in der Stadt. Stipendien senken das deutlich.",
   "Do universities offer scholarships?":
     "Bieten Universitäten Stipendien an?",
@@ -390,7 +390,7 @@
     "Gesundheitswesen & Pflege, IT und Software, Ingenieurwesen, Logistik, Gastgewerbe und Bauwesen sponsern am häufigsten.",
   "How much will I earn?":
     "Wie viel werde ich verdienen?",
-  "Germany IT: â‚¬65–80k/yr; nursing: â‚¬3,600/month; Gulf engineering: $90k+. We go through the real numbers first.":
+  "Germany IT: €65–80k/yr; nursing: €3,600/month; Gulf engineering: $90k+. We go through the real numbers first.":
     "IT in Deutschland: 65–80k €/Jahr; Pflege: 3.600 €/Monat; Ingenieurwesen am Golf: 90k $+. Wir besprechen zuerst die realen Zahlen.",
   "Can my family come?":
     "Kann meine Familie mitkommen?",
@@ -418,7 +418,7 @@
   "A genuine employment contract with a German payroll.":
     "Ein echtes Arbeitsverhältnis mit deutscher Gehaltsabrechnung.",
   "Salary": "Gehalt",
-  "Blue Card threshold ~â‚¬55k (â‚¬43k for shortage roles) 2026.":
+  "Blue Card threshold ~€55k (€43k for shortage roles) 2026.":
     "Blue-Card-Schwelle ca. 55k € (43k € für Engpassberufe) 2026.",
   "A1–B1 for integration; B1 + for care and hands-on roles.":
     "A1–B1 für die Integration; B1+ für Pflege- und handwerkliche Berufe.",
@@ -442,7 +442,7 @@
     "Eine Aufenthalts- und Arbeitserlaubnis für Fachkräfte mit Abschluss und Gehaltsschwelle. Ermöglicht beschleunigte PR (21 Monate mit Integration).",
   "Do I need B German?":
     "Brauche ich B-Deutsch?",
-  "For IT, software and tech, English is usually accepted. For healthcare, nursing and administration, B1–B2 German is dealbreaker.":
+  "For IT, software and tech, English is usually accepted. For healthcare, nursing and administration, B1–B2 German is decisive.":
     "In IT, Software und Technologie wird meist Englisch akzeptiert. Im Gesundheitswesen, der Pflege und Verwaltung ist B1–B2 Deutsch entscheidend.",
   "What is the Opportunity Card?":
     "Was ist die Chancenkarte?",
@@ -540,13 +540,13 @@
   "EOI & filing": "EOI & Einreichung",
   "Profile creation, IELTS-driven invites, full filing.":
     "Profilanlage, IELTS-basierte Einladungen und komplette Einreichung.",
-  "Aland co-existing, provide emails, and landing.":
+  "Coordination of ancillary provisions, ongoing communication and landing.":
     "Koordination der Nebenbestimmungen, laufende Kommunikation und Landung.",
   "24 hr": "24 Std.",
   "EOI + Invite": "EOI + Einladung",
   "Can I get PR without a job?":
     "Kann ich ohne Job eine PR erhalten?",
-  "Yes for Express-Entry / skilled migration office. A job offer only moves you higher in a scoring system.":
+  "Yes for Express-Entry / skilled migration routes. A job offer only moves you higher in a scoring system.":
     "Ja, für Express Entry / Fachkräftemigration im Amt. Ein Arbeitsangebot verbessert nur Ihre Position im Punktesystem.",
   "Is my family included?":
     "Ist meine Familie eingeschlossen?",
@@ -558,7 +558,7 @@
     "Durch Einhaltung der Aufenthaltszeiten (z. B. Kanada 730 Tage, Australien 12 Monate) und ordnungsgemäße Steuererklärungen.",
   "Can I become a citizen after PR?":
     "Kann ich nach der PR die Staatsbürgerschaft erhalten?",
-  "Yes — after 3 (Canada) or 4 (Germany) + of residence and language requirement, we guide that path too.":
+  "Yes — after 3 (Canada) or 4 (Germany) or more years of residence and language requirement, we guide that path too.":
     "Ja – nach 3 (Kanada) bzw. 4 (Deutschland) oder mehr Jahren Aufenthalt und mit Sprachnachweis begleiten wir Sie auch auf diesem Weg.",
   "Your permanent home is 15 minutes away — if we assess you honestly.":
     "Ihr dauerhaftes Zuhause ist nur 15 Minuten entfernt – bei einer ehrlichen Einschätzung.",
@@ -567,7 +567,7 @@
   // ── Family Immigration ────────────────────────────────────
   "Bring everyone": "Bringen Sie alle",
   "with you": "mit sich",
-  "Spouse, children, even parents — we manage family/dependent visas that keep your whole travel plan together. No ghosts of a holiday home made to a family that arrives together.":
+  "Spouse, children, even parents — we manage family/dependent visas that keep your whole travel plan together. No empty promises for a family that arrives together.":
     "Ehepartner, Kinder, sogar Eltern – wir verwalten Familien-/Angehörigenvisa, damit Ihr gesamter Umzugsplan zusammenhält. Keine leeren Versprechen für eine Familie, die gemeinsam ankommt.",
   "Family Approval": "Familien-Erfolgsquote",
   "Gulf processing": "Bearbeitung am Golf",
@@ -667,7 +667,7 @@
     "LLC-Lizenz mit Aufenthalt in der Regel in 7–10 Tagen über unseren lizenzierten Partner – als einheitliches Paket.",
   "What is the investment need?":
     "Welche Investition ist nötig?",
-  "Germany seeks business footing from ~â‚¬50k; UAE Dubai uses sector licenses. We calculate the true cost upfront.":
+  "Germany requires business establishment from ~€50k; UAE Dubai uses sector licenses. We calculate the true cost upfront.":
     "Deutschland verlangt einen Geschäftsaufbau ab ca. 50k €; Dubai in den VAE arbeitet mit Branchenlizenzen. Wir berechnen die echten Kosten im Voraus.",
   "Can my family stay with me?":
     "Kann meine Familie bei mir bleiben?",
@@ -680,8 +680,8 @@
   // ── Language & Tests ──────────────────────────────────────
   "Learn the language": "Lernen Sie die Sprache,",
   "your visa is written in": "in der Ihr Visum geschrieben ist",
-  "German for Germany, IELTS and PTE for the English-speaking world. Small classes, certified trainers, and mock-exam focus that actually moves your score.":
-    "Deutsch für Deutschland, IELTS und PTE für die englischsprachige Welt. Kleine Klassen, zertifizierte Trainer und ein Fokus auf Probeprüfungen, der Ihre Punktzahl wirklich verbessert.",
+  "German for Germany, IELTS and PTE for the English-speaking world. Small classes, certified trainers, and mock-exam focus that actually moves your score — available as in-person and live online sessions.":
+    "Deutsch für Deutschland, IELTS und PTE für die englischsprachige Welt. Kleine Klassen, zertifizierte Trainer und ein Fokus auf Probeprüfungen, der Ihre Punktzahl wirklich verbessert – als Präsenz- und Live-Onlinesitzungen verfügbar.",
   "German Track": "Deutsch-Spur",
   "IELTS Target": "IELTS-Zielwert",
   "Pass in Levels": "Niveau bestanden",
@@ -693,8 +693,8 @@
   "Your visa or application target a course calendar.":
     "Ihr Visum- oder Bewerbungsziel bestimmt den Kurskalender.",
   "Schedule": "Zeitplan",
-  "Evening, weekend or intensive batches.":
-    "Abend-, Wochenend- oder Intensivkurse.",
+  "Evening, weekend or intensive batches — on-site or online.":
+    "Abend-, Wochenend- oder Intensivkurse – vor Ort oder online.",
   "Motivation": "Motivation",
   "A study plan to stay consistent.":
     "Ein Lernplan für kontinuierliche Fortschritte.",
@@ -705,25 +705,25 @@
   "Level, pace and exam-feature mapping.":
     "Abstimmung von Niveau, Tempo und Prüfungsanforderungen.",
   "Live classes": "Live-Unterricht",
-  "Small groups and weekly mock.":
-    "Kleine Gruppen und wöchentliche Probeprüfungen.",
+  "Small groups and weekly mock, in class or online.":
+    "Kleine Gruppen und wöchentliche Probeprüfungen – im Unterricht oder online.",
   "Exam + score": "Prüfung + Punktzahl",
   "Slot booking and score validation.":
     "Terminbuchung und Bestätigung der Punktzahl.",
-  "German 0 â†’ B1": "Deutsch 0 â†’ B1",
+  "German 0 → B1": "Deutsch 0 → B1",
   "Exam score": "Prüfungsergebnis",
   "What looks fastest?":
     "Was bringt am schnellsten Ergebnisse?",
-  "German A1–B1 realistically 4–6 months with intensive hours. IELTS from a 6â†’7 is a targeted 8-week block.":
+  "German A1–B1 realistically 4–6 months with intensive hours. IELTS from a 6→7 is a targeted 8-week block.":
     "Deutsch A1–B1 realistisch in 4–6 Monaten mit intensiven Stunden. IELTS von 6 auf 7 ist ein gezieltes 8-Wochen-Programm.",
   "Goethe or Telc?":
     "Goethe oder Telc?",
   "For German visa sure — Goethe; for business B2 — Telc. We align to what your file needs.":
     "Für das deutsche Visum: Goethe. Für Business-B2: Telc. Wir richten uns nach den Anforderungen Ihrer Akte.",
-  "Can I try it online?":
-    "Kann ich online lernen?",
-  "Yes — live online classes that mirror in-person, with the same teacher and mocks.":
-    "Ja – Live-Online-Kurse, die den Präsenzunterricht mit demselben Lehrer und denselben Probeprüfungen abbilden.",
+  "Are classes online or in person?":
+    "Finden die Kurse online oder vor Ort statt?",
+  "Both — live online and in-person sessions use the same teachers, syllabus and mocks, so you pick whichever fits your schedule and location.":
+    "Beides – Live-Online- und Präsenzkurse nutzen dieselben Lehrer, denselben Lehrplan und dieselben Probeprüfungen. Sie wählen, was zu Ihrem Zeitplan und Standort passt.",
   "Do you book the exam?":
     "Buchen Sie die Prüfung für mich?",
   "We book Goethe, Telc or IELTS slots both domestic and offshore centers.":
@@ -736,7 +736,7 @@
   "German": "Deutsch",
   "Master German,": "Meistern Sie Deutsch,",
   "master your move": "meistern Sie Ihren Umzug",
-  "From A1 to B1+, a Goethe-certified French program with speaking-first and exam-focused training. The German you know becomes the Germany you walk into.":
+  "From A1 to B1+, a Goethe-certified German program with speaking-first and exam-focused training. The German you know becomes the Germany you walk into.":
     "Von A1 bis B1+, ein Goethe-zertifiziertes Deutschprogramm mit sprechzentriertem und prüfungsorientiertem Training. Das Deutsch, das Sie lernen, wird das Deutschland, in das Sie aufbrechen.",
   "Full track": "Kompletter Kurs",
   "Pass rate B1": "B1-Bestehensquote",
@@ -749,14 +749,14 @@
   "3–5 hours per week bestcase.":
     "3–5 Stunden pro Woche im Idealfall.",
   "Textbook": "Lehrbuch",
-  "We provide Goethe coral material.":
+  "We provide certified Goethe material.":
     "Wir stellen zertifiziertes Goethe-Material bereit.",
   "Goal level": "Zielniveau",
   "B1 family reunification, B2 for work.":
     "B1 für Familiennachzug, B2 für den Beruf.",
   "Course": "Kurs",
-  "A1â†’B1 through live classes + work.":
-    "A1 bis B1 durch Live-Unterricht + Eigenarbeit.",
+  "A1→B1 through live in-person or online classes + practice work.":
+    "A1 bis B1 durch Live-Unterricht vor Ort oder online + Übungsarbeit.",
   "Mocks": "Probeprüfungen",
   "Goethe-format full papers.":
     "Komplette Probeprüfungen im Goethe-Format.",
@@ -775,10 +775,10 @@
     "Brauche ich B1 oder B2?",
   "B1: family & work permission; B2: many blue works and nursing. We plan exactly to your country's rules.":
     "B1: Familien- und Arbeitserlaubnis; B2: viele White-Collar-Berufe und Pflege. Wir planen exakt nach den Regeln Ihres Ziellandes.",
-  "Can I do it fully online?":
-    "Kann ich vollständig online lernen?",
-  "Yes — live synchronous German classes run exactly the same. Mock optional in-style.":
-    "Ja – Live-Deutschkurse laufen in Echtzeit genauso ab. Probeprüfungen optional im gewohnten Stil.",
+  "Can I study online or in person?":
+    "Kann ich online oder vor Ort lernen?",
+  "Both — our German courses run live online and in person at our centres, with the same teachers, materials and mock exams.":
+    "Beides – unsere Deutschkurse laufen live online und vor Ort in unseren Zentren, mit denselben Lehrern, Materialien und Probeprüfungen.",
   "What is your B1 pass rate?":
     "Wie hoch ist Ihre B1-Bestehensquote?",
   "99% of our students who reached the exam prep passed Goethe / Telc at B1.":
@@ -791,8 +791,8 @@
   "IELTS": "IELTS",
   "IELTS is your": "IELTS ist Ihre",
   "ticket to the world": "Eintrittskarte in die Welt",
-  "Target band 6.5 to 7.5 with IELTS coaching in all four modules, band-esque correction, mock test flow and a real speaking examiner's feedback.":
-    "Erreichen Sie Band 6.5 bis 7.5 mit IELTS-Coaching in allen vier Modulen, bandgenauer Korrektur, strukturierten Probeprüfungen und Feedback eines echten Speaking-Prüfers.",
+  "Target band 6.5 to 7.5 with IELTS coaching in all four modules, band-accurate correction, mock test flow and a real speaking examiner's feedback — delivered in class or live online.":
+    "Erreichen Sie Band 6.5 bis 7.5 mit IELTS-Coaching in allen vier Modulen, bandgenauer Korrektur, strukturierten Probeprüfungen und Feedback eines echten Speaking-Prüfers – im Unterricht oder live online.",
   "Top band": "Top-Band",
   "Mock tests": "Probeprüfungen",
   "Achieve target": "Ziel erreicht",
@@ -829,7 +829,7 @@
     "Wie lange dauert es, von 6 auf 7 zu kommen?",
   "8 weeks of focused work raises one band — providing you do the personal writing feedback each week.":
     "8 Wochen fokussierter Arbeit heben eine Bandstufe – vorausgesetzt, Sie nutzen das persönliche Schreib-Feedback jede Woche.",
-  "Paper or c right?":
+  "Paper or computer?":
     "Papier oder Computer?",
   "Computer IELTS (CD) scores faster, and we coach on the essentials: highlight, word-count and the screen.":
     "Computer-IELTS (CD) liefert schneller Ergebnisse, und wir trainieren die Grundlagen: Markieren, Wörterzählen und den Umgang mit dem Bildschirm.",
@@ -849,17 +849,17 @@
   "PTE": "PTE",
   "Score faster,": "Schneller punkten,",
   "on Australian soil": "auf australischem Boden",
-  "PTE is machine-scored, delivered in 48 hours and the common choice for the KE. Our PTE specialists train the question-sets — templates, intonation, and timing for a fast score to 65-70+.":
-    "PTE wird maschinell bewertet, Ergebnisse gibt es in 48 Stunden, und es ist die übliche Wahl für die Fachkräftemigration. Unsere PTE-Spezialisten trainieren die Fragetypen – Vorlagen, Betonung und Timing für schnelle Ergebnisse von 65–70+.",
+  "PTE is machine-scored, delivered in 48 hours and the common choice for skilled migration. Our PTE specialists train the question-sets — templates, intonation, and timing for a fast score to 65-70+ — in person or online.":
+    "PTE wird maschinell bewertet, Ergebnisse gibt es in 48 Stunden, und es ist die übliche Wahl für die Fachkräftemigration. Unsere PTE-Spezialisten trainieren die Fragetypen – Vorlagen, Betonung und Timing für schnelle Ergebnisse von 65–70+ – vor Ort oder online.",
   "Result time": "Ergebniszeit",
-  "Ty / AU target": "UK-/AU-Zielwert",
+  "AU / NZ target": "UK-/AU-Zielwert",
   "Question profiles": "Frageprofile",
   "Computer-tested": "Computertestet",
   "Start level": "Startniveau",
-  "Any where from B1 upward.":
+  "Anywhere from B1 upward.":
     "Ab B1 aufwärts.",
   "Target score": "Zielpunktzahl",
-  "Report per country/university.":
+  "Requirement per country/university.":
     "Anforderung je Land/Universität.",
   "Template work": "Vorlagen-Arbeit",
   "Structure for essays and repeat-sentence.":
@@ -953,60 +953,74 @@
     "Ihr Markt kann morgen gegründet sein – lassen Sie uns den schnellsten gesetzeskonformen Weg gestalten.",
   "Book a Business Advisory": "Business-Beratung buchen",
 
-  // ── Construction Services ─────────────────────────────────
-  "Design, build,": "Entwerfen, bauen,",
-  "and hand over": "und übergeben",
-  "Architecture, interior design, house building and project management — premium quality delivered on time and to budget, with a dedicated site supervisor on every project.":
-    "Architektur, Innenarchitektur, Hausbau und Projektmanagement – Premiumqualität pünktlich und im Budget, mit einem festen Bauleiter auf jedem Projekt.",
-  "Projects Delivered": "Abgeschlossene Projekte",
-  "On-Time Handovers": "Pünktliche Übergaben",
-  "Years Experience": "Jahre Erfahrung",
-  "Design & Engineering": "Design & Engineering",
-  "Plot & Title Documents": "Grundstücks- & Eigentumsunterlagen",
-  "Site ownership or approved lease documents.":
-    "Eigentumsnachweise oder genehmigte Mietverträge für das Grundstück.",
-  "Design Approval": "Design-Genehmigung",
-  "Concept plans, municipal approvals and structural design.":
-    "Konzeptpläne, kommunale Genehmigungen und Tragwerksplanung.",
-  "Budget Confirmation": "Budgetbestätigung",
-  "Agreed scope and payment schedule before any work begins.":
-    "Vereinbarter Umfang und Zahlungsplan, bevor mit der Arbeit begonnen wird.",
-  "Permits": "Genehmigungen",
-  "Construction and zoning permits secured by our team.":
-    "Bau- und Zonierungsgenehmigungen, von unserem Team eingeholt.",
-  "Consultation & Survey": "Beratung & Vermessung",
-  "Site survey, requirements and budget discovery.":
-    "Grundstücksvermessung, Anforderungen und Budgetermittlung.",
-  "Design & Approvals": "Design & Genehmigungen",
-  "Architectural plans, engineering and municipality approvals.":
-    "Architekturpläne, Ingenieurleistungen und Genehmigungen der Gemeinde.",
-  "Construction": "Bau",
-  "Structural work, finishes and interiors with site supervision.":
-    "Rohbau, Ausbau und Innenausstattung mit Bauüberwachung.",
-  "Handover": "Übergabe",
-  "Snagging, certificates and final walkthrough.":
-    "Abnahmeprüfung, Zertifikate und abschließende Begehung.",
-  "Survey & Design": "Vermessung & Design",
-  "Approvals": "Genehmigungen",
-  "Do you handle both design and construction?":
-    "Übernehmen Sie sowohl Design als auch Bau?",
-  "Yes — architecture, interiors and building run under one contract, so you deal with a single accountable team.":
-    "Ja – Architektur, Innenausbau und Bau laufen unter einem Vertrag, sodass Sie ein einziges verantwortliches Team haben.",
-  "Can you work with my architect?":
-    "Können Sie mit meinem Architekten zusammenarbeiten?",
-  "We work with your own architect too, or manage the full design-build if you prefer.":
-    "Wir arbeiten auch mit Ihrem eigenen Architekten zusammen oder übernehmen auf Wunsch das komplette Design-Build.",
-  "How are payments structured?":
-    "Wie sind die Zahlungen strukturiert?",
-  "Milestone based — linked to visible completion stages, never one large upfront payment.":
-    "Meilensteinbasiert – gekoppelt an sichtbare Bauabschnitte, nie eine große Vorauszahlung.",
-  "Do you provide warranty?":
-    "Bieten Sie eine Gewährleistung?",
-  "Yes — structural warranties and aftercare periods are included in the contract.":
-    "Ja – Bausubstanz-Gewährleistung und Nachbetreuungszeiten sind im Vertrag enthalten.",
-  "From plot to handover, one accountable team. Let's structure your build.":
-    "Vom Grundstück bis zur Übergabe – ein verantwortliches Team. Gestalten wir Ihren Bau.",
-  "Discuss Your Project": "Ihr Projekt besprechen",
+  // ── Attestation & Testing ──────────────────────────────────
+  "Document Attestation,": "Dokumentenbeglaubigung,",
+  "Testing & Verification": "Tests & Verifizierung",
+  "Degree attestation, HEC verification, apostille, certified translation and language testing — we handle every document our clients need for university admission, employment and visa filing.":
+    "Abschlussbeglaubigung, HEC-Verifizierung, Apostille, beglaubigte Übersetzungen und Sprachprüfungen – wir bearbeiten jedes Dokument, das unsere Kunden für Universitätszulassung, Beschäftigung und Visumanträge benötigen.",
+  "Documents Verified": "Verifizierte Dokumente",
+  "Standard Turnaround": "Standard-Bearbeitungszeit",
+  "Authentic & Legal": "Authentisch & legal",
+  "Approved Institutions": "Zugelassene Institutionen",
+  "Original Documents": "Originaldokumente",
+  "Degree certificates, transcripts and other originals for verification.":
+    "Abschlusszeugnisse, Leistungsnachweise und andere Originale zur Verifizierung.",
+  "ID & Photographs": "Ausweis & Fotos",
+  "CNIC/passport copies and passport-size photos where required.":
+    "CNIC-/Passkopien und Passfotos, wo erforderlich.",
+  "Authority Details": "Behördenangaben",
+  "Name of the university, board or institution for each document.":
+    "Name der Universität, Prüfungsbehörde oder Institution für jedes Dokument.",
+  "Purpose Clarity": "Zweckklärung",
+  "Whether it's for HEC, apostille, immigration or embassy submission.":
+    "Ob für HEC, Apostille, Einwanderung oder Botschaftseinreichung.",
+  "Document Review": "Dokumentenprüfung",
+  "Submit documents digitally — we verify completeness and requirements.":
+    "Reichen Sie Dokumente digital ein – wir prüfen Vollständigkeit und Anforderungen.",
+  "Attestation & Verification": "Beglaubigung & Verifizierung",
+  "HEC, embassy, MOFA and apostille processing at every required level.":
+    "HEC-, Botschafts-, MOFA- und Apostille-Bearbeitung auf jeder erforderlichen Ebene.",
+  "Certified Translation": "Beglaubigte Übersetzung",
+  "English and German translations where the destination requires.":
+    "Englische und deutsche Übersetzungen, wo das Zielland es verlangt.",
+  "Delivery": "Zustellung",
+  "Tracked collection or dispatch of your attested, ready-to-use files.":
+    "Nachverfolgte Abholung oder Versand Ihrer beglaubigten, einsatzbereiten Unterlagen.",
+  "Same day": "Am selben Tag",
+  "Embassy / HEC": "Botschaft / HEC",
+  "Which documents need attestation?":
+    "Welche Dokumente müssen beglaubigt werden?",
+  "Usually degrees, transcripts, marriage certificates, police clearances and birth certificates — depending on the destination country.":
+    "In der Regel Abschlüsse, Leistungsnachweise, Heiratsurkunden, polizeiliche Führungszeugnisse und Geburtsurkunden – je nach Zielland.",
+  "Do you handle HEC verification?":
+    "Übernehmen Sie die HEC-Verifizierung?",
+  "Yes — we manage the full HEC attestation chain for Pakistani degrees, including embassy and MOFA steps.":
+    "Ja – wir übernehmen die komplette HEC-Beglaubigungskette für pakistanische Abschlüsse, einschließlich Botschafts- und MOFA-Schritte.",
+  "How long does it take?":
+    "Wie lange dauert es?",
+  "Basic verification is 2–5 working days. Embassy-level attestation with MOFA can take 1–3 weeks depending on the country.":
+    "Die einfache Verifizierung dauert 2–5 Werktage. Die Botschaftsbeglaubigung mit MOFA kann je nach Land 1–3 Wochen dauern.",
+  "Do you provide translations too?":
+    "Liefern Sie auch Übersetzungen?",
+  "Yes — certified English and German translations of all documents needed for university and visa applications.":
+    "Ja – beglaubigte englische und deutsche Übersetzungen aller Dokumente, die für Universitäts- und Visumanträge benötigt werden.",
+  "Your documents are the foundation of every application. Let's get them attested, verified and ready.":
+    "Ihre Dokumente sind das Fundament jeder Bewerbung. Lassen Sie sie beglaubigen, verifizieren und vorbereiten.",
+  "Start Attestation": "Beglaubigung starten",
+
+  // ── Nursing & Ausbildung (services) ────────────────────────
+  "Nursing in Germany": "Pflege in Deutschland",
+  "Fast-track German nursing visas with recognition, state-covered language courses and hospital placement — one of the most reliable paths to Europe.":
+    "Schnellverfahren für Pflegevisa in Deutschland mit Anerkennung, staatlich geförderten Sprachkursen und Klinikplatzvermittlung – einer der zuverlässigsten Wege nach Europa.",
+  "Recognition, €3,000+ Salary": "Anerkennung, €3.000+ Gehalt",
+  "Ausbildung in Germany": "Ausbildung in Deutschland",
+  "Paid dual vocational training in Germany — earn from day one while you learn a trade that leads to permanent residence.":
+    "Bezahlte duale Berufsausbildung in Deutschland – verdienen Sie ab Tag eins, während Sie einen Beruf lernen, der zum Daueraufenthalt führt.",
+  "Paid Training, 330+ Trades": "Bezahlte Ausbildung, 330+ Berufe",
+  "Germany Career Tracks": "Karriere in Deutschland",
+  "Attestation & Testing": "Beglaubigung & Tests",
+  "HEC verification, apostille & language tests": "HEC-Verifizierung, Apostille & Sprachprüfungen",
+  "HEC, Apostille, IELTS & PTE": "HEC, Apostille, IELTS & PTE",
 
   // ── Durations & timeline labels ───────────────────────────
   "1 week": "1 Woche",

@@ -9,7 +9,7 @@ import {
   Code2,
   BadgeCheck,
   Calculator,
-  Languages,
+  BookOpen,
   HelpCircle,
 } from "lucide-react";
 
@@ -431,8 +431,8 @@ export const germanySubpages: GermanySubpage[] = [
     name: "German Language",
     short: "A1–B2 training & exam prep",
     description:
-      "German language training A1 to B2 with exam preparation — which level you need for each visa and how long each level takes.",
-    icon: Languages,
+      "German language training A1 to B2 with exam preparation — which level you need for each visa, how long each level takes, and flexible in-person or online sessions.",
+    icon: BookOpen,
     href: "/countries/germany/german-language",
     config: {
       codecrumbs: crumbs("German Language"),
@@ -440,7 +440,7 @@ export const germanySubpages: GermanySubpage[] = [
       title: "German Levels That",
       highlight: "Open Visa Doors",
       intro:
-        "German language level determines which German visa you qualify for and how fast you integrate. We train A1 to B2 with exam preparation, so your language progress and visa timeline stay in sync.",
+        "German language level determines which German visa you qualify for and how fast you integrate. We train A1 to B2 with exam preparation — in person at our centres or live online — so your language progress and visa timeline stay in sync.",
       stats: [
         { value: "A1", label: "Visa / Family Basis" },
         { value: "B1", label: "Nursing & Work Minimum" },
@@ -467,7 +467,7 @@ export const germanySubpages: GermanySubpage[] = [
       ],
       faqs: [
         { q: "Which exam should I take?", a: "Goethe is most widely accepted; TELC is accepted for nursing. We book per your visa type." },
-        { q: "Can I learn online from Pakistan?", a: "Yes — our full track runs online with the same certification outcomes." },
+        { q: "Can I learn online from Pakistan?", a: "Yes — our full track runs online from anywhere, and also in person at our centres, with the same certification outcomes." },
         { q: "Is German really required?", a: "For English-taught study and some IT roles, no — for every work route long-term, yes." },
         { q: "Does B2 speed up PR?", a: "Yes — B1 shortens PR from 4 to 2 years, and B2 is the recognition standard." },
       ],

@@ -8,7 +8,7 @@ import {
   GraduationCap,
   Briefcase,
   Globe,
-  Languages,
+  BookOpen,
   ShieldCheck,
   Star,
   ChevronLeft,
@@ -22,7 +22,7 @@ import { useLanguage } from "@/lib/i18n/language-provider";
 const stats = [
   { value: "5+", label: "Years of Expertise" },
   { value: "100+", label: "Students Placed" },
-  { value: "98%", label: "Visa Success Rate" },
+  { value: "96%", label: "Visa Success Rate" },
   { value: "25+", label: "Partner Universities" },
 ];
 
@@ -46,9 +46,9 @@ const quickLinks = [
     href: "/services/immigration",
   },
   {
-    icon: Languages,
+    icon: BookOpen,
     title: "Language Training",
-    description: "German, IELTS & PTE with exam prep",
+    description: "German, IELTS & PTE — online or in-person classes",
     href: "/services/language",
   },
 ];
@@ -64,6 +64,7 @@ type Slide = {
   secondary: { label: string; href: string };
   image: string;
   imagePosition: string;
+  titleClass?: string;
 };
 
 const slides: Slide[] = [
@@ -138,6 +139,7 @@ const slides: Slide[] = [
     secondary: { label: "Book Free Counselling", href: "/apply" },
     image: "/CYPRUS.png",
     imagePosition: "object-right",
+    titleClass: "text-3xl sm:text-4xl lg:text-5xl xl:text-6xl",
   },
   {
     badge: "Destination · UAE & Gulf",
@@ -230,7 +232,12 @@ export function Hero() {
                     {t(slide.badge)}
                   </span>
 
-                  <h1 className="mt-6 text-4xl font-bold leading-[1.08] tracking-tight text-white text-balance sm:text-5xl lg:text-6xl xl:text-7xl">
+                  <h1
+                    className={cn(
+                      "mt-6 font-bold leading-[1.08] tracking-tight text-white text-balance",
+                      slide.titleClass ?? "text-4xl sm:text-5xl lg:text-6xl xl:text-7xl"
+                    )}
+                  >
                     {t(slide.titleA)}{" "}
                     {slide.titleB && <span className="block text-gradient-gold">{t(slide.titleB)}</span>}
                     {slide.titleC && <> {t(slide.titleC)}</>}

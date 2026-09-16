@@ -392,7 +392,7 @@
   "Document House": "Dokumentenservice",
   "Attestation, translation, apostille and PDF packs.": "Attestierung, Übersetzung, Apostille und PDF-Pakete.",
   "Language & Tests": "Sprache & Tests",
-  "IELTS/PTE/German prep and bookings.": "IELTS/PTE/Deutsch-Vorbereitung und Buchungen.",
+  "IELTS/PTE/German prep and bookings — online or on-site.": "IELTS/PTE/Deutsch-Vorbereitung und Buchungen – online oder vor Ort.",
   "GIC, blocked accounts and proof-of-funds structuring.": "GIC, Sperrkonten und Strukturierung des Finanznachweises.",
   "Visa & Departure": "Visum & Abreise",
   "Office interviews, pre-departure and family logistic coordination.": "Interviewtermine, Vorabreise-Betreuung und Koordination der Familienlogistik.",
@@ -782,13 +782,13 @@
   "Calculate My German Salary": "Mein deutsches Gehalt berechnen",
   "German Language": "Deutsche Sprache",
   "A1–B2 training & exam prep": "A1–B2-Training & Prüfungsvorbereitung",
-  "German language training A1 to B2 with exam preparation — which level you need for each visa and how long each level takes.":
-    "Deutschtraining von A1 bis B2 mit Prüfungsvorbereitung – welches Niveau Sie für welches Visum benötigen und wie lange jede Stufe dauert.",
+  "German language training A1 to B2 with exam preparation — which level you need for each visa, how long each level takes, and flexible in-person or online sessions.":
+    "Deutschtraining von A1 bis B2 mit Prüfungsvorbereitung – welches Niveau Sie für welches Visum benötigen, wie lange jede Stufe dauert und flexible Präsenz- oder Onlinekurse.",
   "Germany — German Language": "Deutschland — Deutsche Sprache",
   "German levels that": "Deutschniveaus, die",
   "open visa doors": "Visumstüren öffnen",
-  "German language level determines which German visa you qualify for and how fast you integrate. We train A1 to B2 with exam preparation, so your language progress and visa timeline stay in sync.":
-    "Das Deutschniveau bestimmt, für welches deutsche Visum Sie sich qualifizieren und wie schnell Sie sich integrieren. Wir trainieren A1 bis B2 mit Prüfungsvorbereitung, damit Ihr Sprachfortschritt und Ihre Visumszeitlinie synchron bleiben.",
+  "German language level determines which German visa you qualify for and how fast you integrate. We train A1 to B2 with exam preparation — in person at our centres or live online — so your language progress and visa timeline stay in sync.":
+    "Das Deutschniveau bestimmt, für welches deutsche Visum Sie sich qualifizieren und wie schnell Sie sich integrieren. Wir trainieren A1 bis B2 mit Prüfungsvorbereitung – vor Ort in unseren Zentren oder live online – damit Ihr Sprachfortschritt und Ihre Visumszeitlinie synchron bleiben.",
   "Visa / Family Basis": "Visum-/Familien-Basis",
   "Nursing & Work Minimum": "Minimum für Pflege & Arbeit",
   "Full Recognition": "Volle Anerkennung",
@@ -816,8 +816,8 @@
   "Goethe is most widely accepted; TELC is accepted for nursing. We book per your visa type.":
     "Goethe wird am breitesten akzeptiert; TELC wird für die Pflege akzeptiert. Wir buchen je nach Ihrem Visumtyp.",
   "Can I learn online from Pakistan?": "Kann ich online aus Pakistan lernen?",
-  "Yes — our full track runs online with the same certification outcomes.":
-    "Ja – unser kompletter Kurs läuft online mit denselben Zertifizierungsergebnissen.",
+  "Yes — our full track runs online from anywhere, and also in person at our centres, with the same certification outcomes.":
+    "Ja – unser kompletter Kurs läuft online von überall und auch vor Ort in unseren Zentren, mit denselben Zertifizierungsergebnissen.",
   "Is German really required?": "Ist Deutsch wirklich erforderlich?",
   "For English-taught study and some IT roles, no — for every work route long-term, yes.":
     "Für englischsprachiges Studium und einige IT-Rollen: nein – für jeden Arbeitsweg langfristig: ja.",

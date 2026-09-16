@@ -5,7 +5,7 @@ import { services } from "@/lib/services-data";
 export const metadata: Metadata = {
   title: "IELTS Preparation",
   description:
-    "IELTS band 7+ coaching with mock tests and feedback — structured study plans from Shozani Global Consultancy.",
+    "IELTS band 7+ coaching with mock tests and feedback — structured in-person or online study plans from Shozani Global Consultancy.",
   alternates: { canonical: "/services/language/ielts" },
 };
 

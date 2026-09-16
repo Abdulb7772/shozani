@@ -5,7 +5,7 @@ import { services } from "@/lib/services-data";
 export const metadata: Metadata = {
   title: "Language & Test Preparation",
   description:
-    "German, IELTS and PTE preparation — visa-ready language courses and test coaching with mock exams at Shozani Global Consultancy.",
+    "German, IELTS and PTE preparation — visa-ready language courses and test coaching with mock exams, available as online and in-person sessions at Shozani Global Consultancy.",
   alternates: { canonical: "/services/language" },
 };
 

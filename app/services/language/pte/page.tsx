@@ -5,7 +5,7 @@ import { services } from "@/lib/services-data";
 export const metadata: Metadata = {
   title: "PTE Preparation",
   description:
-    "PTE preparation for fast computer-based scoring — 48-hour results, templates and mocks from Shozani Global Consultancy.",
+    "PTE preparation for fast computer-based scoring — 48-hour results, templates and mocks, in-person or online, from Shozani Global Consultancy.",
   alternates: { canonical: "/services/language/pte" },
 };
 

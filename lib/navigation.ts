@@ -3,13 +3,15 @@ import {
   Globe,
   GraduationCap,
   Briefcase,
-  Languages,
+  BookOpen,
   Bot,
   Calculator,
   FileText,
   CheckCircle2,
   BarChart3,
   Star,
+  HeartPulse,
+  FileCheck,
 } from "lucide-react";
 
 export type NavChild = {
@@ -55,12 +57,14 @@ export const serviceGroups: NavGroup[] = [
       { title: "Permanent Residence", description: "PR routes for skilled professionals", href: "/services/immigration/permanent-residence" },
       { title: "Family Immigration", description: "Reunite with dependent visas", href: "/services/immigration/family" },
       { title: "Business & Investment", description: "Company formation & business visas", href: "/services/immigration/business" },
-      { title: "Construction Services", description: "Architecture, design & house building", href: "/services/construction" },
+      { title: "Nursing", description: "Germany's nursing track with recognition", href: "/countries/germany/nursing", icon: HeartPulse },
+      { title: "Ausbildung", description: "Paid vocational training in Germany", href: "/countries/germany/ausbildung" },
+      { title: "Attestation & Testing", description: "HEC verification, apostille & language tests", href: "/services/attestation-testing", icon: FileCheck },
     ],
   },
   {
     label: "Language Training",
-    icon: Languages,
+    icon: BookOpen,
     children: [
       { title: "German Language", description: "A1 – C1 with exam prep & visa-ready", href: "/services/language/german" },
       { title: "IELTS Preparation", description: "Band 7+ coaching with mock tests", href: "/services/language/ielts" },

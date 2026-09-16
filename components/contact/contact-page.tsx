@@ -256,7 +256,7 @@ function ContactSection({
                       {t("I'm interested in")}
                     </label>
                     <select id="cf-service" value={form.service} onChange={update("service")} className={inputClasses}>
-                      {["Study Abroad", "Work Abroad", "Immigration & PR", "Business Setup", "Language Training", "Construction"].map((s) => (
+                      {["Study Abroad", "Work Abroad", "Immigration & PR", "Business Setup", "Language Training", "Nursing", "Ausbildung", "Attestation & Testing"].map((s) => (
                         <option key={s}>{t(s)}</option>
                       ))}
                     </select>
