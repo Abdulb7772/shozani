@@ -505,7 +505,7 @@ export const services: Record<ServiceId, ServiceData> = {
     codecrumbs: [{ label: "Services", href: "/services/language" }, { label: "Language", href: "/services/language" }],
     eyebrow: "Language Training",
     title: "Learn the Language",
-    highlight: "Your Visa Is Written In",
+    highlight: "Your Visa Needs It",
     intro:
       "German for Germany, IELTS and PTE for the English-speaking world. Small classes, certified trainers, and mock-exam focus that actually moves your score — available as in-person and live online sessions.",
     stats: [
