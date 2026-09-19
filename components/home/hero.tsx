@@ -74,7 +74,7 @@ const slides: Slide[] = [
     titleB: "Germany",
     description:
       "Tuition-free public universities, an 18-month post-study work visa and a permanent residency route in just 5 years. Engineers, nurses and IT professionals are in high demand — and we manage your APS, blocked account and admission end-to-end.",
-    services: ["University Admissions", "APS & Blocked Account", "Ausbildung Placement", "German A1–C1 Training", "Nursing & Work Visas"],
+    services: ["University Admissions", "APS & Blocked Account", "Ausbildung Placement", "German A1–B2 Training", "Nursing & Work Visas"],
     primary: { label: "Explore Germany", href: "/countries/germany" },
     secondary: { label: "Book Free Counselling", href: "/apply" },
     image: "/GERMANY.png",
@@ -323,12 +323,12 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="relative hidden lg:block"
+            transition={{ duration: 1, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
+            className="relative mt-10 hidden lg:block"
           >
-            <div className="glass-card relative overflow-hidden p-8">
+            <div className="glass-card relative overflow-hidden p-5">
               <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gold-500" aria-hidden />
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3">
                 {quickLinks.map((item, i) => (
                   <motion.div
                     key={item.title}
@@ -338,15 +338,15 @@ export function Hero() {
                   >
                     <Link
                       href={item.href}
-                      className="group block h-full rounded-2xl border border-navy-100 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-gold-500/60 hover:shadow-luxe dark:border-white/10 dark:bg-navy-900/60"
+                      className="group block h-full rounded-2xl border border-navy-100 bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-gold-500/60 hover:shadow-luxe dark:border-white/10 dark:bg-navy-900/60"
                     >
-                      <span className="grid size-11 place-items-center rounded-xl bg-navy-800 text-gold-400 transition-colors duration-300 group-hover:bg-gold-600 group-hover:text-white dark:bg-navy-700 dark:text-gold-400">
+                      <span className="grid size-9 place-items-center rounded-lg bg-navy-800 text-gold-400 transition-colors duration-300 group-hover:bg-gold-600 group-hover:text-white dark:bg-navy-700 dark:text-gold-400">
                         <item.icon className="size-5" />
                       </span>
-                      <p className="mt-4 font-display text-sm font-semibold text-navy-900 dark:text-white">
+                      <p className="mt-3 font-display text-sm font-semibold text-navy-900 dark:text-white">
                         {t(item.title)}
                       </p>
-                      <p className="mt-1 text-xs leading-relaxed text-navy-500 dark:text-navy-200/60">
+                      <p className="mt-0.5 text-xs leading-relaxed text-navy-500 dark:text-navy-200/60">
                         {t(item.description)}
                       </p>
                     </Link>

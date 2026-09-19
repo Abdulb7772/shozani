@@ -66,7 +66,7 @@ export const serviceGroups: NavGroup[] = [
     label: "Language Training",
     icon: BookOpen,
     children: [
-      { title: "German Language", description: "A1 – C1 with exam prep & visa-ready", href: "/services/language/german" },
+      { title: "German Language", description: "A1 – B2 with exam prep & visa-ready", href: "/services/language/german" },
       { title: "IELTS Preparation", description: "Band 7+ coaching with mock tests", href: "/services/language/ielts" },
       { title: "PTE Preparation", description: "Fast scoring, computer-based format", href: "/services/language/pte" },
     ],

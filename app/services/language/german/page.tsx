@@ -5,7 +5,7 @@ import { services } from "@/lib/services-data";
 export const metadata: Metadata = {
   title: "German Language Courses",
   description:
-    "German A1 to C1 courses with visa-ready certification — intensive, evening, in-person and online classes from Shozani Global Consultancy.",
+    "German A1 to B2 courses with visa-ready certification — intensive, evening, in-person and online classes from Shozani Global Consultancy.",
   alternates: { canonical: "/services/language/german" },
 };
 

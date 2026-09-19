@@ -7,8 +7,8 @@ export const de: Record<string, string> = {
   "Our Story": "Unsere Geschichte",
   "From a single desk to a": "Vom einzelnen Schreibtisch zur",
   "global platform": "globalen Plattform",
-  "Shozani began in 2004 with a single desk in Lahore and a simple idea: that world-class guidance should never come with fine print. Two decades later, we have helped more than 10,000 students and professionals begin new chapters in Germany, the UK, Canada, Australia, the USA and across Europe.":
-    "Shozani begann 2004 mit einem einzigen Schreibtisch in Lahore und einer einfachen Idee: Erstklassige Beratung sollte niemals mit Kleingedrucktem verbunden sein. Zwei Jahrzehnte später haben wir über 10.000 Studierenden und Fachkräften geholfen, neue Kapitel in Deutschland, UK, Kanada, Australien, den USA und ganz Europa zu beginnen.",
+  "Shozani began in 2020 in Germany with a simple idea: that world-class guidance should never come with fine print. Two decades later, we have helped more than 100 students and professionals begin new chapters in Germany, the UK, Canada, Australia, the USA and across Europe.":
+    "Shozanis Geschichte begann 2020 in Deutschland mit einer einfachen Idee: Erstklassige Beratung sollte niemals mit Kleingedrucktem verbunden sein. Sechs Jahre später haben wir mehr als 100 Studierenden und Fachkräften geholfen, neue Kapitel in Deutschland, UK, Kanada, Australien, den USA und ganz Europa zu beginnen.",
   "We grew the way trust grows — slowly, carefully and on the strength of client referrals. Today our specialists, counsellors and trainers work as one team across study, work, immigration, business and settlement, supported by technology that puts your entire application in your own hands.":
     "Wir sind gewachsen, wie Vertrauen wächst – langsam, behutsam und durch Empfehlungen unserer Kunden. Heute arbeiten unsere Spezialisten, Berater und Trainer als ein Team in den Bereichen Studium, Arbeit, Einwanderung, Business und Niederlassung – unterstützt durch Technologie, die Ihre gesamte Bewerbung in Ihre eigenen Hände legt.",
   "Fix-Priced Services": "Leistungen zum Festpreis",
@@ -43,7 +43,7 @@ export const de: Record<string, string> = {
   "Company formation, business visas, accommodation and on-ground support for a smooth landing.":
     "Firmengründung, Geschäftsvisa, Unterkunft und Unterstützung vor Ort für einen reibungslosen Start.",
   "Our Journey": "Unsere Reise",
-  "Two decades of": "Zwei Jahrzehnte",
+  "Six years of": "Sechs Jahre",
   "moving forward": "des Fortschritts",
   "First office opens in Lahore": "Eröffnung des ersten Büros in Lahore",
   "Founded by a small team of advisors committed to ethical consultancy.":
@@ -58,8 +58,8 @@ export const de: Record<string, string> = {
   "Digital-first tools — eligibility checks, calculators and live status tracking.":
     "Digital-first-Tools – Berechtigungschecks, Rechner und Live-Statusverfolgung.",
   "25+ partner institutions": "25+ Partnerinstitutionen",
-  "Deep partnerships with universities, employers and A1–C1 language centres.":
-    "Enge Partnerschaften mit Universitäten, Arbeitgebern und A1–C1-Sprachzentren.",
+  "Deep partnerships with universities, employers and A1–B2 language centres.":
+    "Enge Partnerschaften mit Universitäten, Arbeitgebern und A1–B2-Sprachzentren.",
   "Ready to begin": "Bereit für",
   "your story?": "Ihre Geschichte?",
   "Book a free consultation and let us map your options across study, work and immigration in a single honest conversation.":

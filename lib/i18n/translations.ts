@@ -47,7 +47,7 @@ export const de: Record<string, string> = {
   "Business & Investment": "Business & Investition",
   "Company formation & business visas": "Firmengründung & Geschäftsvisa",
   "German Language": "Deutsche Sprache",
-  "A1 – C1 with exam prep & visa-ready": "A1 – C1 mit Prüfungsvorbereitung & visatauglich",
+  "A1 – B2 with exam prep & visa-ready": "A1 – B2 mit Prüfungsvorbereitung & visatauglich",
   "IELTS Preparation": "IELTS-Vorbereitung",
   "Band 7+ coaching with mock tests": "Band 7+ Training mit Probetests",
   "PTE Preparation": "PTE-Vorbereitung",
@@ -202,8 +202,8 @@ export const de: Record<string, string> = {
   "Company formation, business visas and investment advisory to establish and grow your business abroad.":
     "Firmengründung, Geschäftsvisa und Investitionsberatung, um Ihr Unternehmen im Ausland aufzubauen und zu wachsen.",
   "Company Formation": "Firmengründung",
-  "German (A1–C1), IELTS and PTE coaching with certified trainers, mock exams and proven band results — online or in-person sessions.":
-    "Deutsch (A1–C1), IELTS- und PTE-Training mit zertifizierten Trainern, Probeprüfungen und nachgewiesenen Ergebnissen – in Online- oder Präsenzkursen.",
+  "German (A1–B2), IELTS and PTE coaching with certified trainers, mock exams and proven band results — online or in-person sessions.":
+    "Deutsch (A1–B2), IELTS- und PTE-Training mit zertifizierten Trainern, Probeprüfungen und nachgewiesenen Ergebnissen – in Online- oder Präsenzkursen.",
   "German, IELTS, PTE": "Deutsch, IELTS, PTE",
   "Explore": "Entdecken",
 

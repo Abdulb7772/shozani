@@ -85,11 +85,11 @@ const pillars = [
 ];
 
 const journey = [
-  { year: "2004", title: "First office opens in Lahore", text: "Founded by a small team of advisors committed to ethical consultancy." },
-  { year: "2010", title: "Germany desk launches", text: "Became one of the first agencies dedicated to the German market." },
-  { year: "2025", title: "100th student placed", text: "Reached 100 successful placements across Europe, the UK, Canada and Australia." },
+  { year: "2020", title: "First office opens in Germany", text: "Founded by a small team of advisors committed to ethical consultancy." },
+  { year: "2020", title: "Founded in Germany", text: "Became one of the first agencies dedicated to the German market." },
+  { year: "2021", title: "100th student placed", text: "Reached 100+ successful placements across Europe, the UK, Canada and Australia." },
   { year: "2022", title: "Global Opportunities Platform", text: "Digital-first tools — eligibility checks, calculators and live status tracking." },
-  { year: "2025", title: "25+ partner institutions", text: "Deep partnerships with universities, employers and A1–C1 language centres." },
+  { year: "2025", title: "25+ partner institutions", text: "Deep partnerships with universities, employers and A1–B2 language centres." },
 ];
 
 export function AboutPage() {
@@ -101,18 +101,36 @@ export function AboutPage() {
       <ValuesSection />
       <PillarsSection />
       <JourneySection />
-<div className="mt-12">
-  <div className="grid grid-cols-3 gap-4">
-    <img src="/images/GERMANY.png" alt="Shozani in Germany" className="rounded-lg w-full h-48 object-cover" />
-    <img src="/images/UK.png" alt="Shozani in the UK" className="rounded-lg w-full h-48 object-cover" />
-    <img src="/images/CANADA.png" alt="Shozani in Canada" className="rounded-lg w-full h-48 object-cover" />
-  </div>
-  <div className="mt-10 flex justify-center">
-    <Button variant="gold" size="lg" href="/gallery" withArrow>
-      View More Pictures
-    </Button>
-  </div>
-</div>
+<div className="relative mt-16 overflow-hidden rounded-3xl bg-navy-900 shadow-luxe">
+          <div className="pointer-events-none absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 80% 20%, #d4a017, transparent 55%)" }} aria-hidden />
+          <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,340px)_1fr]">
+            <div className="relative mx-auto w-64 sm:w-72 lg:mx-0 lg:pl-8 lg:pt-8">
+              <div className="absolute -inset-3 rotate-3 rounded-3xl bg-gradient-to-br from-gold-500 to-gold-700 opacity-80" />
+              <img
+                src="/images/WhatsApp Image 2026-09-11 at 11.23.07 AM.jpeg"
+                alt="Shozani CEO"
+                className="relative aspect-[3/4] w-full rounded-3xl border-4 border-white object-cover shadow-2xl dark:border-navy-950"
+              />
+            </div>
+            <div className="px-6 pb-10 text-center sm:px-10 lg:py-10 lg:text-left">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-300">Meet our CEO</p>
+              <h3 className="mt-3 font-display text-2xl font-semibold text-white sm:text-3xl">
+                The hands behind every Shozani story
+              </h3>
+              <p className="mt-4 max-w-xl text-sm leading-relaxed text-navy-100/70 sm:text-base">
+                From the first consultation to the day you land, our CEO leads a team that treats your future as their own — keeping every promise personal, honest and within reach.
+              </p>
+              <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
+                <Button variant="gold" size="lg" href="/gallery" withArrow>
+                  View More Pictures
+                </Button>
+                <Button variant="glass" size="lg" href="/about">
+                  Meet the leadership
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
     </>
   );
 }
@@ -204,7 +222,7 @@ function Story() {
             className="space-y-5 text-base leading-relaxed text-navy-600 dark:text-navy-200/70"
           >
             <p>
-              {t("Shozani began in 2004 with a single desk in Lahore and a simple idea: that world-class guidance should never come with fine print. Two decades later, we have helped more than 10,000 students and professionals begin new chapters in Germany, the UK, Canada, Australia, the USA and across Europe.")}
+              {t("Shozani began in 2020 in Germany and a simple idea: that world-class guidance should never come with fine print. Six years later, we have helped more than 100 students and professionals begin new chapters in Germany, the UK, Canada, Australia, the USA and across Europe.")}
             </p>
             <p>
               {t("We grew the way trust grows — slowly, carefully and on the strength of client referrals. Today our specialists, counsellors and trainers work as one team across study, work, immigration, business and settlement, supported by technology that puts your entire application in your own hands.")}
@@ -310,7 +328,7 @@ function JourneySection() {
       <Container className="relative">
         <SectionHeading
           eyebrow={t("Our Journey")}
-          title={<>{t("Two decades of")}{" "}<span className="text-gradient-gold">{t("moving forward")}</span></>}
+          title={<>{t("Four years of")}{" "}<span className="text-gradient-gold">{t("moving forward")}</span></>}
         />
         <div className="relative mx-auto max-w-3xl">
           <div className="absolute left-[19px] top-2 bottom-2 w-px bg-gold-400/40 sm:left-1/2" aria-hidden />

@@ -53,7 +53,7 @@ const services = [
     icon: BookOpen,
     title: "Language Training",
     description:
-      "German (A1–C1), IELTS and PTE coaching with certified trainers, mock exams and proven band results — online or in-person sessions.",
+      "German (A1–B2), IELTS and PTE coaching with certified trainers, mock exams and proven band results — online or in-person sessions.",
     href: "/services/language",
     tag: "German, IELTS, PTE",
   },
