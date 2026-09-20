@@ -709,7 +709,7 @@ cta: { title: "", text: "The 48-hour PTE score could be the fastest yes in your 
     intro:
       "Degree attestation, HEC verification, apostille, certified translation and language testing — we handle every document our clients need for university admission, employment and visa filing.",
     stats: [
-      { value: "10,000+", label: "Documents Verified" },
+      { value: "1,000+", label: "Documents Verified" },
       { value: "2–5 days", label: "Standard Turnaround" },
       { value: "100%", label: "Authentic & Legal" },
       { value: "30+", label: "Approved Institutions" },
