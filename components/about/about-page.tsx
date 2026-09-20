@@ -13,6 +13,8 @@ import {
   Users,
   Award,
   Globe,
+  MapPin,
+  Phone,
   GraduationCap,
   HeartHandshake,
   ArrowRight,
@@ -103,32 +105,62 @@ export function AboutPage() {
       <JourneySection />
 <div className="relative mt-16 overflow-hidden rounded-3xl bg-navy-900 shadow-luxe">
           <div className="pointer-events-none absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 80% 20%, #d4a017, transparent 55%)" }} aria-hidden />
-          <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,340px)_1fr]">
-            <div className="relative mx-auto w-64 sm:w-72 lg:mx-0 lg:pl-8 lg:pt-8">
-              <div className="absolute -inset-3 rotate-3 rounded-3xl bg-gradient-to-br from-gold-500 to-gold-700 opacity-80" />
-              <img
-                src="/images/WhatsApp Image 2026-09-11 at 11.23.07 AM.jpeg"
-                alt="Shozani CEO"
-                className="relative aspect-[3/4] w-full rounded-3xl border-4 border-white object-cover shadow-2xl dark:border-navy-950"
-              />
-            </div>
-            <div className="px-6 pb-10 text-center sm:px-10 lg:py-10 lg:text-left">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-300">Meet our CEO</p>
-              <h3 className="mt-3 font-display text-2xl font-semibold text-white sm:text-3xl">
-                The hands behind every Shozani story
-              </h3>
-              <p className="mt-4 max-w-xl text-sm leading-relaxed text-navy-100/70 sm:text-base">
-                From the first consultation to the day you land, our CEO leads a team that treats your future as their own — keeping every promise personal, honest and within reach.
-              </p>
-              <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
-                <Button variant="gold" size="lg" href="/gallery" withArrow>
-                  View More Pictures
-                </Button>
-                <Button variant="glass" size="lg" href="/about">
-                  Meet the leadership
-                </Button>
+          <div className="grid gap-12 p-6 sm:p-10 lg:grid-cols-2">
+            <div className="grid items-center gap-8 sm:grid-cols-[minmax(0,240px)_1fr]">
+              <div className="relative mx-auto w-56 sm:w-full">
+                <div className="absolute -inset-3 rotate-3 rounded-3xl bg-gradient-to-br from-gold-500 to-gold-700 opacity-80" />
+                <img
+                  src="/images/WhatsApp Image 2026-09-11 at 11.23.07 AM.jpeg"
+                  alt="Shozani CEO"
+                  className="relative aspect-[3/4] w-full rounded-3xl border-4 border-white object-cover shadow-2xl dark:border-navy-950"
+                />
+              </div>
+              <div className="text-center sm:text-left">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-300">Meet our CEO</p>
+                <h3 className="mt-3 font-display text-2xl font-semibold text-white sm:text-3xl">
+                  The hands behind every Shozani story
+                </h3>
+                <p className="mt-4 max-w-xl text-sm leading-relaxed text-navy-100/70">
+                  From the first consultation to the day you land, our CEO leads a team that treats your future as their own — keeping every promise personal, honest and within reach.
+                </p>
               </div>
             </div>
+
+            <div className="grid items-center gap-8 sm:grid-cols-[minmax(0,240px)_1fr]">
+              <div className="relative mx-auto w-56 sm:w-full">
+                <div className="absolute -inset-3 -rotate-3 rounded-3xl bg-gradient-to-br from-gold-500 to-gold-700 opacity-80" />
+                <img
+                  src="/images/sr consultant.jpeg"
+                  alt="Umer Ali — Senior Consultant"
+                  className="relative aspect-[3/4] w-full rounded-3xl border-4 border-white object-cover shadow-2xl dark:border-navy-950"
+                />
+              </div>
+              <div className="text-center sm:text-left">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-300">Meet Our Senior Consultant</p>
+                <h3 className="mt-3 font-display text-2xl font-semibold text-white">Umer Ali</h3>
+                <div className="mt-4 space-y-3 text-sm leading-relaxed text-navy-100/70">
+                  <span className="flex items-center justify-center gap-2 sm:justify-start">
+                    <MapPin className="size-4 shrink-0 text-gold-300" aria-hidden />
+                    47B Lennox Avenue, Lutana, Hobart
+                  </span>
+                  <a
+                    href="tel:+61426960825"
+                    className="flex items-center justify-center gap-2 sm:justify-start transition-colors hover:text-gold-300"
+                  >
+                    <Phone className="size-4 shrink-0 text-gold-300" aria-hidden />
+                    +61 426 960 825
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3 px-6 pb-10 sm:px-10">
+            <Button variant="gold" size="lg" href="/gallery" withArrow>
+              View More Pictures
+            </Button>
+            <Button variant="glass" size="lg" href="/about">
+              Meet the leadership
+            </Button>
           </div>
         </div>
     </>

@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ChevronRight,
@@ -28,6 +29,7 @@ export type ServiceData = {
   timeline: { step: string; title: string; text: string }[];
   faqs: { q: string; a: string }[];
   cta: { title: string; text: string; link: string; linkLabel: string };
+  image?: string;
 };
 
 export function ServicePage({ config }: { config: ServiceData }) {
@@ -51,6 +53,20 @@ function ServiceHero({ config }: { config: ServiceData }) {
   const last = config.codecrumbs[config.codecrumbs.length - 1];
   return (
     <section className="relative overflow-hidden bg-white pt-36 pb-20 sm:pt-44 sm:pb-28 dark:bg-navy-950">
+      {config.image && (
+        <>
+          <Image
+            src={config.image}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+            aria-hidden
+          />
+          <div className="absolute inset-0 bg-white/70 dark:bg-navy-950/85" aria-hidden />
+        </>
+      )}
       <div className="pointer-events-none absolute inset-0 navy-radial opacity-0 dark:opacity-100" aria-hidden />
       <div className="pointer-events-none absolute inset-0 grid-lines opacity-40" aria-hidden />
       <Container className="relative">

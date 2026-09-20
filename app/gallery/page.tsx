@@ -32,6 +32,7 @@ const CERTS = [
   { src: "/certificates/11.JPG", label: "Authorized Representative" },
   { src: "/certificates/13.JPG", label: "Compliance Certified" },
   { src: "/certificates/14.JPG", label: "Trusted Partner" },
+  { src: "/certificates/WhatsApp%20Image%202026-09-17%20at%206.47.59%20PM.jpeg", label: "Verified Certification" },
 ];
 
 export default function GalleryPage() {

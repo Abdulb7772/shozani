@@ -23,6 +23,7 @@ export const countries: Record<CountryId, ServiceData> = {
     highlight: "Degrees & a Real PR Path",
     intro:
       "Germany pairs tuition-free university education with the EU's strongest job market, a post-study residence permit and a transparent permanent residency route. Engineers, nurses and skilled workers are in constant demand.",
+    image: "/GERMANY.png",
     stats: [
       { value: "Tuition-free", label: "Public Universities" },
       { value: "€934", label: "Monthly Blocked Account" },
@@ -63,6 +64,7 @@ export const countries: Record<CountryId, ServiceData> = {
     highlight: "on One Proactive Path",
     intro:
       "Australia links quality education directly to skilled migration — post-study work visas, employer sponsorship and points-tested migration make Australia one of the strongest study-to-PR destinations.",
+    image: "/AUS.png",
     stats: [
       { value: "2–4 yrs", label: "Post-Study Work Visa" },
       { value: "65", label: "PR Points Baseline" },
@@ -103,6 +105,7 @@ export const countries: Record<CountryId, ServiceData> = {
     highlight: "a 2-Year Stay-Back",
     intro:
       "The UK's world-class universities economic, legal and STEM programs are matched by a two-year Graduate Visa that powers a fast path into skilled work.",
+    image: "/UK.png",
     stats: [
       { value: "2 yrs", label: "Graduate Visa Stay-Back" },
       { value: "#50+", label: "QS Top 100 Institutions" },
@@ -143,6 +146,7 @@ export const countries: Record<CountryId, ServiceData> = {
     highlight: "STEM & Scholarship-Driven",
     intro:
       "US universities, colleges and the STEM OPT extension offer global employability. We select affordable, scholarship-friendly institutions aligned to your F-1 journey.",
+    image: "/USA.png",
     stats: [
       { value: "#1", label: "Universities Worldwide" },
       { value: "OPT 24", label: "STEM Extension" },
@@ -183,6 +187,7 @@ export const countries: Record<CountryId, ServiceData> = {
     highlight: "Qualify for PR",
     intro:
       "Canada's post-graduation work permit and Express Entry let international students convert education into permanent residence faster than almost any large study market.",
+    image: "/CANADA.png",
     stats: [
       { value: "3 yrs", label: "PGWP Length" },
       { value: "24 hr/wk", label: "Work While Studying" },
@@ -223,6 +228,7 @@ export const countries: Record<CountryId, ServiceData> = {
     highlight: "One Chosen Base",
     intro:
       "Across the Schengen region — Netherlands, France, Ireland, Poland and more — public and affordable education, high salaries and intra-EU movement create options Germany alone cannot.",
+    image: "/europe.png",
     stats: [
       { value: "27", label: "EU Member States" },
       { value: "≈€400", label: "Semester of many Courses" },
@@ -263,6 +269,7 @@ export const countries: Record<CountryId, ServiceData> = {
     highlight: "Work, Salary & Stability",
     intro:
       "With Vision 2030 adding millions of jobs and professional giga-projects, Saudi Arabia is the fastest-growing Gulf market for skilled workers across construction, healthcare, IT and oil industries.",
+    image: "/sau.png",
     stats: [
       { value: "SAR 4-6k", label: "Entry Salaries (USD)" },
       { value: "IQAMA", label: "Residency Work Mechanism" },
@@ -303,6 +310,7 @@ export const countries: Record<CountryId, ServiceData> = {
     highlight: "Plus Global Stature",
     intro:
       "The UAE combines tax-free income, a global business hub and golden residency — from job-seeker and freelance visas to investor residency and company formation.",
+    image: "/uae.png",
     stats: [
       { value: "0%", label: "Personal Income Tax" },
       { value: "2 yrs", label: "Golden Residency Options" },
@@ -343,6 +351,7 @@ export const countries: Record<CountryId, ServiceData> = {
     highlight: "Frame the Move Out",
     intro:
       "We support the Pakistan side of your journey — visa document preparation, language training, GIC and finance structuring, and family support back home so your move abroad becomes permanent.",
+    image: "/pak.png",
     stats: [
       { value: "24/7", label: "Local Support desk" },
       { value: "0", label: "Hidden doc fees" },
@@ -383,6 +392,7 @@ export const countries: Record<CountryId, ServiceData> = {
     highlight: "at a Fraction of the Cost",
     intro:
       "Malaysia blends English-medium university education with tuition 60–80% below Western benchmarks. Twinning programs award UK, Australian and US degrees on Malaysian campuses, with an open post-study job market in Kuala Lumpur and beyond.",
+    image: "/malaysia.png",
     stats: [
       { value: "USD 3–5k", label: "Tuition Per Year" },
       { value: "1–2 yrs", label: "Post-Study Work" },
@@ -423,6 +433,7 @@ export const countries: Record<CountryId, ServiceData> = {
     highlight: "Backed by Global Scholarships",
     intro:
       "Turkey pairs strong universities with the Türkiye Bursları scholarship system and tuition far below Western Europe. Engineering, medicine and aviation programs are taught in English and Turkish, with a regional job market that keeps growing.",
+    image: "/turkey.png",
     stats: [
       { value: "500+", label: "Partner Universities" },
       { value: "0–USD 2k", label: "Tuition With Scholarships" },
@@ -463,6 +474,7 @@ export const countries: Record<CountryId, ServiceData> = {
     highlight: "Affordable Education Corridor",
     intro:
       "Tajikistan is emerging as an affordable education and business corridor in Central Asia — low-cost medical, engineering and language programs with growing trade links through Pakistan's northern routes.",
+    image: "/tajk.png",
     stats: [
       { value: "USD 1–3k", label: "Tuition Per Year" },
       { value: "30+", label: "Partner Institutions" },
@@ -503,6 +515,7 @@ export const countries: Record<CountryId, ServiceData> = {
     highlight: "Taught in English",
     intro:
       "Cyprus is the EU's most accessible English-medium study hub — private universities with European accreditation, tuition below Western EU averages, post-study stay options and a clear path to long-term EU residence.",
+    image: "/CYPRUS.png",
     stats: [
       { value: "EUR 5–8k", label: "Tuition Per Year" },
       { value: "1 yr", label: "Post-Study Stay" },
