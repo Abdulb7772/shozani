@@ -324,7 +324,7 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
-            className="relative mt-10 hidden lg:block"
+            className="relative mt-24 hidden lg:block"
           >
             <div className="glass-card relative overflow-hidden p-5">
               <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gold-500" aria-hidden />
