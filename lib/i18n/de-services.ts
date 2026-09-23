@@ -704,9 +704,9 @@
   "Course plan": "Kursplan",
   "Level, pace and exam-feature mapping.":
     "Abstimmung von Niveau, Tempo und Prüfungsanforderungen.",
-  "Live classes": "Live-Unterricht",
-  "Small groups and weekly mock, in class or online.":
-    "Kleine Gruppen und wöchentliche Probeprüfungen – im Unterricht oder online.",
+  "Live & physical classes": "Live- & Präsenzunterricht",
+  "Small groups and weekly mock — live online or in our centres.":
+    "Kleine Gruppen und wöchentliche Probeprüfungen – live online oder in unseren Zentren.",
   "Exam + score": "Prüfung + Punktzahl",
   "Slot booking and score validation.":
     "Terminbuchung und Bestätigung der Punktzahl.",

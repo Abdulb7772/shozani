@@ -523,7 +523,7 @@ export const services: Record<ServiceId, ServiceData> = {
     process: [
       { step: "01", title: "Free placement test", text: "Diagnose where you start." },
       { step: "02", title: "Course plan", text: "Level, pace and exam-feature mapping." },
-      { step: "03", title: "Live classes", text: "Small groups and weekly mock, in class or online." },
+      { step: "03", title: "Live & physical classes", text: "Small groups and weekly mock — live online or in our centres." },
       { step: "04", title: "Exam + score", text: "Slot booking and score validation." },
     ],
     timeline: [
