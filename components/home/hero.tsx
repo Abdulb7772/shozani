@@ -209,9 +209,9 @@ export function Hero() {
           <img src={slide.image} alt="" className={cn("size-full object-cover", slide.imagePosition)} />
         </motion.div>
       </AnimatePresence>
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950/80 via-navy-950/40 to-navy-950/10" aria-hidden />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-950/40 to-transparent" aria-hidden />
-      <div className="pointer-events-none absolute inset-0 grid-lines-light opacity-20" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950/40 via-navy-950/15 to-transparent" aria-hidden />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-950/25 to-transparent" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 grid-lines-light opacity-10" aria-hidden />
 
       <Container className="relative">
         <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr]">
@@ -325,7 +325,7 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
             className="relative mt-24 hidden lg:block"
           >
-            <div className="relative overflow-hidden rounded-3xl border border-white/25 bg-white/10 p-5 shadow-luxe backdrop-blur-2xl dark:border-white/15 dark:bg-navy-900/30">
+            <div className="relative rounded-3xl border border-white/20 p-5 dark:border-white/10">
               <div className="grid grid-cols-2 gap-3">
                 {quickLinks.map((item, i) => (
                   <motion.div
@@ -336,9 +336,9 @@ export function Hero() {
                   >
                     <Link
                       href={item.href}
-                      className="group block h-full rounded-2xl border border-white/25 bg-white/10 p-4 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-gold-400/60 hover:bg-white/20 hover:shadow-luxe dark:border-white/15 dark:bg-white/5 dark:hover:bg-white/10"
+                      className="group block h-full rounded-2xl border border-white/30 bg-white/20 p-4 backdrop-blur-2xl backdrop-saturate-150 transition-all duration-300 hover:-translate-y-1 hover:border-gold-400/60 hover:bg-white/30 hover:shadow-luxe dark:border-white/15 dark:bg-white/10 dark:hover:bg-white/15"
                     >
-                      <span className="grid size-9 place-items-center rounded-lg bg-white/15 text-gold-300 transition-colors duration-300 group-hover:bg-gold-600 group-hover:text-white dark:bg-white/10 dark:text-gold-300">
+                      <span className="grid size-9 place-items-center rounded-lg bg-white/10 text-gold-300 transition-colors duration-300 group-hover:bg-gold-600 group-hover:text-white dark:bg-white/10 dark:text-gold-300">
                         <item.icon className="size-5" />
                       </span>
                       <p className="mt-3 font-display text-sm font-semibold text-white">
