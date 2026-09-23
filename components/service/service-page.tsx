@@ -30,6 +30,7 @@ export type ServiceData = {
   faqs: { q: string; a: string }[];
   cta: { title: string; text: string; link: string; linkLabel: string };
   image?: string;
+  imagePosition?: string;
 };
 
 export function ServicePage({ config }: { config: ServiceData }) {
@@ -68,10 +69,10 @@ function ServiceHero({ config }: { config: ServiceData }) {
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className={cn("object-cover", config.imagePosition ?? "object-center")}
             aria-hidden
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/35 via-white/25 to-transparent dark:from-navy-950/75 dark:via-navy-950/40 dark:to-transparent" aria-hidden />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/45 via-navy-950/15 to-transparent dark:from-navy-950/75 dark:via-navy-950/40 dark:to-transparent" aria-hidden />
         </>
       )}
       {!config.image && (

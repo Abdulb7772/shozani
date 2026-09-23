@@ -147,6 +147,7 @@ export const countries: Record<CountryId, ServiceData> = {
     intro:
       "US universities, colleges and the STEM OPT extension offer global employability. We select affordable, scholarship-friendly institutions aligned to your F-1 journey.",
     image: "/USA.png",
+    imagePosition: "object-right",
     stats: [
       { value: "#1", label: "Universities Worldwide" },
       { value: "OPT 24", label: "STEM Extension" },
