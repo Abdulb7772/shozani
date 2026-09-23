@@ -64,7 +64,7 @@ function ServiceHero({ config }: { config: ServiceData }) {
             className="object-cover"
             aria-hidden
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-white/20 to-transparent dark:from-navy-950/70 dark:via-navy-950/30 dark:to-transparent" aria-hidden />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/35 via-white/25 to-transparent dark:from-navy-950/75 dark:via-navy-950/40 dark:to-transparent" aria-hidden />
         </>
       )}
       {!config.image && (
@@ -104,10 +104,20 @@ function ServiceHero({ config }: { config: ServiceData }) {
             <Sparkles className="size-3.5" />
             {t(config.eyebrow)}
           </span>
-          <h1 className="mt-6 text-4xl font-bold leading-[1.1] text-navy-900 text-balance sm:text-5xl lg:text-6xl dark:text-white">
+          <h1
+            className={cn(
+              "mt-6 text-4xl font-bold leading-[1.1] text-balance sm:text-5xl lg:text-6xl",
+              config.image ? "text-white" : "text-navy-900 dark:text-white"
+            )}
+          >
             {t(config.title)} <span className="text-gradient-gold">{t(config.highlight)}</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-navy-600 sm:text-lg dark:text-navy-100/75">
+          <p
+            className={cn(
+              "mt-6 max-w-2xl text-base leading-relaxed sm:text-lg",
+              config.image ? "font-medium text-white" : "text-navy-600 dark:text-navy-100/75"
+            )}
+          >
             {t(config.intro)}
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
