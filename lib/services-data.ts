@@ -269,7 +269,7 @@ export const services: Record<ServiceId, ServiceData> = {
     highlight: "Across Borders",
     intro:
       "From EU Blue Cards and nursing in Germany to skilled work across other European countries, and Gulf contracts in Saudi Arabia and the UAE — we match your profile with real employers across Germany, UK, Canada, Australia, USA, Europe, Saudi Arabia, UAE and more, prepare your language and handle the work visa from offer to landing.",
-    image: "/study,work.png",
+    image: "/work.png",
     stats: [
       { value: "80+", label: "Professionals Placed" },
       { value: "90%", label: "Offer Secured" },

@@ -61,7 +61,7 @@ function ServiceHero({ config }: { config: ServiceData }) {
             fill
             priority
             sizes="100vw"
-            className="blur-[2px] object-cover object-top"
+            className="object-cover"
             aria-hidden
           />
           <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-white/20 to-transparent dark:from-navy-950/70 dark:via-navy-950/30 dark:to-transparent" aria-hidden />
