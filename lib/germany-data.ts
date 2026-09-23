@@ -153,6 +153,8 @@ export const germanySubpages: GermanySubpage[] = [
       highlight: "Nursing Path",
       intro:
         "Germany faces a national shortage of roughly 100,000+ nurses (Pflegekräfte). Qualified nurses get accelerated recognition, state-covered German language courses and a visa route designed for healthcare — one of the most reliable paths to Germany from Pakistan.",
+      images: ["/nursing.png", "/nursing2.png"],
+      heroAspect: "3/2",
       stats: [
         { value: "100k+", label: "Nurse Shortage Nationwide" },
         { value: "€3,000+", label: "Monthly Start Salary" },
