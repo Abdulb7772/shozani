@@ -28,7 +28,7 @@ export const services: Record<ServiceId, ServiceData> = {
     highlight: "One Guidance Desk",
     intro:
       "From course selection and admission to visa letter, pre-departure briefing and settlement — our study abroad desk manages your complete journey across Germany, UK, Australia, Canada, USA and Europe.",
-    image: "/study,work.png",
+    image: "/study.png",
     stats: [
       { value: "4,500+", label: "Students Placed" },
       { value: "97%", label: "Admission Success" },
