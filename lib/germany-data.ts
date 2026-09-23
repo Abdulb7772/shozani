@@ -201,6 +201,8 @@ export const germanySubpages: GermanySubpage[] = [
       highlight: "Start Your Career with Germany's Ausbildung",
       intro:
         "Ausbildung is Germany's dual vocational training: you study theory and work in a company at the same time — and get paid from day one. It is the strongest route for school leavers and career-changers who want German qualifications without a university degree.",
+      images: ["/ausbuilding.png"],
+      heroAspect: "3/2",
       stats: [
         { value: "€900+", label: "Monthly Training Salary" },
         { value: "2–3 yrs", label: "Training Duration" },
