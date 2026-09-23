@@ -510,6 +510,7 @@ export const services: Record<ServiceId, ServiceData> = {
     highlight: "Your Visa Needs It",
     intro:
       "German for Germany, IELTS and PTE for the English-speaking world. Small classes, certified trainers, and mock-exam focus that actually moves your score — available as in-person and live online sessions.",
+    image: "/language.png",
     stats: [
       { value: "B1–B2", label: "German Track" },
       { value: "7.5", label: "IELTS Target" },
