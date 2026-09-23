@@ -32,6 +32,8 @@ export type ServiceData = {
   image?: string;
   images?: string[];
   imagePosition?: string;
+  imageClassName?: string;
+  heroLayout?: "split";
 };
 
 export function ServicePage({ config }: { config: ServiceData }) {
@@ -62,6 +64,104 @@ function ServiceHero({ config }: { config: ServiceData }) {
     return () => clearInterval(id);
   }, [images.length]);
 
+  const breadcrumb = (
+    <motion.nav
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      aria-label={t("Breadcrumb")}
+      className="flex flex-wrap items-center gap-2 text-sm text-navy-500 dark:text-navy-100/60"
+    >
+      <Link href="/" className="transition-colors hover:text-gold-600 dark:hover:text-gold-300">{t("Home")}</Link>
+      {config.codecrumbs.map((c) => (
+        <React.Fragment key={c.href + c.label}>
+          <ChevronRight className="size-4" aria-hidden />
+          {c.href === last.href ? (
+            <span className="text-gold-700 dark:text-gold-300">{t(c.label)}</span>
+          ) : (
+            <Link href={c.href} className="transition-colors hover:text-gold-600 dark:hover:text-gold-300">
+              {t(c.label)}
+            </Link>
+          )}
+        </React.Fragment>
+      ))}
+    </motion.nav>
+  );
+
+  const fullBleed = config.heroLayout !== "split" && images.length > 0;
+
+  const textBlock = (
+    <motion.div
+      initial={{ opacity: 0, y: 28 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.1 }}
+      className="mt-8 max-w-3xl"
+    >
+      <span className="inline-flex items-center gap-2 rounded-full border border-gold-600 bg-gold-600 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
+        <Sparkles className="size-3.5" />
+        {t(config.eyebrow)}
+      </span>
+      <h1
+        className={cn(
+          "mt-6 text-4xl font-bold leading-[1.1] text-balance sm:text-5xl lg:text-6xl",
+          fullBleed ? "text-white" : "text-navy-900 dark:text-white"
+        )}
+      >
+        {t(config.title)} <span className="text-gradient-gold">{t(config.highlight)}</span>
+      </h1>
+      <p
+        className={cn(
+          "mt-6 max-w-2xl text-base leading-relaxed sm:text-lg",
+          fullBleed ? "font-medium text-white" : "text-navy-600 dark:text-navy-100/75"
+        )}
+      >
+        {t(config.intro)}
+      </p>
+      <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <Button variant="gold" size="lg" href="/apply" withArrow>
+          {t("Book Free Consultation")}
+        </Button>
+        <Button variant="glass" size="lg" href="/contact">
+          {t("Ask a Question")}
+        </Button>
+      </div>
+    </motion.div>
+  );
+
+  if (config.heroLayout === "split") {
+    return (
+      <section className="relative overflow-hidden bg-white pt-20 pb-20 sm:pt-24 sm:pb-28 dark:bg-navy-950">
+        <div className="pointer-events-none absolute inset-0 navy-radial opacity-0 dark:opacity-100" aria-hidden />
+        <div className="pointer-events-none absolute inset-0 grid-lines opacity-40" aria-hidden />
+        <Container className="relative">
+          {breadcrumb}
+          <div className="grid items-center gap-12 lg:grid-cols-[1fr_auto]">
+            <div>{textBlock}</div>
+            {images.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.25 }}
+                className="hidden lg:block"
+              >
+                <div className="relative aspect-[1427/1102] w-[340px] overflow-hidden rounded-[2rem] border border-navy-900/10 shadow-luxe dark:border-white/10">
+                  <Image
+                    src={images[0]}
+                    alt=""
+                    fill
+                    priority
+                    sizes="340px"
+                    className="object-cover"
+                  />
+                </div>
+              </motion.div>
+            )}
+          </div>
+        </Container>
+      </section>
+    );
+  }
+
   return (
     <section
       className={cn(
@@ -89,7 +189,11 @@ function ServiceHero({ config }: { config: ServiceData }) {
                 fill
                 priority
                 sizes="100vw"
-                className={cn("object-cover", config.imagePosition ?? "object-center")}
+                className={cn(
+                  "object-cover",
+                  config.imagePosition ?? "object-center",
+                  config.imageClassName
+                )}
               />
             </motion.div>
           </AnimatePresence>
@@ -97,68 +201,13 @@ function ServiceHero({ config }: { config: ServiceData }) {
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-950/25 to-transparent" aria-hidden />
         </>
       )}
-      {!config.image && !config.images && (
+      {!fullBleed && (
         <div className="pointer-events-none absolute inset-0 navy-radial opacity-0 dark:opacity-100" aria-hidden />
       )}
       <div className="pointer-events-none absolute inset-0 grid-lines opacity-40" aria-hidden />
       <Container className="relative">
-        <motion.nav
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          aria-label={t("Breadcrumb")}
-          className="flex flex-wrap items-center gap-2 text-sm text-navy-500 dark:text-navy-100/60"
-        >
-          <Link href="/" className="transition-colors hover:text-gold-600 dark:hover:text-gold-300">{t("Home")}</Link>
-          {config.codecrumbs.map((c) => (
-            <React.Fragment key={c.href + c.label}>
-              <ChevronRight className="size-4" aria-hidden />
-              {c.href === last.href ? (
-                <span className="text-gold-700 dark:text-gold-300">{t(c.label)}</span>
-              ) : (
-                <Link href={c.href} className="transition-colors hover:text-gold-600 dark:hover:text-gold-300">
-                  {t(c.label)}
-                </Link>
-              )}
-            </React.Fragment>
-          ))}
-        </motion.nav>
-
-        <motion.div
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="mt-8 max-w-3xl"
-        >
-          <span className="inline-flex items-center gap-2 rounded-full border border-gold-600 bg-gold-600 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
-            <Sparkles className="size-3.5" />
-            {t(config.eyebrow)}
-          </span>
-          <h1
-            className={cn(
-              "mt-6 text-4xl font-bold leading-[1.1] text-balance sm:text-5xl lg:text-6xl",
-              config.image ? "text-white" : "text-navy-900 dark:text-white"
-            )}
-          >
-            {t(config.title)} <span className="text-gradient-gold">{t(config.highlight)}</span>
-          </h1>
-          <p
-            className={cn(
-              "mt-6 max-w-2xl text-base leading-relaxed sm:text-lg",
-              config.image ? "font-medium text-white" : "text-navy-600 dark:text-navy-100/75"
-            )}
-          >
-            {t(config.intro)}
-          </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button variant="gold" size="lg" href="/apply" withArrow>
-              {t("Book Free Consultation")}
-            </Button>
-            <Button variant="glass" size="lg" href="/contact">
-              {t("Ask a Question")}
-            </Button>
-          </div>
-        </motion.div>
+        {breadcrumb}
+        {textBlock}
       </Container>
     </section>
   );

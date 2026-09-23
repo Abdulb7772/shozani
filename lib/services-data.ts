@@ -351,7 +351,7 @@ export const services: Record<ServiceId, ServiceData> = {
     intro:
       "A second residency or citizenship is a strategic decision — for visa-free travel, tax efficiency or a reliable plan B. We manage these programs end-to-end, from due diligence and applications to approval and family inclusion.",
     image: "/immigration.png",
-    imagePosition: "object-right",
+    heroLayout: "split",
     stats: [
       { value: "96%", label: "Approval Rate" },
       { value: "40+", label: "Visa Routes" },
