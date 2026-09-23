@@ -364,9 +364,9 @@ export function Hero() {
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="font-display text-3xl font-bold text-white sm:text-4xl">
-                <span className="text-gold-300">{stat.value}</span>
+                <span className="text-gold-600">{stat.value}</span>
               </p>
-              <p className="mt-1 text-xs font-medium uppercase tracking-[0.12em] text-white/60">
+              <p className="mt-1 text-xs font-semibold uppercase tracking-[0.12em] text-white/90">
                 {t(stat.label)}
               </p>
             </div>
