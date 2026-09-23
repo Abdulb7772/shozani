@@ -38,7 +38,7 @@ export const countries: Record<CountryId, ServiceData> = {
     ],
     process: [
       { step: "01", title: "Profile & Route", text: "We confirm your study, work or nursing route with a free assessment." },
-      { step: "02", title: "APS & Approvals", text: "Document validation and any professional recognition processed for you." },
+      { step: "02", title: "APS & Approvals", text: "APS (Akademische Prüfstelle) document validation and any professional recognition processed for you." },
       { step: "03", title: "Admission / Job Offer", text: "University acceptance or a German employer contract." },
       { step: "04", title: "Visa & Arrival", text: "Blocked account, insurance, interview prep and settlement onboarding." },
     ],
