@@ -22,6 +22,26 @@ const groups = [
     ],
   },
   {
+    icon: HeartPulse,
+    label: "Germany Career Tracks",
+    href: "/countries/germany",
+    items: [
+      { title: "Nursing in Germany", href: "/countries/germany/nursing" },
+      { title: "Ausbildung in Germany", href: "/countries/germany/ausbildung" },
+    ],
+  },
+  {
+    icon: BookOpen,
+    label: "Language & Tests",
+    href: "/services/language",
+    items: [
+      { title: "Language & Tests", href: "/services/language" },
+      { title: "German Language", href: "/services/language/german" },
+      { title: "IELTS Preparation", href: "/services/language/ielts" },
+      { title: "PTE Preparation", href: "/services/language/pte" },
+    ],
+  },
+  {
     icon: Briefcase,
     label: "Work Abroad",
     href: "/services/work-abroad",
@@ -39,26 +59,6 @@ const groups = [
       { title: "Permanent Residence", href: "/services/immigration/permanent-residence" },
       { title: "Family Immigration", href: "/services/immigration/family" },
       { title: "Business & Investment", href: "/services/immigration/business" },
-    ],
-  },
-  {
-    icon: BookOpen,
-    label: "Language & Tests",
-    href: "/services/language",
-    items: [
-      { title: "Language & Tests", href: "/services/language" },
-      { title: "German Language", href: "/services/language/german" },
-      { title: "IELTS Preparation", href: "/services/language/ielts" },
-      { title: "PTE Preparation", href: "/services/language/pte" },
-    ],
-  },
-  {
-    icon: HeartPulse,
-    label: "Germany Career Tracks",
-    href: "/countries/germany",
-    items: [
-      { title: "Nursing in Germany", href: "/countries/germany/nursing" },
-      { title: "Ausbildung in Germany", href: "/countries/germany/ausbildung" },
     ],
   },
   {
