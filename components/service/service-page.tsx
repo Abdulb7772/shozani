@@ -52,7 +52,14 @@ function ServiceHero({ config }: { config: ServiceData }) {
   const { t } = useLanguage();
   const last = config.codecrumbs[config.codecrumbs.length - 1];
   return (
-    <section className="relative overflow-hidden bg-white pt-20 pb-20 sm:pt-24 sm:pb-28 dark:bg-navy-950">
+    <section
+      className={cn(
+        "relative overflow-hidden bg-white pb-20 sm:pb-28 dark:bg-navy-950",
+        config.image
+          ? "min-h-[560px] pt-20 sm:min-h-[640px] sm:pt-24 lg:min-h-[720px] lg:pt-24"
+          : "pt-20 sm:pt-24"
+      )}
+    >
       {config.image && (
         <>
           <Image
@@ -143,7 +150,7 @@ function ServiceStats({ stats }: { stats: NonNullable<ServiceData["stats"]> }) {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="glass-card grid grid-cols-2 gap-y-8 p-8 md:grid-cols-4 md:p-10"
+          className="grid grid-cols-2 gap-y-8 rounded-3xl border-2 border-red-500/60 bg-transparent p-8 backdrop-blur-2xl md:grid-cols-4 md:p-10 dark:border-red-400/40 dark:bg-transparent"
         >
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
