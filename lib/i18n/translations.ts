@@ -13,6 +13,7 @@ export const de: Record<string, string> = {
   // ── Navbar ────────────────────────────────────────────────
   "Study Abroad": "Studium im Ausland",
   "Work & Immigration": "Arbeit & Einwanderung",
+  "Paid vocational training in Germany": "Bezahlte Berufsausbildung in Deutschland",
   "Language Training": "Sprachkurse",
   "AI Tools": "KI-Tools",
   "Countries": "Länder",

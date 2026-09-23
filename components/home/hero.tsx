@@ -6,11 +6,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   Sparkles,
   GraduationCap,
-  Briefcase,
-  Globe,
+  HeartPulse,
   BookOpen,
+  Wrench,
   ShieldCheck,
-  Star,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
@@ -34,16 +33,16 @@ const quickLinks = [
     href: "/services/study-abroad",
   },
   {
-    icon: Briefcase,
-    title: "Work Abroad",
-    description: "Germany jobs, healthcare, IT & engineering",
-    href: "/services/work-abroad",
+    icon: HeartPulse,
+    title: "Nursing",
+    description: "Healthcare careers with recognition",
+    href: "/countries/germany/nursing",
   },
   {
-    icon: Globe,
-    title: "Immigration & PR",
-    description: "Permanent residence & family sponsorship",
-    href: "/services/immigration",
+    icon: Wrench,
+    title: "Ausbildung",
+    description: "Paid vocational training in Germany",
+    href: "/countries/germany/ausbildung",
   },
   {
     icon: BookOpen,
@@ -327,7 +326,6 @@ export function Hero() {
             className="relative mt-24 hidden lg:block"
           >
             <div className="relative overflow-hidden rounded-3xl border border-white/25 bg-white/10 p-5 shadow-luxe backdrop-blur-2xl dark:border-white/15 dark:bg-navy-900/30">
-              <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gold-500" aria-hidden />
               <div className="grid grid-cols-2 gap-3">
                 {quickLinks.map((item, i) => (
                   <motion.div
@@ -353,35 +351,7 @@ export function Hero() {
                   </motion.div>
                 ))}
               </div>
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.85 }}
-                className="mt-5 flex items-center gap-3 rounded-2xl border border-gold-700 bg-gold-600 p-4 dark:bg-white/5"
-              >
-                <span className="grid size-10 shrink-0 place-items-center rounded-full bg-white text-gold-600">
-                  <Star className="size-4 fill-current" />
-                </span>
-                <div>
-                  <p className="font-display text-sm font-semibold text-white">{t("Rated 4.9 / 5 by 4,200+ clients")}</p>
-                  <p className="text-xs text-white/85 dark:text-navy-200/60">
-                    {t("Verified Google reviews from students & workers")}
-                  </p>
-                </div>
-              </motion.div>
             </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.9 }}
-              className="absolute -bottom-8 -left-8 hidden rounded-2xl border border-navy-200 bg-white px-6 py-4 shadow-luxe xl:block dark:border-white/10 dark:bg-navy-900"
-            >
-              <p className="text-3xl font-bold text-gold-600 dark:text-gold-400">96%</p>
-              <p className="mt-0.5 text-xs font-medium uppercase tracking-[0.14em] text-navy-500 dark:text-navy-200/60">
-                {t("Visa Success Rate")}
-              </p>
-            </motion.div>
           </motion.div>
         </div>
 
