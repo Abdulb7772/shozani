@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { countryList } from "@/lib/countries-data";
+import { countries, countryList } from "@/lib/countries-data";
 
 export const metadata: Metadata = {
   title: "Countries",
@@ -38,21 +38,31 @@ export default function CountriesIndex() {
               <Link
                 key={country.id}
                 href={country.href}
-                className="group relative block overflow-hidden rounded-3xl border border-navy-900/10 bg-white p-6 transition-all duration-500 hover:-translate-y-1 hover:border-gold-400/60 hover:shadow-luxe dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10"
+                className="group relative block h-48 overflow-hidden rounded-3xl border border-navy-900/10 transition-all duration-500 hover:-translate-y-1 hover:border-gold-400/60 hover:shadow-luxe sm:h-56 dark:border-white/10"
               >
-                <div className="flex items-start justify-between">
+                <img
+                  src={countries[country.id].image}
+                  alt={country.name}
+                  className="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/20 to-transparent" aria-hidden />
+
+                <div className="absolute inset-x-0 top-0 flex items-start justify-between p-4">
                   <span
-                    className="rounded-xl border border-navy-900/10 bg-navy-900/5 px-3 py-1.5 font-display text-xs font-bold tracking-[0.18em] text-navy-500 transition-colors duration-300 group-hover:border-gold-400/50 group-hover:text-gold-600 dark:border-white/10 dark:bg-white/5 dark:text-navy-100/70 dark:group-hover:text-gold-300"
+                    className="rounded-xl border border-white/15 bg-navy-950/30 px-3 py-1.5 font-display text-xs font-bold tracking-[0.18em] text-white backdrop-blur-sm transition-colors duration-300 group-hover:border-gold-400/50 group-hover:text-gold-300"
                     aria-hidden
                   >
                     {country.name.slice(0, 3).toUpperCase()}
                   </span>
-                  <ArrowUpRight className="size-5 text-navy-900/20 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-gold-600 dark:text-white/30 dark:group-hover:text-gold-300" />
+                  <ArrowUpRight className="size-5 text-white/90 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-gold-300" />
                 </div>
-                <h2 className="mt-5 font-display text-lg font-semibold text-navy-900 dark:text-white">{country.name}</h2>
-                <p className="mt-1.5 text-xs leading-relaxed text-navy-500 dark:text-navy-100/60">
-                  Requirements, visas, timelines and FAQs.
-                </p>
+
+                <div className="absolute inset-x-0 bottom-0 p-6">
+                  <h2 className="font-display text-xl font-bold text-white drop-shadow-sm">{country.name}</h2>
+                  <p className="mt-1.5 text-xs leading-relaxed text-white/85">
+                    Requirements, visas, timelines and FAQs.
+                  </p>
+                </div>
               </Link>
             ))}
           </div>
