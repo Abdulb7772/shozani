@@ -530,7 +530,7 @@ export const services: Record<ServiceId, ServiceData> = {
     ],
     timeline: [
       { step: "1", title: "Placement", text: "Day 1" },
-      { step: "2", title: "German 0 → B1", text: "4–6 months" },
+      { step: "2", title: "German A1 → B1", text: "4–6 months" },
       { step: "3", title: "IELTS 6.5–7", text: "8–10 weeks" },
       { step: "4", title: "Exam score", text: "1–2 weeks" },
     ],

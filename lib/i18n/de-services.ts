@@ -710,7 +710,7 @@
   "Exam + score": "Prüfung + Punktzahl",
   "Slot booking and score validation.":
     "Terminbuchung und Bestätigung der Punktzahl.",
-  "German 0 → B1": "Deutsch 0 → B1",
+  "German A1 → B1": "Deutsch A1 → B1",
   "Exam score": "Prüfungsergebnis",
   "What looks fastest?":
     "Was bringt am schnellsten Ergebnisse?",
