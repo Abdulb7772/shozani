@@ -355,7 +355,26 @@ function VideoSection() {
           description={t("Students and professionals share their journeys — from the first consultation to landing abroad.")}
         />
         <div className="grid gap-6 md:grid-cols-3">
-          {[1, 2, 3].map((v, i) => (
+          <motion.div
+            initial={{ opacity: 0, y: 28 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6 }}
+            className="group relative aspect-video overflow-hidden rounded-3xl border border-white/10 bg-navy-900"
+          >
+            <video
+              src="/aus-vid.mp4"
+              poster="/ausbuilding.png"
+              controls
+              preload="metadata"
+              playsInline
+              className="h-full w-full object-cover"
+            />
+            <p className="absolute bottom-4 left-4 font-display text-sm font-semibold text-white drop-shadow">
+              {t("Hassan — Hannover Ausbildung")}
+            </p>
+          </motion.div>
+          {[2, 3].map((v, i) => (
             <motion.div
               key={v}
               initial={{ opacity: 0, y: 28 }}
@@ -375,7 +394,7 @@ function VideoSection() {
                 </span>
               </button>
               <p className="absolute bottom-4 left-4 font-display text-sm font-semibold text-white">
-                {t(["Ayesha — Germany Study", "Bilal — Germany IT", "Usman — Australia PR"][i])}
+                {t(["Bilal — Germany IT", "Usman — Australia PR"][i])}
               </p>
             </motion.div>
           ))}
