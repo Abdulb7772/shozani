@@ -34,6 +34,8 @@ export type ServiceData = {
   imagePosition?: string;
   imageClassName?: string;
   heroLayout?: "split";
+  heroAspect?: "3/2";
+  hideHeroHeading?: boolean;
 };
 
 export function ServicePage({ config }: { config: ServiceData }) {
@@ -95,28 +97,32 @@ function ServiceHero({ config }: { config: ServiceData }) {
       initial={{ opacity: 0, y: 28 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.1 }}
-      className="mt-8 max-w-3xl"
+      className={cn("mt-8 max-w-3xl", config.hideHeroHeading && "max-w-none")}
     >
-      <span className="inline-flex items-center gap-2 rounded-full border border-gold-600 bg-gold-600 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
-        <Sparkles className="size-3.5" />
-        {t(config.eyebrow)}
-      </span>
-      <h1
-        className={cn(
-          "mt-6 text-4xl font-bold leading-[1.1] text-balance sm:text-5xl lg:text-6xl",
-          fullBleed ? "text-white" : "text-navy-900 dark:text-white"
-        )}
-      >
-        {t(config.title)} <span className="text-gradient-gold">{t(config.highlight)}</span>
-      </h1>
-      <p
-        className={cn(
-          "mt-6 max-w-2xl text-base leading-relaxed sm:text-lg",
-          fullBleed ? "font-medium text-white" : "text-navy-600 dark:text-navy-100/75"
-        )}
-      >
-        {t(config.intro)}
-      </p>
+      {!config.hideHeroHeading && (
+        <>
+          <span className="inline-flex items-center gap-2 rounded-full border border-gold-600 bg-gold-600 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
+            <Sparkles className="size-3.5" />
+            {t(config.eyebrow)}
+          </span>
+          <h1
+            className={cn(
+              "mt-6 text-4xl font-bold leading-[1.1] text-balance sm:text-5xl lg:text-6xl",
+              fullBleed ? "text-white" : "text-navy-900 dark:text-white"
+            )}
+          >
+            {t(config.title)} <span className="text-gradient-gold">{t(config.highlight)}</span>
+          </h1>
+          <p
+            className={cn(
+              "mt-6 max-w-2xl text-base leading-relaxed sm:text-lg",
+              fullBleed ? "font-medium text-white" : "text-navy-600 dark:text-navy-100/75"
+            )}
+          >
+            {t(config.intro)}
+          </p>
+        </>
+      )}
       <div className="mt-8 flex flex-col gap-3 sm:flex-row">
         <Button variant="gold" size="lg" href="/apply" withArrow>
           {t("Book Free Consultation")}
@@ -167,7 +173,9 @@ function ServiceHero({ config }: { config: ServiceData }) {
       className={cn(
         "relative overflow-hidden bg-white pb-20 sm:pb-28 dark:bg-navy-950",
         images.length > 0
-          ? "min-h-[560px] pt-20 sm:min-h-[640px] sm:pt-24 lg:min-h-[720px] lg:pt-24"
+          ? config.heroAspect === "3/2"
+            ? "aspect-[3/2] pt-16 sm:pt-20"
+            : "min-h-[560px] pt-20 sm:min-h-[640px] sm:pt-24 lg:min-h-[720px] lg:pt-24"
           : "pt-20 sm:pt-24"
       )}
     >

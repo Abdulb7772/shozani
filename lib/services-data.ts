@@ -350,8 +350,9 @@ export const services: Record<ServiceId, ServiceData> = {
     highlight: "such as Dominica CBI, Greece Golden Visa & UAE Golden Visa",
     intro:
       "A second residency or citizenship is a strategic decision — for visa-free travel, tax efficiency or a reliable plan B. We manage these programs end-to-end, from due diligence and applications to approval and family inclusion.",
-    image: "/immigration.png",
-    heroLayout: "split",
+    images: ["/immigration.png", "/immigration-2.png", "/immigration-3.png"],
+    heroAspect: "3/2",
+    hideHeroHeading: true,
     stats: [
       { value: "96%", label: "Approval Rate" },
       { value: "40+", label: "Visa Routes" },
