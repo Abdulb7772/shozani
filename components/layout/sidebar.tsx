@@ -16,13 +16,14 @@ const groups = [
     icon: GraduationCap,
     links: [
       { title: "Study Abroad", href: "/services/study-abroad" },
+      { title: "Germany Career Tracks", href: "/countries/germany" },
+      { title: "Language Training", href: "/services/language" },
       { title: "Work Abroad", href: "/services/work-abroad" },
       { title: "Immigration", href: "/services/immigration" },
       { title: "Business Setup", href: "/services/business" },
       { title: "Nursing", href: "/countries/germany/nursing" },
       { title: "Ausbildung", href: "/countries/germany/ausbildung" },
       { title: "Attestation & Testing", href: "/services/attestation-testing" },
-      { title: "Language Training", href: "/services/language" },
     ],
   },
   {

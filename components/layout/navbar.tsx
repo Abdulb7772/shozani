@@ -40,6 +40,16 @@ const MEGA: MegaGroup[] = [
         description: "Germany, UK, USA, Australia, Canada, Europe",
       },
       {
+        title: "Germany Career Tracks",
+        href: "/countries/germany",
+        description: "Nursing & Ausbildung in Germany",
+      },
+      {
+        title: "Language Training",
+        href: "/services/language",
+        description: "German, IELTS and PTE preparation",
+      },
+      {
         title: "Work Abroad",
         href: "/services/work-abroad",
         description: "Germany jobs, IT, Engineering, Healthcare, Nursing",
@@ -48,11 +58,6 @@ const MEGA: MegaGroup[] = [
         title: "Immigration",
         href: "/services/immigration",
         description: "Permanent residence, family & business visas",
-      },
-      {
-        title: "Language Training",
-        href: "/services/language",
-        description: "German, IELTS and PTE preparation",
       },
     ],
   },
