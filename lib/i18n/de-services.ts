@@ -356,8 +356,8 @@
   "Valid with 6+ months for most Gulf/Europe countries.":
     "Für die meisten Golf-/Europastaaten mit mindestens 6 Monaten Gültigkeit.",
   "Qualification": "Qualifikation",
-  "Degree or recognised experience for the role sector.":
-    "Abschluss oder anerkannte Berufserfahrung in der jeweiligen Branche.",
+  "Degree or recognised experience — we also provide certified translation of documents European countries require.":
+    "Abschluss oder anerkannte Berufserfahrung – wir bieten auch die beglaubigte Übersetzung der Dokumente, die europäische Länder verlangen.",
   "Language": "Sprache",
   "B1–B2 German for Germany; IELTS / PTE for others.":
     "B1–B2 Deutsch für Deutschland; IELTS / PTE für andere Länder.",
@@ -496,10 +496,10 @@
     "Welches Land ist am schnellsten?",
   "Canada offers Express + PNP, Australia Quotable points, Germany 'B' needs a 21-month PR. Fastest depends on your exact profile.":
     "Kanada bietet Express + PNP, Australien Punkte über die Qualifizierung, Deutschland benötigt 21 Monate bis zur PR. Das schnellste Land hängt von Ihrem genauen Profil ab.",
-  "Do I need a job offer?":
-    "Brauche ich ein Arbeitsangebot?",
-  "For Express Entry and skilled work, a job offer is not mandatory but boosts points. For some PR routes it is required.":
-    "Für Express Entry und Fachkräftearbeit ist ein Arbeitsangebot nicht zwingend, erhöht aber die Punkte. Bei einigen PR-Wegen ist es erforderlich.",
+  "Do I need a job offer (Canada)?":
+    "Brauche ich ein Arbeitsangebot (Kanada)?",
+  "For Canada, a job offer is not mandatory for Express Entry but boosts CRS points. For some other PR routes it is required.":
+    "Für Kanada ist ein Arbeitsangebot bei Express Entry nicht zwingend, erhöht aber die CRS-Punkte. Bei einigen anderen PR-Wegen ist es erforderlich.",
   "How reliable is the outcome?":
     "Wie zuverlässig ist das Ergebnis?",
   "We only take feasible honest cases, with registered timelines and no empty guarantees.":

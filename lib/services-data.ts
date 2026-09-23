@@ -276,7 +276,7 @@ export const services: Record<ServiceId, ServiceData> = {
     ],
     requirements: [
       { title: "Passport", text: "Valid with 6+ months for most Gulf/Europe countries." },
-      { title: "Qualification", text: "Degree or recognised experience for the role sector." },
+      { title: "Qualification", text: "Degree or recognised experience — we also provide certified translation of documents European countries require." },
       { title: "Language", text: "B1–B2 German for Germany; IELTS / PTE for others." },
       { title: "Documentation", text: "CV, references, verification, and police certificate." },
     ],
@@ -374,7 +374,7 @@ export const services: Record<ServiceId, ServiceData> = {
     ],
     faqs: [
       { q: "Which country is fastest?", a: "Canada offers Express + PNP, Australia Quotable points, Germany 'B' needs a 21-month PR. Fastest depends on your exact profile." },
-      { q: "Do I need a job offer?", a: "For Express Entry and skilled work, a job offer is not mandatory but boosts points. For some PR routes it is required." },
+      { q: "Do I need a job offer (Canada)?", a: "For Canada, a job offer is not mandatory for Express Entry but boosts CRS points. For some other PR routes it is required." },
       { q: "How reliable is the outcome?", a: "We only take feasible honest cases, with registered timelines and no empty guarantees." },
       { q: "Can you handle my family?" , a: "Yes — spouse and children ride on the same PR/visa file every time." },
     ],
