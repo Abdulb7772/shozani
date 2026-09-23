@@ -345,11 +345,11 @@ export const services: Record<ServiceId, ServiceData> = {
 
   immigration: {
     codecrumbs: [{ label: "Services", href: "/services/immigration" }, { label: "Immigration", href: "/services/immigration" }],
-    eyebrow: "Immigration & PR",
-    title: "Build Your Future",
-    highlight: "in Another Land",
+    eyebrow: "Residency & Citizenship",
+    title: "Residency & Citizenship Programs",
+    highlight: "such as Dominica CBI, Greece Golden Visa & UAE Golden Visa",
     intro:
-      "We turn eligible profiles into approved outcomes. Whether you're after permanent residence, family sponsorship or a business visa, we guide you end-to-end— with clear timeframes and zero guesswork.",
+      "A second residency or citizenship is a strategic decision — for visa-free travel, tax efficiency or a reliable plan B. We manage these programs end-to-end, from due diligence and applications to approval and family inclusion.",
     stats: [
       { value: "96%", label: "Approval Rate" },
       { value: "40+", label: "Visa Routes" },

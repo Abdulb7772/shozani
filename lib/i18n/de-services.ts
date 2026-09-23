@@ -457,10 +457,12 @@
   "Check My Germany Eligibility": "Meine Deutschland-Berechtigung prüfen",
 
   // ── Immigration ───────────────────────────────────────────
-  "Build your future": "Bauen Sie Ihre Zukunft",
-  "in another land": "in einem anderen Land",
-  "We turn eligible profiles into approved outcomes. Whether you're after permanent residence, family sponsorship or a business visa, we guide you end-to-end— with clear timeframes and zero guesswork.":
-    "Wir verwandeln berechtigte Profile in genehmigte Ergebnisse. Ob Daueraufenthalt, Familiensponsoring oder Geschäftsvisum – wir begleiten Sie von Anfang bis Ende, mit klaren Zeitplänen und ohne Rätselraten.",
+  "Residency & Citizenship": "Aufenthalt & Staatsbürgerschaft",
+  "Residency & Citizenship Programs": "Aufenthalts- & Staatsbürgerschaftsprogramme",
+  "such as Dominica CBI, Greece Golden Visa & UAE Golden Visa":
+    "wie Dominica CBI, Golden Visa Griechenland & Golden Visa VAE",
+  "A second residency or citizenship is a strategic decision — for visa-free travel, tax efficiency or a reliable plan B. We manage these programs end-to-end, from due diligence and applications to approval and family inclusion.":
+    "Eine zweite Aufenthalts- oder Staatsbürgerschaft ist eine strategische Entscheidung – für visafreies Reisen, Steuereffizienz oder einen zuverlässigen Plan B. Diese Programme betreuen wir von der Due-Diligence-Prüfung über die Anträge bis hin zu Genehmigung und Familienaufnahme komplett.",
   "Approval Rate": "Erfolgsquote",
   "Visa Routes": "Visarouten",
   "PRs Secured": "Erzielte PRs",
