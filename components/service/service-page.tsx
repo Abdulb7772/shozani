@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -30,6 +30,7 @@ export type ServiceData = {
   faqs: { q: string; a: string }[];
   cta: { title: string; text: string; link: string; linkLabel: string };
   image?: string;
+  images?: string[];
   imagePosition?: string;
 };
 
@@ -52,31 +53,51 @@ export function ServicePage({ config }: { config: ServiceData }) {
 function ServiceHero({ config }: { config: ServiceData }) {
   const { t } = useLanguage();
   const last = config.codecrumbs[config.codecrumbs.length - 1];
+  const images = config.images ?? (config.image ? [config.image] : []);
+  const [index, setIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    if (images.length < 2) return;
+    const id = setInterval(() => setIndex((i) => (i + 1) % images.length), 6000);
+    return () => clearInterval(id);
+  }, [images.length]);
+
   return (
     <section
       className={cn(
         "relative overflow-hidden bg-white pb-20 sm:pb-28 dark:bg-navy-950",
-        config.image
+        images.length > 0
           ? "min-h-[560px] pt-20 sm:min-h-[640px] sm:pt-24 lg:min-h-[720px] lg:pt-24"
           : "pt-20 sm:pt-24"
       )}
     >
-      {config.image && (
+      {images.length > 0 && (
         <>
-          <Image
-            src={config.image}
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className={cn("object-cover", config.imagePosition ?? "object-center")}
-            aria-hidden
-          />
+          <AnimatePresence initial={false}>
+            <motion.div
+              key={images[index]}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.8 }}
+              className="absolute inset-0"
+              aria-hidden
+            >
+              <Image
+                src={images[index]}
+                alt=""
+                fill
+                priority
+                sizes="100vw"
+                className={cn("object-cover", config.imagePosition ?? "object-center")}
+              />
+            </motion.div>
+          </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-r from-navy-950/40 via-navy-950/15 to-transparent" aria-hidden />
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-950/25 to-transparent" aria-hidden />
         </>
       )}
-      {!config.image && (
+      {!config.image && !config.images && (
         <div className="pointer-events-none absolute inset-0 navy-radial opacity-0 dark:opacity-100" aria-hidden />
       )}
       <div className="pointer-events-none absolute inset-0 grid-lines opacity-40" aria-hidden />

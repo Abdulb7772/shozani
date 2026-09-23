@@ -350,6 +350,8 @@ export const services: Record<ServiceId, ServiceData> = {
     highlight: "such as Dominica CBI, Greece Golden Visa & UAE Golden Visa",
     intro:
       "A second residency or citizenship is a strategic decision — for visa-free travel, tax efficiency or a reliable plan B. We manage these programs end-to-end, from due diligence and applications to approval and family inclusion.",
+    image: "/immigration.png",
+    imagePosition: "object-right",
     stats: [
       { value: "96%", label: "Approval Rate" },
       { value: "40+", label: "Visa Routes" },
@@ -510,7 +512,7 @@ export const services: Record<ServiceId, ServiceData> = {
     highlight: "Your Visa Needs It",
     intro:
       "German for Germany, IELTS and PTE for the English-speaking world. Small classes, certified trainers, and mock-exam focus that actually moves your score — available as in-person and live online sessions.",
-    image: "/language.png",
+    images: ["/language.png", "/ielts-pte.png"],
     stats: [
       { value: "B1–B2", label: "German Track" },
       { value: "7.5", label: "IELTS Target" },
