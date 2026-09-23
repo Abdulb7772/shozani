@@ -1,6 +1,7 @@
 "use client";
 
 import { Sparkles, ArrowRight, GraduationCap, Briefcase, Building2, BookOpen, HeartPulse, FileCheck } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
@@ -74,18 +75,20 @@ export default function ServicesIndex() {
   const { t } = useLanguage();
   return (
     <>
-      <section className="relative overflow-hidden bg-white pt-36 pb-20 sm:pt-44 sm:pb-28 dark:bg-navy-950">
-        <div className="pointer-events-none absolute inset-0 navy-radial opacity-0 dark:opacity-100" aria-hidden />
-        <div className="pointer-events-none absolute inset-0 grid-lines opacity-40 dark:opacity-0" aria-hidden />
+      <section className="relative overflow-hidden bg-white pt-16 pb-20 min-h-[560px] sm:pt-24 sm:pb-28 sm:min-h-[640px] dark:bg-navy-950">
+        <Image src="/service.png" alt="" fill priority sizes="100vw" className="object-cover" aria-hidden />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-950/60 via-navy-950/25 to-transparent" aria-hidden />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-950/40 to-transparent" aria-hidden />
+        <div className="pointer-events-none absolute inset-0 grid-lines opacity-40" aria-hidden />
         <Container className="relative">
-          <span className="inline-flex items-center gap-2 rounded-full border border-gold-600 bg-gold-600 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
+          <span className="inline-flex items-center gap-2 rounded-full border border-gold-400/40 bg-navy-950/40 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white backdrop-blur-sm">
             <Sparkles className="size-3.5" />
             {t("Our Services")}
           </span>
-          <h1 className="mt-6 max-w-3xl text-4xl font-bold leading-[1.1] text-navy-900 text-balance sm:text-5xl lg:text-6xl dark:text-white">
+          <h1 className="mt-6 max-w-3xl text-4xl font-bold leading-[1.1] text-white text-balance sm:text-5xl lg:text-6xl">
             {t("Everything your move abroad")} <span className="text-gradient-gold">{t("needs to succeed")}</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-navy-600 sm:text-lg dark:text-navy-100/75">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
             {t("Study, work, immigration or language — every service is managed end-to-end by a dedicated case officer.")}
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
