@@ -205,7 +205,7 @@ export const germanySubpages: GermanySubpage[] = [
         { value: "€900+", label: "Monthly Training Salary" },
         { value: "2–3 yrs", label: "Training Duration" },
         { value: "330+", label: "Recognised Trades" },
-        { value: "60%", label: "Get Hired After Training" },
+        { value: "90%", label: "Get Hired After Training" },
       ],
       requirements: [
         { title: "Age & Education", text: "Generally 18+, with secondary education and strong school records." },
