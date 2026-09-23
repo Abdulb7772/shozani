@@ -339,11 +339,11 @@ export function Hero() {
                       className="group block h-full rounded-2xl border border-white/30 bg-white/20 p-4 backdrop-blur-2xl backdrop-saturate-150 transition-all duration-300 hover:-translate-y-1 hover:border-gold-400/60 hover:bg-white/30 hover:shadow-luxe dark:border-white/15 dark:bg-white/10 dark:hover:bg-white/15"
                     >
 <span className="grid size-9 place-items-center rounded-lg bg-white/10 text-sky-400 transition-colors duration-300 group-hover:bg-white/20 group-hover:text-red-500 dark:text-sky-400 dark:group-hover:text-red-500">
-  <item.icon className="size-5" />
+  <item.icon className="size-5" strokeWidth={2.5} />
 </span>
-                      <p className="mt-3 font-display text-sm font-semibold text-white">
-                        {t(item.title)}
-                      </p>
+<p className="mt-3 font-display text-sm font-bold text-white">
+  {t(item.title)}
+</p>
                       <p className="mt-0.5 text-xs leading-relaxed text-white/70">
                         {t(item.description)}
                       </p>

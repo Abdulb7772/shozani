@@ -153,7 +153,7 @@ export function Navbar({
               key={link.href}
               href={link.href}
               className={cn(
-                "flex items-center rounded-full px-2.5 py-2 font-display text-[13px] font-bold leading-none tracking-tight text-gold-500 transition-all duration-500 ease-out-gold hover:delay-300 hover:bg-gold-500/10 hover:text-gold-600 dark:text-gold-400 dark:hover:bg-gold-400/10 dark:hover:text-gold-300",
+                "flex items-center rounded-full px-2.5 py-2 font-display text-sm font-extrabold leading-none tracking-tight text-gold-500 transition-all duration-500 ease-out-gold hover:delay-300 hover:bg-gold-500/10 hover:text-gold-600 dark:text-gold-400 dark:hover:bg-gold-400/10 dark:hover:text-gold-300",
                 pathname === link.href && "text-gold-700 dark:text-gold-300"
               )}
             >
@@ -278,7 +278,7 @@ function MegaTrigger({
       type="button"
       onMouseEnter={onOpen}
       className={cn(
-        "flex items-center gap-1 rounded-full px-2.5 py-2 font-display text-[13px] font-bold leading-none tracking-tight text-gold-500 transition-all duration-500 ease-out-gold hover:delay-300 hover:bg-gold-500/10 hover:text-gold-600 dark:text-gold-400 dark:hover:bg-gold-400/10 dark:hover:text-gold-300",
+        "flex items-center gap-1 rounded-full px-2.5 py-2 font-display text-sm font-extrabold leading-none tracking-tight text-gold-500 transition-all duration-500 ease-out-gold hover:delay-300 hover:bg-gold-500/10 hover:text-gold-600 dark:text-gold-400 dark:hover:bg-gold-400/10 dark:hover:text-gold-300",
         active && "text-gold-700 hover:text-gold-700 dark:text-gold-300 dark:hover:text-gold-300"
       )}
     >

@@ -72,7 +72,8 @@ function ServiceHero({ config }: { config: ServiceData }) {
             className={cn("object-cover", config.imagePosition ?? "object-center")}
             aria-hidden
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/45 via-navy-950/15 to-transparent dark:from-navy-950/75 dark:via-navy-950/40 dark:to-transparent" aria-hidden />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/40 via-navy-950/15 to-transparent" aria-hidden />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-950/25 to-transparent" aria-hidden />
         </>
       )}
       {!config.image && (

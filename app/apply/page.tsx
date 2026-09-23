@@ -47,7 +47,7 @@ const steps = [
   {
     icon: UserCheck,
     key: "Step 1",
-    title: "Profile review call",
+    title: "Profile Review Call",
     text: "A 20-minute call where we check your documents, eligibility and the realistic route for your goal.",
     deTitle: "Profil-Check-Anruf",
     deText: "Ein 20-minütiger Anruf, bei dem wir Unterlagen, Eignung und den realistischen Weg für Ihr Ziel prüfen.",
@@ -55,7 +55,7 @@ const steps = [
   {
     icon: Clock,
     key: "Step 2",
-    title: "Plan & quote",
+    title: "Plan & Quote",
     text: "Within two working days you receive a route plan, timeline and a fixed service quotation.",
     deTitle: "Plan & Angebot",
     deText: "Innerhalb von zwei Werktagen erhalten Sie einen Routenplan, Zeitplan und ein festes Angebot.",
@@ -63,7 +63,7 @@ const steps = [
   {
     icon: MessageCircle,
     key: "Step 3",
-    title: "Kick-off",
+    title: "Application Launch",
     text: "Once you confirm, your case manager opens the file and the work begins — language, recognition or applications first.",
     deTitle: "Start",
     deText: "Nach Ihrer Bestätigung öffnet Ihr Case Manager die Akte und die Arbeit beginnt — Sprache, Anerkennung oder Anträge zuerst.",

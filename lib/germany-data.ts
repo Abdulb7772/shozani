@@ -197,8 +197,8 @@ export const germanySubpages: GermanySubpage[] = [
     config: {
       codecrumbs: crumbs("Ausbildung"),
       eyebrow: "Germany — Ausbildung",
-      title: "Get Paid While You",
-      highlight: "Learn a German Trade",
+      title: "Learn. Work. Earn.",
+      highlight: "Start Your Career with Germany's Ausbildung",
       intro:
         "Ausbildung is Germany's dual vocational training: you study theory and work in a company at the same time — and get paid from day one. It is the strongest route for school leavers and career-changers who want German qualifications without a university degree.",
       stats: [

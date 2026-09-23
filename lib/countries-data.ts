@@ -26,7 +26,7 @@ export const countries: Record<CountryId, ServiceData> = {
     image: "/GERMANY.png",
     stats: [
       { value: "Tuition-free", label: "Public Universities" },
-      { value: "€934", label: "Monthly Blocked Account" },
+      { value: "€992", label: "Monthly Blocked Account" },
       { value: "18 mo", label: "Post-Study Work Visa" },
       { value: "5 yrs", label: "Residence → PR Route" },
     ],
