@@ -323,7 +323,7 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
-            className="relative mt-24 hidden lg:block"
+            className="relative mt-32 hidden -translate-x-6 lg:block"
           >
             <div className="relative rounded-3xl border border-white/20 p-5 dark:border-white/10">
               <div className="grid grid-cols-2 gap-3">
