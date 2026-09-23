@@ -28,6 +28,7 @@ export const services: Record<ServiceId, ServiceData> = {
     highlight: "One Guidance Desk",
     intro:
       "From course selection and admission to visa letter, pre-departure briefing and settlement — our study abroad desk manages your complete journey across Germany, UK, Australia, Canada, USA and Europe.",
+    image: "/study,work.png",
     stats: [
       { value: "4,500+", label: "Students Placed" },
       { value: "97%", label: "Admission Success" },
@@ -267,7 +268,8 @@ export const services: Record<ServiceId, ServiceData> = {
     title: "Take Your Career",
     highlight: "Across Borders",
     intro:
-      "From EU Blue Cards to nursing in Germany and to Gulf contracts — we match your profile with real employers, prepare your language and handle the work visa from offer to landing.",
+      "From EU Blue Cards and nursing in Germany to skilled work across other European countries, and Gulf contracts in Saudi Arabia and the UAE — we match your profile with real employers across Germany, UK, Canada, Australia, USA, Europe, Saudi Arabia, UAE and more, prepare your language and handle the work visa from offer to landing.",
+    image: "/study,work.png",
     stats: [
       { value: "80+", label: "Professionals Placed" },
       { value: "90%", label: "Offer Secured" },

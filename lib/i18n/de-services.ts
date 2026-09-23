@@ -346,8 +346,8 @@
   // ── Work Abroad ───────────────────────────────────────────
   "Take your career": "Bringen Sie Ihre Karriere",
   "across borders": "über Grenzen",
-  "From EU Blue Cards to nursing in Germany and to Gulf contracts — we match your profile with real employers, prepare your language and handle the work visa from offer to landing.":
-    "Von der EU Blue Card über die Pflege in Deutschland bis zu Verträgen am Golf – wir bringen Ihr Profil mit echten Arbeitgebern zusammen, bereiten Sie sprachlich vor und übernehmen das Arbeitsvisum von der Zusage bis zur Landung.",
+  "From EU Blue Cards and nursing in Germany to skilled work across other European countries, and Gulf contracts in Saudi Arabia and the UAE — we match your profile with real employers across Germany, UK, Canada, Australia, USA, Europe, Saudi Arabia, UAE and more, prepare your language and handle the work visa from offer to landing.":
+    "Von der EU Blue Card und der Pflege in Deutschland über Facharbeit in weiteren europäischen Ländern bis zu Verträgen am Golf in Saudi-Arabien und den VAE – wir bringen Ihr Profil mit echten Arbeitgebern in Deutschland, UK, Kanada, Australien, USA, Europa, Saudi-Arabien, den VAE und weiteren Ländern zusammen, bereiten Sie sprachlich vor und übernehmen das Arbeitsvisum von der Zusage bis zur Landung.",
   "Professionals Placed": "Vermittelte Fachkräfte",
   "Offer Secured": "Gesicherte Zusagen",
   "Industries": "Branchen",
