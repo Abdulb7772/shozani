@@ -29,7 +29,7 @@
   "Profile & Route": "Profil & Weg",
   "We confirm your study, work or nursing route with a free assessment.": "Wir bestätigen Ihren Studien-, Arbeits- oder Pflegeweg mit einer kostenlosen Einschätzung.",
   "APS & Approvals": "APS & Genehmigungen",
-  "APS (Akademische Prüfstelle) document validation and any professional recognition processed for you.": "APS (Akademische Prüfstelle) Dokumentenprüfung und ggf. Berufsanerkennung werden für Sie abgewickelt.",
+  "APS (Academic Examination Office) document validation and any professional recognition processed for you.": "APS (Akademische Prüfstelle) Dokumentenprüfung und ggf. Berufsanerkennung werden für Sie abgewickelt.",
   "Admission / Job Offer": "Zulassung / Jobangebot",
   "University acceptance or a German employer contract.": "Uni-Zulassung oder ein Vertrag mit einem deutschen Arbeitgeber.",
   "Visa & Arrival": "Visum & Ankunft",
