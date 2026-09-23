@@ -204,9 +204,9 @@ export const germanySubpages: GermanySubpage[] = [
       images: ["/ausbuilding.png"],
       heroAspect: "3/2",
       stats: [
-        { value: "€900+", label: "Monthly Training Salary" },
-        { value: "2–3 yrs", label: "Training Duration" },
-        { value: "330+", label: "Recognised Trades" },
+        { value: "€1100+", label: "Monthly Training Salary" },
+        { value: "3 yrs", label: "Training Duration" },
+        { value: "100+", label: "Recognised Trades" },
         { value: "90%", label: "Get Hired After Training" },
       ],
       requirements: [
