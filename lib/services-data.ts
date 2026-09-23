@@ -350,6 +350,9 @@ export const services: Record<ServiceId, ServiceData> = {
     highlight: "such as Dominica CBI, Greece Golden Visa & UAE Golden Visa",
     intro:
       "A second residency or citizenship is a strategic decision — for visa-free travel, tax efficiency or a reliable plan B. We manage these programs end-to-end, from due diligence and applications to approval and family inclusion.",
+    images: ["/immigration.png"],
+    heroAspect: "3/2",
+    imagePosition: "object-[75%_center]",
     stats: [
       { value: "96%", label: "Approval Rate" },
       { value: "40+", label: "Visa Routes" },
@@ -711,6 +714,8 @@ cta: { title: "", text: "The 48-hour PTE score could be the fastest yes in your 
     highlight: "Testing & Verification",
     intro:
       "Degree attestation, HEC verification, apostille, certified translation and language testing — we handle every document our clients need for university admission, employment and visa filing.",
+    images: ["/attestation.png"],
+    heroAspect: "3/2",
     stats: [
       { value: "1,000+", label: "Documents Verified" },
       { value: "2–5 days", label: "Standard Turnaround" },

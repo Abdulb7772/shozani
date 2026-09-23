@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ChevronRight,
@@ -170,36 +171,46 @@ export function AboutPage() {
 function AboutHero() {
   const { t } = useLanguage();
   return (
-    <section className="relative overflow-hidden bg-white pt-36 pb-20 sm:pt-44 sm:pb-28 dark:bg-navy-950">
-      <div className="pointer-events-none absolute inset-0 navy-radial opacity-0 dark:opacity-100" aria-hidden />
-      <div className="pointer-events-none absolute inset-0 grid-lines opacity-40 dark:opacity-0" aria-hidden />
+    <section className="relative overflow-hidden bg-white pt-20 pb-20 min-h-[560px] sm:pt-24 sm:pb-28 sm:min-h-[640px] lg:min-h-[720px] dark:bg-navy-950">
+      <Image
+        src="/about.png"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+        aria-hidden
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-950/60 via-navy-950/25 to-transparent" aria-hidden />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-950/40 to-transparent" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 grid-lines opacity-40" aria-hidden />
       <Container className="relative">
         <motion.nav
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           aria-label={t("Breadcrumb")}
-          className="flex items-center gap-2 text-sm text-navy-500 dark:text-navy-100/60"
+          className="flex items-center gap-2 text-sm text-white/70"
         >
-          <Link href="/" className="transition-colors hover:text-gold-600 dark:hover:text-gold-300">{t("Home")}</Link>
+          <Link href="/" className="transition-colors hover:text-gold-300">{t("Home")}</Link>
           <ChevronRight className="size-4" />
-          <span className="text-gold-700 dark:text-gold-300">{t("About Us")}</span>
+          <span className="text-gold-300">{t("About Us")}</span>
         </motion.nav>
 
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="mt-8 max-w-3xl"
+          className="mt-16 max-w-3xl"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-gold-600 bg-gold-600 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white dark:border-gold-400/30 dark:bg-white/5 dark:text-gold-300">
+          <span className="inline-flex items-center gap-2 rounded-full border border-gold-400/40 bg-navy-950/40 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white backdrop-blur-sm">
             <Compass className="size-3.5" />
             {t("About Shozani")}
           </span>
-          <h1 className="mt-6 text-4xl font-bold leading-[1.1] text-navy-900 text-balance sm:text-5xl lg:text-6xl dark:text-white">
+          <h1 className="mt-6 text-4xl font-bold leading-[1.1] text-white text-balance sm:text-5xl lg:text-6xl">
             {t("Your global journey,")}{" "}<span className="text-gradient-gold">{t("guided with integrity")}</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-navy-600 sm:text-lg dark:text-navy-100/75">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
             {t("Shozani Global Consultancy is more than an education and immigration agency. We are a global opportunities platform built on one belief: everyone deserves a transparent path to study, work and settle abroad — without guesswork or hidden agendas.")}
           </p>
         </motion.div>
