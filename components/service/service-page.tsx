@@ -31,6 +31,8 @@ export type ServiceData = {
   cta: { title: string; text: string; link: string; linkLabel: string };
   image?: string;
   images?: string[];
+  video?: string;
+  videoPoster?: string;
   imagePosition?: string;
   imageClassName?: string;
   heroLayout?: "split";
@@ -47,6 +49,7 @@ export function ServicePage({ config }: { config: ServiceData }) {
       {config.stats && <ServiceStats stats={config.stats} />}
       <RequirementsSection config={config} />
       <ProcessSection config={config} />
+      {config.video && <VideoSection config={config} />}
       <TimelineSection config={config} />
       <FaqSection config={config} openFaq={openFaq} setOpenFaq={setOpenFaq} />
       <ServiceCta config={config} />
@@ -307,6 +310,36 @@ function ProcessSection({ config }: { config: ServiceData }) {
             </motion.div>
           ))}
         </div>
+      </Container>
+    </section>
+  );
+}
+
+function VideoSection({ config }: { config: ServiceData }) {
+  const { t } = useLanguage();
+  return (
+    <section className="bg-navy-50/60 py-20 sm:py-28 dark:bg-navy-900/30">
+      <Container className="max-w-4xl">
+        <SectionHeading
+          eyebrow={t("Watch")}
+          title={<>{t("See Ausbildung")} <span className="text-gradient-gold">{t("in action")}</span></>}
+        />
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.7 }}
+          className="overflow-hidden rounded-[2rem] border border-navy-900/10 bg-white shadow-luxe dark:border-white/10 dark:bg-navy-900/40"
+        >
+          <video
+            src={config.video}
+            poster={config.videoPoster}
+            controls
+            preload="metadata"
+            playsInline
+            className="aspect-video w-full bg-navy-950 object-cover"
+          />
+        </motion.div>
       </Container>
     </section>
   );
