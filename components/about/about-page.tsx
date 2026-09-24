@@ -90,9 +90,9 @@ const pillars = [
 const journey = [
   { year: "2020", title: "First office opens in Germany", text: "Founded by a small team of advisors committed to ethical consultancy." },
   { year: "2020", title: "Founded in Germany", text: "Became one of the first agencies dedicated to the German market." },
-  { year: "2021", title: "100th student placed", text: "Reached 100+ successful placements across Europe, the UK, Canada and Australia." },
-  { year: "2022", title: "Global Opportunities Platform", text: "Digital-first tools — eligibility checks, calculators and live status tracking." },
-  { year: "2025", title: "85+ partner institutions", text: "Deep partnerships with universities, employers and A1–B2 language centres." },
+  { year: "2024", title: "100th student placed", text: "Reached 100+ successful placements across Europe, the UK, Canada and Australia." },
+  { year: "2025", title: "Global Opportunities Platform", text: "Digital-first tools — eligibility checks, calculators and live status tracking." },
+  { year: "2026", title: "85+ partner institutions", text: "Deep partnerships with universities, employers and A1–B2 language centres." },
 ];
 
 export function AboutPage() {
