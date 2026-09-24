@@ -105,7 +105,7 @@ function ContactHero() {
   const { t } = useLanguage();
   return (
     <section className="relative overflow-hidden bg-white pt-16 pb-20 min-h-[560px] sm:pt-24 sm:pb-24 sm:min-h-[640px] dark:bg-navy-950">
-      <Image src="/contact.png" alt="" fill priority sizes="100vw" className="object-cover" aria-hidden />
+      <Image src="/contact us.png" alt="" fill priority sizes="100vw" className="object-cover" aria-hidden />
       <div className="absolute inset-0 bg-gradient-to-r from-navy-950/60 via-navy-950/25 to-transparent" aria-hidden />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-950/40 to-transparent" aria-hidden />
       <div className="pointer-events-none absolute inset-0 grid-lines opacity-40" aria-hidden />
