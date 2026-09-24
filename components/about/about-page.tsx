@@ -88,8 +88,8 @@ const pillars = [
 ];
 
 const journey = [
-  { year: "2020", title: "First office opens in Germany", text: "Founded by a small team of advisors committed to ethical consultancy." },
-  { year: "2020", title: "Founded in Germany", text: "Became one of the first agencies dedicated to the German market." },
+  { year: "2021", title: "First application filed", text: "Our journey began in 2021 with a single application — one client, fully supported from start to finish." },
+  { year: "2022", title: "One of the first online consultancies", text: "Became one of the first consultancies to run the entire process online, before most agencies had websites." },
   { year: "2024", title: "100th student placed", text: "Reached 100+ successful placements across Europe, the UK, Canada and Australia." },
   { year: "2025", title: "Global Opportunities Platform", text: "Digital-first tools — eligibility checks, calculators and live status tracking." },
   { year: "2026", title: "85+ partner institutions", text: "Deep partnerships with universities, employers and A1–B2 language centres." },
@@ -265,7 +265,7 @@ function Story() {
             className="space-y-5 text-base leading-relaxed text-navy-600 dark:text-navy-200/70"
           >
             <p>
-              {t("Shozani began in 2020 in Germany and a simple idea: that world-class guidance should never come with fine print. Six years later, we have helped more than 100 students and professionals begin new chapters in Germany, the UK, Canada, Australia, the USA and across Europe.")}
+              {t("Shozani began in 2021 with a single application and a simple idea: that world-class guidance should never come with fine print. Today we have helped more than 100 students and professionals begin new chapters in Germany, the UK, Canada, Australia, the USA and across Europe.")}
             </p>
             <p>
               {t("We grew the way trust grows — slowly, carefully and on the strength of client referrals. Today our specialists, counsellors and trainers work as one team across study, work, immigration, business and settlement, supported by technology that puts your entire application in your own hands.")}
