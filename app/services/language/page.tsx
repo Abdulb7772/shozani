@@ -13,8 +13,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <ServicePage config={services["language"]} />
-      <PlacementCards showHeading={false} />
+      <ServicePage config={services["language"]} aboveRequirements={<PlacementCards showHeading={false} />} />
     </>
   );
 }

@@ -40,13 +40,20 @@ export type ServiceData = {
   hideHeroHeading?: boolean;
 };
 
-export function ServicePage({ config }: { config: ServiceData }) {
+export function ServicePage({
+  config,
+  aboveRequirements,
+}: {
+  config: ServiceData;
+  aboveRequirements?: React.ReactNode;
+}) {
   const [openFaq, setOpenFaq] = React.useState<number | null>(0);
 
   return (
     <>
       <ServiceHero config={config} />
       {config.stats && <ServiceStats stats={config.stats} />}
+      {aboveRequirements}
       <RequirementsSection config={config} />
       <ProcessSection config={config} />
       {config.video && <VideoSection config={config} />}

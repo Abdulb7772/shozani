@@ -17,6 +17,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/lib/i18n/language-provider";
+import { PlacementCards } from "@/components/placement/placement-cards";
 
 const destinations = [
   "Germany",
@@ -132,6 +133,8 @@ export default function ApplyPage() {
           </motion.div>
         </Container>
       </section>
+
+      <PlacementCards showHeading={false} />
 
       <section className="bg-white py-16 sm:py-20 dark:bg-navy-950">
         <Container>
