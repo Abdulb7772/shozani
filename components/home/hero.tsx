@@ -72,7 +72,7 @@ const slides: Slide[] = [
     titleA: "Study Free & Build Your Career in",
     titleB: "Germany",
     description:
-      "Tuition-free public universities, an 18-month post-study work visa and a permanent residency route in just 5 years. Engineers, nurses and IT professionals are in high demand — and we manage your APS, blocked account and admission end-to-end.",
+      "Public universities with no or only a small semester fee (mostly €250–400 per term), an 18-month post-study residence permit to look for work, and a potential pathway to permanent residence — depending on your qualification, employment, residence status and current German law. Engineers, nurses and IT professionals are in high demand, and we manage your APS, blocked account and admission end-to-end.",
     services: ["University Admissions", "APS & Blocked Account", "Ausbildung Placement", "German A1–B2 Training", "Nursing & Work Visas"],
     primary: { label: "Explore Germany", href: "/countries/germany" },
     secondary: { label: "Book Free Counselling", href: "/apply" },

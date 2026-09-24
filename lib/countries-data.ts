@@ -22,7 +22,7 @@ export const countries: Record<CountryId, ServiceData> = {
     title: "Germany: Tuition-Free",
     highlight: "Degrees & a Real PR Path",
     intro:
-      "Germany pairs tuition-free university education with the EU's strongest job market, a post-study residence permit and a transparent permanent residency route. Engineers, nurses and skilled workers are in constant demand.",
+      "Germany pairs public universities with no tuition or a small semester fee (around €250–400 per term at public universities) with the EU's strongest job market)Skip, a post-study residence permit and potential pathways to permanent residence depending on your qualification, employment, residence status and current German law. The FAQ section below answers the tuition and settlement questions we hear most.",
     image: "/GERMANY.png",
     stats: [
       { value: "Tuition-free", label: "Public Universities" },
