@@ -196,7 +196,7 @@ export function Hero() {
   const slide = slides[index];
 
   return (
-    <section className="relative overflow-hidden bg-white pt-14 pb-16 sm:pt-20 sm:pb-24 lg:pt-20 dark:bg-navy-950">
+    <section className="relative overflow-hidden bg-white pt-20 pb-16 sm:pt-24 sm:pb-24 lg:pt-24 dark:bg-navy-950">
       <AnimatePresence initial={false}>
         <motion.div
           key={index}
