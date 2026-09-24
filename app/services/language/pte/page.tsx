@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ServicePage } from "@/components/service/service-page";
+import { PlacementBanner } from "@/components/placement/placement-banner";
 import { services } from "@/lib/services-data";
 
 export const metadata: Metadata = {
@@ -10,5 +11,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <ServicePage config={services["language-pte"]} />;
+  return (
+    <>
+      <PlacementBanner label="the PTE placement test" href="/services/language/placement/pte" />
+      <ServicePage config={services["language-pte"]} />
+    </>
+  );
 }

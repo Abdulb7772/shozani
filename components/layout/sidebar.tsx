@@ -18,6 +18,7 @@ const groups = [
       { title: "Study Abroad", href: "/services/study-abroad" },
       { title: "Germany Career Tracks", href: "/countries/germany" },
       { title: "Language Training", href: "/services/language" },
+      { title: "Free Placement Tests", href: "/services/language/placement" },
       { title: "Work Abroad", href: "/services/work-abroad" },
       { title: "Immigration", href: "/services/immigration" },
       { title: "Business Setup", href: "/services/business" },

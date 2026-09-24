@@ -59,6 +59,7 @@ const serviceLinks = [
   { title: "Ausbildung", href: "/countries/germany/ausbildung" },
   { title: "Attestation & Testing", href: "/services/attestation-testing" },
   { title: "Language Training", href: "/services/language" },
+  { title: "Free Placement Tests", href: "/services/language/placement" },
 ];
 
 const countryLinks = [

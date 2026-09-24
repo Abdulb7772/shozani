@@ -69,6 +69,7 @@ export const serviceGroups: NavGroup[] = [
       { title: "German Language", description: "A1 – B2 with exam prep & visa-ready", href: "/services/language/german" },
       { title: "IELTS Preparation", description: "Band 7+ coaching with mock tests", href: "/services/language/ielts" },
       { title: "PTE Preparation", description: "Fast scoring, computer-based format", href: "/services/language/pte" },
+      { title: "Free Placement Tests", description: "German, IELTS & PTE level test", href: "/services/language/placement", badge: "Free" },
     ],
   },
 ];

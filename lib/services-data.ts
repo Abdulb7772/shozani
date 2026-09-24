@@ -63,7 +63,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   "study-germany": {
-    codecrumbs: [{ label: "Services", href: "/services/study-abroad" }, { label: "Study Germany", href: "/services/study-abroad/germany" }],
+    codecrumbs: [{ label: "Study Abroad", href: "/services/study-abroad" }, { label: "Study Germany", href: "/services/study-abroad/germany" }],
     eyebrow: "Study Abroad — Germany",
     title: "Tuition-Free Education",
     highlight: "with World-Class Careers",
@@ -103,7 +103,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   "study-australia": {
-    codecrumbs: [{ label: "Services", href: "/services/study-abroad" }, { label: "Study Australia", href: "/services/study-abroad/australia" }],
+    codecrumbs: [{ label: "Study Abroad", href: "/services/study-abroad" }, { label: "Study Australia", href: "/services/study-abroad/australia" }],
     eyebrow: "Study Abroad — Australia",
     title: "A degree that",
     highlight: "Leads to a PR",
@@ -143,7 +143,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   "study-canada": {
-    codecrumbs: [{ label: "Services", href: "/services/study-abroad" }, { label: "Study Canada", href: "/services/study-abroad/canada" }],
+    codecrumbs: [{ label: "Study Abroad", href: "/services/study-abroad" }, { label: "Study Canada", href: "/services/study-abroad/canada" }],
     eyebrow: "Study Abroad — Canada",
     title: "Study Now,",
     highlight: "Stay as a Canadian",
@@ -183,7 +183,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   "study-usa": {
-    codecrumbs: [{ label: "Services", href: "/services/study-abroad" }, { label: "Study USA", href: "/services/study-abroad/usa" }],
+    codecrumbs: [{ label: "Study Abroad", href: "/services/study-abroad" }, { label: "Study USA", href: "/services/study-abroad/usa" }],
     eyebrow: "Study Abroad — USA",
     title: "Top-Ranked Colleges,",
     highlight: "Unlimited Possibilities",
@@ -223,7 +223,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   "study-uk": {
-    codecrumbs: [{ label: "Services", href: "/services/study-abroad" }, { label: "Study UK", href: "/services/study-abroad/uk" }],
+    codecrumbs: [{ label: "Study Abroad", href: "/services/study-abroad" }, { label: "Study UK", href: "/services/study-abroad/uk" }],
     eyebrow: "Study Abroad — UK",
     title: "Elite Education,",
     highlight: "Two-Year Stay-Back",
@@ -263,7 +263,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   "work-abroad": {
-    codecrumbs: [{ label: "Services", href: "/services/work-abroad" }, { label: "Work Abroad", href: "/services/work-abroad" }],
+    codecrumbs: [{ label: "Work Abroad", href: "/services/work-abroad" }],
     eyebrow: "Work Abroad",
     title: "Take Your Career",
     highlight: "Across Borders",
@@ -304,7 +304,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   "work-germany": {
-    codecrumbs: [{ label: "Services", href: "/services/work-abroad" }, { label: "Work Germany", href: "/services/work-abroad/germany" }],
+    codecrumbs: [{ label: "Work Abroad", href: "/services/work-abroad" }, { label: "Work Germany", href: "/services/work-abroad/germany" }],
     eyebrow: "Work Abroad — Germany",
     title: "A European Career",
     highlight: "at Your Fingertips",
@@ -344,7 +344,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   immigration: {
-    codecrumbs: [{ label: "Services", href: "/services/immigration" }, { label: "Immigration", href: "/services/immigration" }],
+    codecrumbs: [{ label: "Immigration", href: "/services/immigration" }],
     eyebrow: "Residency & Citizenship",
     title: "Residency & Citizenship Programs",
     highlight: "such as Dominica CBI, Greece Golden Visa & UAE Golden Visa",
@@ -387,7 +387,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   "immigration-pr": {
-    codecrumbs: [{ label: "Services", href: "/services/immigration" }, { label: "Permanent Residence", href: "/services/immigration/permanent-residence" }],
+    codecrumbs: [{ label: "Immigration", href: "/services/immigration" }, { label: "Permanent Residence", href: "/services/immigration/permanent-residence" }],
     eyebrow: "Permanent Residence",
     title: "A Permanent Home,",
     highlight: "Not Just a Permit",
@@ -427,7 +427,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   "immigration-family": {
-    codecrumbs: [{ label: "Services", href: "/services/immigration" }, { label: "Family Immigration", href: "/services/immigration/family" }],
+    codecrumbs: [{ label: "Immigration", href: "/services/immigration" }, { label: "Family Immigration", href: "/services/immigration/family" }],
     eyebrow: "Family Immigration",
     title: "Bring Everyone",
     highlight: "with You",
@@ -467,7 +467,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   "immigration-business": {
-    codecrumbs: [{ label: "Services", href: "/services/immigration" }, { label: "Business Immigration", href: "/services/immigration/business" }],
+    codecrumbs: [{ label: "Immigration", href: "/services/immigration" }, { label: "Business Immigration", href: "/services/immigration/business" }],
     eyebrow: "Business & Investor",
     title: "Found, Incorporate,",
     highlight: "and Live in Your Market",
@@ -507,7 +507,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   language: {
-    codecrumbs: [{ label: "Services", href: "/services/language" }, { label: "Language", href: "/services/language" }],
+    codecrumbs: [{ label: "Language", href: "/services/language" }],
     eyebrow: "Language Training",
     title: "Learn the Language",
     highlight: "Your Visa Needs It",
@@ -521,13 +521,13 @@ export const services: Record<ServiceId, ServiceData> = {
       { value: "14+", label: "Years of Teaching" },
     ],
     requirements: [
-      { title: "Placement", text: "A free 10-min grades your current level." },
+      { title: "Placement", text: "A free 3-min online test grades your German or English level." },
       { title: "Goal date", text: "Your visa or application target a course calendar." },
       { title: "Schedule", text: "Evening, weekend or intensive batches — on-site or online." },
       { title: "Motivation", text: "A study plan to stay consistent." },
     ],
     process: [
-      { step: "01", title: "Free placement test", text: "Diagnose where you start." },
+      { step: "01", title: "Free online placement test", text: "Diagnose your level in 3 minutes — just click the test." },
       { step: "02", title: "Course plan", text: "Level, pace and exam-feature mapping." },
       { step: "03", title: "Live & physical classes", text: "Small groups and weekly mock — live online or in our centres." },
       { step: "04", title: "Exam + score", text: "Slot booking and score validation." },
@@ -548,7 +548,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   "language-german": {
-    codecrumbs: [{ label: "Services", href: "/services/language" }, { label: "German", href: "/services/language/german" }],
+    codecrumbs: [{ label: "Language", href: "/services/language" }, { label: "German", href: "/services/language/german" }],
     eyebrow: "German Language",
     title: "Master German,",
     highlight: "Master Your Move",
@@ -567,7 +567,7 @@ export const services: Record<ServiceId, ServiceData> = {
       { title: "Goal level", text: "B1 family reunification, B2 for work." },
     ],
     process: [
-      { step: "01", title: "Placement", text: "Find your current speaking-level." },
+      { step: "01", title: "Placement test", text: "Take our free online German test to confirm your level." },
       { step: "02", title: "Course", text: "A1→B1 through live in-person or online classes + practice work." },
       { step: "03", title: "Mocks", text: "Goethe-format full papers." },
       { step: "04", title: "Exam date", text: "Goethe exam booking." },
@@ -588,7 +588,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   "language-ielts": {
-    codecrumbs: [{ label: "Services", href: "/services/language" }, { label: "IELTS", href: "/services/language/ielts" }],
+    codecrumbs: [{ label: "Language", href: "/services/language" }, { label: "IELTS", href: "/services/language/ielts" }],
     eyebrow: "IELTS Preparation",
     title: "IELTS Is Your",
     highlight: "Ticket to the World",
@@ -628,7 +628,7 @@ export const services: Record<ServiceId, ServiceData> = {
   },
 
   "language-pte": {
-    codecrumbs: [{ label: "Services", href: "/services/language" }, { label: "PTE", href: "/services/language/pte" }],
+    codecrumbs: [{ label: "Language", href: "/services/language" }, { label: "PTE", href: "/services/language/pte" }],
     eyebrow: "PTE Preparation",
     title: "Score Faster,",
     highlight: "on Australian Soil",

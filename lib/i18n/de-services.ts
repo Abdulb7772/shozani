@@ -689,8 +689,11 @@
   "Pass in Levels": "Niveau bestanden",
   "Years of Teaching": "Jahre Lehrerfahrung",
   "Placement": "Einstufung",
+  "Placement test": "Einstufungstest",
   "A free 10-min grades your current level.":
     "Ein kostenloser 10-Minuten-Test bestätigt Ihr aktuelles Niveau.",
+  "A free 3-min online test grades your German or English level.":
+    "Ein kostenloser 3-Minuten-Online-Test ermittelt Ihr deutsches oder englisches Niveau.",
   "Goal date": "Zieldatum",
   "Your visa or application target a course calendar.":
     "Ihr Visum- oder Bewerbungsziel bestimmt den Kurskalender.",
@@ -701,6 +704,7 @@
   "A study plan to stay consistent.":
     "Ein Lernplan für kontinuierliche Fortschritte.",
   "Free placement test": "Kostenloser Einstufungstest",
+  "Free online placement test": "Kostenloser Online-Einstufungstest",
   "Diagnose where you start.":
     "Wir ermitteln Ihr Startniveau.",
   "Course plan": "Kursplan",

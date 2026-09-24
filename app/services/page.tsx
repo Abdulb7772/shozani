@@ -39,6 +39,7 @@ const groups = [
       { title: "German Language", href: "/services/language/german" },
       { title: "IELTS Preparation", href: "/services/language/ielts" },
       { title: "PTE Preparation", href: "/services/language/pte" },
+      { title: "Free Placement Tests", href: "/services/language/placement" },
     ],
   },
   {
@@ -59,6 +60,15 @@ const groups = [
       { title: "Permanent Residence", href: "/services/immigration/permanent-residence" },
       { title: "Family Immigration", href: "/services/immigration/family" },
       { title: "Business & Investment", href: "/services/immigration/business" },
+    ],
+  },
+  {
+    icon: Building2,
+    label: "Business & Investment",
+    href: "/services/business",
+    items: [
+      { title: "Business & Investment", href: "/services/business" },
+      { title: "Business Immigration", href: "/services/immigration/business" },
     ],
   },
   {

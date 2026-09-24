@@ -50,6 +50,11 @@ const MEGA: MegaGroup[] = [
         description: "German, IELTS and PTE preparation",
       },
       {
+        title: "Free Placement Tests",
+        href: "/services/language/placement",
+        description: "German, IELTS & PTE level test in 3 minutes",
+      },
+      {
         title: "Work Abroad",
         href: "/services/work-abroad",
         description: "Germany jobs, IT, Engineering, Healthcare, Nursing",
@@ -58,6 +63,11 @@ const MEGA: MegaGroup[] = [
         title: "Immigration",
         href: "/services/immigration",
         description: "Permanent residence, family & business visas",
+      },
+      {
+        title: "Business & Investment",
+        href: "/services/business",
+        description: "Company formation, visas & investment advisory",
       },
     ],
   },
