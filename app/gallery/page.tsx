@@ -33,6 +33,10 @@ const CERTS = [
   { src: "/certificates/13.JPG", label: "Compliance Certified" },
   { src: "/certificates/14.JPG", label: "Trusted Partner" },
   { src: "/certificates/WhatsApp%20Image%202026-09-17%20at%206.47.59%20PM.jpeg", label: "Verified Certification" },
+  { src: "/certificates/WhatsApp%20Image%202026-09-25%20at%202.04.09%20AM.jpeg", label: "Certified Consultant" },
+  { src: "/certificates/WhatsApp%20Image%202026-09-25%20at%202.04.09%20AM%20(1).jpeg", label: "Accredited Advisor" },
+  { src: "/certificates/WhatsApp%20Image%202026-09-25%20at%203.04.28%20AM.jpeg", label: "Registered Specialist" },
+  { src: "/certificates/WhatsApp%20Image%202026-09-25%20at%203.09.32%20AM.jpeg", label: "Verified Member" },
 ];
 
 export default function GalleryPage() {
@@ -117,9 +121,6 @@ export default function GalleryPage() {
                   sizes="(min-width: 1024px) 22vw, (min-width: 640px) 33vw, 50vw"
                   className="object-contain transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-950/90 to-transparent p-2.5">
-                  <p className="text-center text-xs font-semibold text-white sm:text-sm">{cert.label}</p>
-                </div>
               </div>
             ))}
           </div>

@@ -292,7 +292,7 @@ export function SiteFooter() {
             </div>
           </div>
           <a
-            href="https://eservices.secp.gov.pk/eServices/ControllerServlet?request_id=VERIFY_ONLINE_INCORP_CERT&id=032786"
+            href="https://eservices.secp.gov.pk/eServices/ControllerServlet"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex shrink-0 items-center gap-1.5 font-medium text-gold-300 transition-colors hover:text-gold-200"
