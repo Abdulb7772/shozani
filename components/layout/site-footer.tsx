@@ -9,6 +9,8 @@ import {
   Clock,
   Send,
   CheckCircle2,
+  BadgeCheck,
+  ExternalLink,
 } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Logo } from "@/components/ui/logo";
@@ -246,6 +248,28 @@ export function SiteFooter() {
 
         <div className="pt-4 pb-12">
           <Newsletter />
+        </div>
+
+        <div className="flex flex-col items-center gap-3 border-t border-white/10 py-8 text-center text-xs leading-relaxed text-navy-100/60 sm:flex-row sm:justify-between sm:text-left">
+          <div>
+            <p className="font-display text-sm font-semibold text-white">Shozani (SMC - Private) Limited</p>
+            <p className="mt-1.5">
+              {t("Registered in Pakistan")} — {t("Registration No")} 1576030 · {t("Reference No")} 1576030-3 · {t("SECP (CUIN) No")} 032786 · {t("FBR Registration Status")}:{" "}
+              <span className="inline-flex items-center gap-1 font-medium text-gold-300">
+                <BadgeCheck className="size-3.5" />
+                {t("Active")}
+              </span>
+            </p>
+          </div>
+          <a
+            href="https://eservices.secp.gov.pk/eServices/ControllerServlet?request_id=VERIFY_ONLINE_INCORP_CERT&id=032786"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex shrink-0 items-center gap-1.5 font-medium text-gold-300 transition-colors hover:text-gold-200"
+          >
+            {t("Verify with SECP")}
+            <ExternalLink className="size-3.5" />
+          </a>
         </div>
 
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-8 text-xs text-navy-100/50 sm:flex-row">

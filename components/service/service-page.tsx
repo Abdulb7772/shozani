@@ -227,7 +227,7 @@ function ServiceHero({ config }: { config: ServiceData }) {
 function ServiceStats({ stats }: { stats: NonNullable<ServiceData["stats"]> }) {
   const { t } = useLanguage();
   return (
-    <section className="relative z-10 -mt-8">
+    <section className="relative z-10 mt-0">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 24 }}
