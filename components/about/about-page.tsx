@@ -20,6 +20,9 @@ import {
   HeartHandshake,
   ArrowRight,
   CheckCircle2,
+  Building2,
+  Factory,
+  BookOpen,
   ExternalLink,
 } from "lucide-react";
 import { Container } from "@/components/ui/container";
@@ -377,6 +380,94 @@ function TrustedPartnersSection() {
                 {t("NEXT GEN")}
               </h3>
               <p className="mt-1 text-sm text-navy-500 dark:text-navy-200/60">nextgen.kids</p>
+            </div>
+            <ExternalLink className="size-5 text-navy-400 transition-colors group-hover:text-gold-500" />
+          </motion.a>
+
+          <motion.a
+            href="https://www.messe.de/en/messen/"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ y: -4 }}
+            className="group flex items-center gap-5 rounded-3xl border border-navy-900/10 bg-navy-50/70 p-7 transition-colors hover:border-gold-400/60 hover:bg-white dark:border-white/10 dark:bg-navy-900/40 dark:hover:border-gold-400/40 dark:hover:bg-navy-900/70"
+          >
+            <span className="grid size-14 shrink-0 place-items-center rounded-2xl bg-navy-900 text-gold-400 dark:bg-gold-600 dark:text-white">
+              <Building2 className="size-7" />
+            </span>
+            <div className="flex-1">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-navy-400 dark:text-navy-200/50">
+                {t("Trade Fair Partner")}
+              </p>
+              <h3 className="mt-1 font-display text-xl font-semibold text-navy-900 transition-colors group-hover:text-gold-700 dark:text-white dark:group-hover:text-gold-300">
+                {t("Messe")}
+              </h3>
+              <p className="mt-1 text-sm text-navy-500 dark:text-navy-200/60">messe.de</p>
+            </div>
+            <ExternalLink className="size-5 text-navy-400 transition-colors group-hover:text-gold-500" />
+          </motion.a>
+
+          <motion.a
+            href="https://www.hannovermesse.de/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ y: -4 }}
+            className="group flex items-center gap-5 rounded-3xl border border-navy-900/10 bg-navy-50/70 p-7 transition-colors hover:border-gold-400/60 hover:bg-white dark:border-white/10 dark:bg-navy-900/40 dark:hover:border-gold-400/40 dark:hover:bg-navy-900/70"
+          >
+            <span className="grid size-14 shrink-0 place-items-center rounded-2xl bg-navy-900 text-gold-400 dark:bg-gold-600 dark:text-white">
+              <Factory className="size-7" />
+            </span>
+            <div className="flex-1">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-navy-400 dark:text-navy-200/50">
+                {t("Global Industry Partner")}
+              </p>
+              <h3 className="mt-1 font-display text-xl font-semibold text-navy-900 transition-colors group-hover:text-gold-700 dark:text-white dark:group-hover:text-gold-300">
+                {t("Hannover Messe")}
+              </h3>
+              <p className="mt-1 text-sm text-navy-500 dark:text-navy-200/60">hannovermesse.de</p>
+            </div>
+            <ExternalLink className="size-5 text-navy-400 transition-colors group-hover:text-gold-500" />
+          </motion.a>
+
+          <motion.a
+            href="https://www.umt.edu.pk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ y: -4 }}
+            className="group flex items-center gap-5 rounded-3xl border border-navy-900/10 bg-navy-50/70 p-7 transition-colors hover:border-gold-400/60 hover:bg-white dark:border-white/10 dark:bg-navy-900/40 dark:hover:border-gold-400/40 dark:hover:bg-navy-900/70"
+          >
+            <span className="grid size-14 shrink-0 place-items-center rounded-2xl bg-navy-900 text-gold-400 dark:bg-gold-600 dark:text-white">
+              <GraduationCap className="size-7" />
+            </span>
+            <div className="flex-1">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-navy-400 dark:text-navy-200/50">
+                {t("University Partner")}
+              </p>
+              <h3 className="mt-1 font-display text-xl font-semibold text-navy-900 transition-colors group-hover:text-gold-700 dark:text-white dark:group-hover:text-gold-300">
+                {t("UMT")}
+              </h3>
+              <p className="mt-1 text-sm text-navy-500 dark:text-navy-200/60">umt.edu.pk</p>
+            </div>
+            <ExternalLink className="size-5 text-navy-400 transition-colors group-hover:text-gold-500" />
+          </motion.a>
+
+          <motion.a
+            href="https://arden.ac.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ y: -4 }}
+            className="group flex items-center gap-5 rounded-3xl border border-navy-900/10 bg-navy-50/70 p-7 transition-colors hover:border-gold-400/60 hover:bg-white dark:border-white/10 dark:bg-navy-900/40 dark:hover:border-gold-400/40 dark:hover:bg-navy-900/70"
+          >
+            <span className="grid size-14 shrink-0 place-items-center rounded-2xl bg-navy-900 text-gold-400 dark:bg-gold-600 dark:text-white">
+              <BookOpen className="size-7" />
+            </span>
+            <div className="flex-1">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-navy-400 dark:text-navy-200/50">
+                {t("University Partner")}
+              </p>
+              <h3 className="mt-1 font-display text-xl font-semibold text-navy-900 transition-colors group-hover:text-gold-700 dark:text-white dark:group-hover:text-gold-300">
+                {t("Arden University")}
+              </h3>
+              <p className="mt-1 text-sm text-navy-500 dark:text-navy-200/60">arden.ac.uk</p>
             </div>
             <ExternalLink className="size-5 text-navy-400 transition-colors group-hover:text-gold-500" />
           </motion.a>
