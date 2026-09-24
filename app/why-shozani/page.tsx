@@ -66,10 +66,10 @@ const pillars = [
 ];
 
 const numbers = [
-  { value: "15,000+", label: "Counselling sessions", deLabel: "Beratungsgespräche" },
-  { value: "4,800+", label: "Visa approvals", deLabel: "Visumgenehmigungen" },
-  { value: "92%", label: "First-attempt success", deLabel: "Erfolg beim ersten Versuch" },
-  { value: "12+", label: "Countries served", deLabel: "Betreute Länder" },
+  { value: "500+", label: "Counselling sessions", deLabel: "Beratungsgespräche" },
+  { value: "100+", label: "Visa approvals", deLabel: "Visumgenehmigungen" },
+  { value: "96%", label: "First-attempt success", deLabel: "Erfolg beim ersten Versuch" },
+  { value: "16+", label: "Countries served", deLabel: "Betreute Länder" },
 ];
 
 const comparison = [

@@ -28,7 +28,7 @@ import { useLanguage } from "@/lib/i18n/language-provider";
 
 const stats = [
   { value: "5+", label: "Years of Expertise" },
-  { value: "100+", label: "Success Stories" },
+  { value: "100+", label: "Students Placed" },
   { value: "96%", label: "Visa Success Rate" },
   { value: "85+", label: "Partner Universities" },
 ];

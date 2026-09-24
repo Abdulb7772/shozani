@@ -30,8 +30,8 @@ export const services: Record<ServiceId, ServiceData> = {
       "From course selection and admission to visa letter, pre-departure briefing and settlement — our study abroad desk manages your complete journey across Germany, UK, Australia, Canada, USA and Europe.",
     image: "/study.png",
     stats: [
-      { value: "4,500+", label: "Students Placed" },
-      { value: "97%", label: "Admission Success" },
+      { value: "100+", label: "Students Placed" },
+      { value: "96%", label: "Admission Success" },
       { value: "85+", label: "Partner Universities" },
       { value: "16", label: "Countries Offered" },
     ],
@@ -434,7 +434,7 @@ export const services: Record<ServiceId, ServiceData> = {
     intro:
       "Spouse, children, even parents — we manage family/dependent visas that keep your whole travel plan together. No empty promises for a family that arrives together.",
     stats: [
-      { value: "95%", label: "Family Approval" },
+      { value: "96%", label: "Family Approval" },
       { value: "1", label: "Application" },
       { value: "21 d", label: "Gulf processing" },
       { value: "4", label: "Dependent types" },
