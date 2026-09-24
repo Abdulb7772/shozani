@@ -22,7 +22,7 @@ const stats = [
   { value: "5+", label: "Years of Expertise" },
   { value: "100+", label: "Students Placed" },
   { value: "96%", label: "Visa Success Rate" },
-  { value: "25+", label: "Partner Universities" },
+  { value: "85+", label: "Partner Universities" },
 ];
 
 const quickLinks = [

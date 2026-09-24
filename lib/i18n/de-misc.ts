@@ -57,7 +57,7 @@ export const de: Record<string, string> = {
   "Global Opportunities Platform": "Plattform für globale Chancen",
   "Digital-first tools — eligibility checks, calculators and live status tracking.":
     "Digital-first-Tools – Berechtigungschecks, Rechner und Live-Statusverfolgung.",
-  "25+ partner institutions": "25+ Partnerinstitutionen",
+  "85+ partner institutions": "85+ Partnerinstitutionen",
   "Deep partnerships with universities, employers and A1–B2 language centres.":
     "Enge Partnerschaften mit Universitäten, Arbeitgebern und A1–B2-Sprachzentren.",
   "Ready to begin": "Bereit für",

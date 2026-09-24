@@ -30,7 +30,7 @@ const stats = [
   { value: "5+", label: "Years of Expertise" },
   { value: "100+", label: "Success Stories" },
   { value: "96%", label: "Visa Success Rate" },
-  { value: "25+", label: "Partner Universities" },
+  { value: "85+", label: "Partner Universities" },
 ];
 
 const values = [
@@ -92,7 +92,7 @@ const journey = [
   { year: "2020", title: "Founded in Germany", text: "Became one of the first agencies dedicated to the German market." },
   { year: "2021", title: "100th student placed", text: "Reached 100+ successful placements across Europe, the UK, Canada and Australia." },
   { year: "2022", title: "Global Opportunities Platform", text: "Digital-first tools — eligibility checks, calculators and live status tracking." },
-  { year: "2025", title: "25+ partner institutions", text: "Deep partnerships with universities, employers and A1–B2 language centres." },
+  { year: "2025", title: "85+ partner institutions", text: "Deep partnerships with universities, employers and A1–B2 language centres." },
 ];
 
 export function AboutPage() {

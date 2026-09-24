@@ -32,7 +32,7 @@ export const services: Record<ServiceId, ServiceData> = {
     stats: [
       { value: "4,500+", label: "Students Placed" },
       { value: "97%", label: "Admission Success" },
-      { value: "25+", label: "Partner Universities" },
+      { value: "85+", label: "Partner Universities" },
       { value: "16", label: "Countries Offered" },
     ],
     requirements: [
@@ -678,7 +678,7 @@ cta: { title: "", text: "The 48-hour PTE score could be the fastest yes in your 
     stats: [
       { value: "1,200+", label: "Companies Formed" },
       { value: "7–10", label: "Days UAE LLC Setup" },
-      { value: "25+", label: "Markets Covered" },
+      { value: "85+", label: "Markets Covered" },
       { value: "1", label: "End-to-End Package" },
     ],
     requirements: [
