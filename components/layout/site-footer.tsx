@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   MapPin,
@@ -253,13 +254,42 @@ export function SiteFooter() {
         <div className="flex flex-col items-center gap-3 border-t border-white/10 py-8 text-center text-xs leading-relaxed text-navy-100/60 sm:flex-row sm:justify-between sm:text-left">
           <div>
             <p className="font-display text-sm font-semibold text-white">Shozani (SMC - Private) Limited</p>
-            <p className="mt-1.5">
-              {t("Registered in Pakistan")} — {t("Registration No")} 1576030 · {t("Reference No")} 1576030-3 · {t("SECP (CUIN) No")} 032786 · {t("FBR Registration Status")}:{" "}
-              <span className="inline-flex items-center gap-1 font-medium text-gold-300">
-                <BadgeCheck className="size-3.5" />
-                {t("Active")}
-              </span>
-            </p>
+            <div className="mt-3 flex flex-col gap-2.5">
+              <p className="flex flex-wrap items-center gap-2">
+                <Image
+                  src="/secp logo.jpg"
+                  alt="SECP logo"
+                  width={40}
+                  height={40}
+                  className="h-9 w-auto rounded bg-white object-contain px-1"
+                />
+                <span>
+                  {t("Registered with SECP — Securities and Exchange Commission of Pakistan")}{" "}·{" "}
+                  {t("Company Universal Identification Number (CUIN)")}{" "}
+                  <span className="font-medium text-white">032786</span> ·{" "}
+                  <span className="inline-flex items-center gap-1 font-semibold text-emerald-400">
+                    <BadgeCheck className="size-3.5" />
+                    {t("Active")}
+                  </span>
+                </span>
+              </p>
+              <p className="flex flex-wrap items-center gap-2">
+                <Image
+                  src="/fbr logo.png"
+                  alt="FBR logo"
+                  width={44}
+                  height={38}
+                  className="h-8 w-auto rounded bg-white object-contain px-1"
+                />
+                <span>
+                  {t("Registered with FBR — Federal Board of Revenue")} · {t("Registration No")} 1576030 · {t("Reference No")} 1576030-3 · {t("FBR Status")}:{" "}
+                  <span className="inline-flex items-center gap-1 font-semibold text-emerald-400">
+                    <BadgeCheck className="size-3.5" />
+                    {t("Active")}
+                  </span>
+                </span>
+              </p>
+            </div>
           </div>
           <a
             href="https://eservices.secp.gov.pk/eServices/ControllerServlet?request_id=VERIFY_ONLINE_INCORP_CERT&id=032786"
