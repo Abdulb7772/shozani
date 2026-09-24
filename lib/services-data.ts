@@ -669,6 +669,7 @@ cta: { title: "", text: "The 48-hour PTE score could be the fastest yes in your 
 
   business: {
     codecrumbs: [{ label: "Services", href: "/services" }, { label: "Business & Investment", href: "/services/business" }],
+    image: "/business.png",
     eyebrow: "Business & Investment",
     title: "Set Up, Invest,",
     highlight: "and Grow Abroad",
