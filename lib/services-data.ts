@@ -355,8 +355,8 @@ export const services: Record<ServiceId, ServiceData> = {
     imagePosition: "object-[75%_center]",
     stats: [
       { value: "96%", label: "Approval Rate" },
-      { value: "40+", label: "Visa Routes" },
-      { value: "3,000+", label: "PRs Secured" },
+      { value: "10", label: "Visa Routes" },
+      { value: "20", label: "PRs Secured" },
       { value: "5+", label: "Channels" },
     ],
     requirements: [
