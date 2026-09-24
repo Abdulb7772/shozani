@@ -25,10 +25,8 @@ import { useLanguage } from "@/lib/i18n/language-provider";
 
 const offices = [
   { city: "Islamabad (Head Office)", country: "Pakistan", address: "Main Soan Ave, Plaza by HCPL, Block D, Islamabad", phone: "+92 320 650 6990", maps: links.maps },
-  { city: "Karachi", country: "Pakistan", address: "Suite 5, Clifton Block 4, Karachi", phone: "+92 320 650 6990" },
-  { city: "Dubai", country: "UAE", address: "Office 340, Business Bay, Dubai", phone: "+971 4 567 8901" },
-  { city: "Frankfurt", country: "Germany", address: "Kaiserstraße 43, 60329 Frankfurt", phone: "+49 163 4757909" },
-  { city: "Toronto", country: "Canada", address: "Suite 210, 100 King Street W, Toronto", phone: "+1 416 555 0134" },
+  { city: "Jauharabad", country: "Pakistan", address: "New Satellite Town Rd, B Block New Sattelite Town, Jauharabad, 41200", phone: "+92 300 254672" },
+  { city: "Hobart", country: "Australia", address: "47B Lennox Avenue, Lutana, Hobart", phone: "+61 426 960 825" },
 ];
 
 type FormState = {
