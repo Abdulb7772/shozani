@@ -25,7 +25,7 @@ import { useLanguage } from "@/lib/i18n/language-provider";
 
 const offices = [
   { city: "Islamabad (Head Office)", country: "Pakistan", address: "Main Soan Ave, Plaza by HCPL, Block D, Islamabad", phone: "+92 320 650 6990", maps: links.maps },
-  { city: "Jauharabad", country: "Pakistan", address: "New Satellite Town Rd, B Block New Sattelite Town, Jauharabad, 41200", phone: "+92 300 254672" },
+  { city: "Jauharabad", country: "Pakistan", address: "New Satellite Town Rd, B Block New Sattelite Town, Jauharabad, 41200", phone: "+92 301 6773301" },
   { city: "Hobart", country: "Australia", address: "47B Lennox Avenue, Lutana, Hobart", phone: "+61 426 960 825" },
 ];
 
