@@ -20,6 +20,7 @@ import {
   HeartHandshake,
   ArrowRight,
   CheckCircle2,
+  ExternalLink,
 } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
@@ -102,6 +103,7 @@ export function AboutPage() {
       <StatsBand />
       <Story />
       <ValuesSection />
+      <TrustedPartnersSection />
       <PillarsSection />
       <JourneySection />
 <div className="relative mt-16 overflow-hidden rounded-3xl bg-navy-900 shadow-luxe">
@@ -318,6 +320,66 @@ function ValuesSection() {
               </p>
             </motion.div>
           ))}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function TrustedPartnersSection() {
+  const { t } = useLanguage();
+  return (
+    <section className="bg-white pb-20 sm:pb-28 dark:bg-navy-950">
+      <Container>
+        <SectionHeading
+          eyebrow={t("Trusted Partners")}
+          title={<>{t("The partners we")}{" "}<span className="text-gradient-gold">{t("work with")}</span></>}
+          description={t("Official partner organisations that share our standards — verified and vetted before they are recommended to you.")}
+        />
+        <div className="grid gap-6 sm:grid-cols-2">
+          <motion.a
+            href="https://swabconsultants.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ y: -4 }}
+            className="group flex items-center gap-5 rounded-3xl border border-navy-900/10 bg-navy-50/70 p-7 transition-colors hover:border-gold-400/60 hover:bg-white dark:border-white/10 dark:bg-navy-900/40 dark:hover:border-gold-400/40 dark:hover:bg-navy-900/70"
+          >
+            <span className="grid size-14 shrink-0 place-items-center rounded-2xl bg-navy-900 text-gold-400 dark:bg-gold-600 dark:text-white">
+              <Handshake className="size-7" />
+            </span>
+            <div className="flex-1">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-navy-400 dark:text-navy-200/50">
+                {t("Consultancy Partner")}
+              </p>
+              <h3 className="mt-1 font-display text-xl font-semibold text-navy-900 transition-colors group-hover:text-gold-700 dark:text-white dark:group-hover:text-gold-300">
+                {t("SWAB Consultancy")}
+              </h3>
+              <p className="mt-1 text-sm text-navy-500 dark:text-navy-200/60">swabconsultants.com</p>
+            </div>
+            <ExternalLink className="size-5 text-navy-400 transition-colors group-hover:text-gold-500" />
+          </motion.a>
+
+          <motion.a
+            href="https://nextgen.kids/"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ y: -4 }}
+            className="group flex items-center gap-5 rounded-3xl border border-navy-900/10 bg-navy-50/70 p-7 transition-colors hover:border-gold-400/60 hover:bg-white dark:border-white/10 dark:bg-navy-900/40 dark:hover:border-gold-400/40 dark:hover:bg-navy-900/70"
+          >
+            <span className="grid size-14 shrink-0 place-items-center rounded-2xl bg-navy-900 text-gold-400 dark:bg-gold-600 dark:text-white">
+              <GraduationCap className="size-7" />
+            </span>
+            <div className="flex-1">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-navy-400 dark:text-navy-200/50">
+                {t("Educational Partner")}
+              </p>
+              <h3 className="mt-1 font-display text-xl font-semibold text-navy-900 transition-colors group-hover:text-gold-700 dark:text-white dark:group-hover:text-gold-300">
+                {t("NEXT GEN")}
+              </h3>
+              <p className="mt-1 text-sm text-navy-500 dark:text-navy-200/60">nextgen.kids</p>
+            </div>
+            <ExternalLink className="size-5 text-navy-400 transition-colors group-hover:text-gold-500" />
+          </motion.a>
         </div>
       </Container>
     </section>
