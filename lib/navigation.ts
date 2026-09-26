@@ -12,6 +12,7 @@ import {
   Star,
   HeartPulse,
   FileCheck,
+  Stamp,
 } from "lucide-react";
 
 export type NavChild = {
@@ -57,6 +58,7 @@ export const serviceGroups: NavGroup[] = [
       { title: "Permanent Residence", description: "PR routes for skilled professionals", href: "/services/immigration/permanent-residence" },
       { title: "Family Immigration", description: "Reunite with dependent visas", href: "/services/immigration/family" },
       { title: "Business & Investment", description: "Company formation & business visas", href: "/services/immigration/business" },
+      { title: "Visa Services", description: "Business & visit visas, eVisas", href: "/services/visa", icon: Stamp },
       { title: "Nursing", description: "Germany's nursing track with recognition", href: "/countries/germany/nursing", icon: HeartPulse },
       { title: "Ausbildung", description: "Paid vocational training in Germany", href: "/countries/germany/ausbildung" },
       { title: "Attestation & Testing", description: "HEC verification, apostille & language tests", href: "/services/attestation-testing", icon: FileCheck },

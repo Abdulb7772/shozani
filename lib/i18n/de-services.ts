@@ -1109,6 +1109,87 @@
     "Deutschtraining von A1 bis B2 mit Prüfungsvorbereitung – welches Niveau Sie für welches Visum benötigen und wie lange jede Stufe dauert.",
   "FAQs": "FAQ",
   "Every Germany question answered": "Jede Deutschland-Frage beantwortet",
+  "Visa Services": "Visa-Services",
+  "Visas": "Visen",
+  "Every Visa Route,": "Jede Visaroute,",
+  "One Visa Desk": "Ein Visa-Desk",
+  "Check Visa Eligibility": "Visa-Eignung prüfen",
+  "Companies Formed": "Gegründete Firmen",
+  "Business visas and visit visas filed properly — company formation, investor residence, business meetings, family travel and eVisas across the UAE, Germany, Europe, the UK and the Gulf, with attestation and banking handled in the same file.":
+    "Geschäftsvisa und Besuchervisa korrekt eingereicht - Firmengründung, Investorenresidenz, Geschäftstermine, Familienbesuche und eVisas in den VAE, Deutschland, Europa, Großbritannien und am Golf, inklusive Attestierung und Bankeröffnung in derselben Akte.",
+  "Business Visa": "Geschäftsvisa",
+  "Visit Visa": "Besuchervisa",
+  "Company formation & investor residence": "Firmengründung & Investorenresidenz",
+  "Tourist, business visit & family travel": "Tourismus, Geschäftsreise & Familienbesuch",
+  "Company formation, investor and founder visas across the UAE, Germany, Saudi Arabia, Europe and the UK — incorporation, licensing, banking and residency handled as one file.":
+    "Firmengründung sowie Investoren- und Gründervisas in den VAE, Deutschland, Saudi-Arabien, Europa und Großbritannien - Gründung, Lizenzierung, Banking und Aufenthalt in einer Akte.",
+  "Schengen, UK, Gulf and eVisa filing": "Schengen, UK, Golf und eVisa-Einreichung",
+  "Invitation letters and insurance prepared": "Einladungsschreiben und Versicherung vorbereitet",
+  "eVisa approvals in 1–3 days": "eVisa-Genehmigung in 1-3 Tagen",
+  "Attested documents where the mission asks": "Attestierte Dokumente, wenn die Botschaft sie verlangt",
+  "Tourists and family visitors": "Touristen und Familienbesucher",
+  "Business travellers on meetings": "Geschäftsreisende zu Terminen",
+  "Anyone attending trade fairs or events": "Alle, die Messen oder Veranstaltungen besuchen",
+  "Visitors needing medical or pilgrimage travel": "Besucher für medizinische Reisen oder Pilgerfahrten",
+  "Two Tracks": "Zwei Wege",
+  "Pick your": "Wählen Sie Ihr",
+  "visa type": "Visatyp",
+  "Most confusion in visa cases comes from filing the wrong category. Start with the one that matches your purpose — we handle both, plus the upgrade from one to the other.":
+    "Die meisten Verwirrungen bei Visafällen entstehen durch die falsche Kategorie. Beginnen Sie mit dem, was zu Ihrem Zweck passt - wir bearbeiten beide sowie den Wechsel von einem zum anderen.",
+  "Read the detail": "Details lesen",
+  "Who this is for": "Für wen das gedacht ist",
+  "Everything below gets checked before filing. Missing one of these is the most common reason a visa is delayed or refused.":
+    "Alles unten wird vor der Einreichung geprüft. Fehlt eines davon, ist das der häufigste Grund für Verzögerung oder Ablehnung.",
+  "Route Options": "Routenoptionen",
+  "Where we can": "Wo wir für Sie",
+  "file for you": "einreichen können",
+  "Each destination has its own category, stay limit and capital rule. Open the country guide for the full picture, timelines and costs.":
+    "Jedes Ziel hat eigene Kategorie, Aufenthaltsdauer und Kapitalregel. Öffnen Sie den Länderguide für alle Details, Zeiten und Kosten.",
+  "Stay": "Aufenthalt",
+  "Key Requirement": "Wichtigste Voraussetzung",
+  "A transparent, step-by-step process with a dedicated case officer from first call to decision.":
+    "Ein transparenter Schritt-für-Schritt-Prozess mit fester Ansprechperson vom ersten Gespräch bis zur Entscheidung.",
+  "Document Pack": "Dokumentenpaket",
+  "Your file, ready to": "Ihre Akte, bereit zur",
+  "file": "Einreichung",
+  "We assemble, translate and attest everything before the appointment — so the first submission is a complete one.":
+    "Wir stellen, übersetzen und attestieren alles vor dem Termin - damit die erste Einreichung vollständig ist.",
+  "Need your documents attested?": "Müssen Ihre Dokumente attestiert werden?",
+  "HEC verification, degree attestation, apostille, MOFA and certified English or German translation run through our own attestation desk.":
+    "HEC-Verifizierung, Diplomatattestierung, Apostille, MOFA und beglaubigte englische oder deutsche Übersetzung laufen über unser eigenes Attestierungsbüro.",
+  "Realistic timeframes per stage — updated live as your application moves.":
+    "Realistische Zeiten je Phase - live aktualisiert, während Ihr Antrag läuft.",
+  "Related Services": "Verwandte Services",
+  "If this is not quite": "Falls das nicht ganz",
+  "your route": "Ihre Route ist",
+  "These pages cover the neighbouring visa categories — same case officer, same document set.":
+    "Diese Seiten behandeln die benachbarten Visakategorien - dieselbe Ansprechperson, dieselben Dokumente.",
+  "One desk for the whole": "Ein Desk für die komplette",
+  "visa file": "Visa-Akte",
+  "Most visa refusals are file failures, not applicant failures. We build the file the mission can approve, and we keep it moving.":
+    "Die meisten Visa-Ablehnungen sind Aktenfehler, keine Bewerberfehler. Wir bauen die Akte, die die Botschaft genehmigen kann, und halten sie in Bewegung.",
+  "One Desk, Not Five": "Ein Desk, nicht fünf",
+  "Documents That Survive Scrutiny": "Unterlagen, die der Prüfung standhalten",
+  "Real Timelines": "Realistische Zeiten",
+  "Where we": "Wo wir",
+  "file visas": "Visen einreichen",
+  "Every destination below has its own country guide with costs, timelines and the routes we handle there.":
+    "Jedes Ziel unten hat einen eigenen Länderguide mit Kosten, Zeiten und den Routen, die wir dort bearbeiten.",
+  "The Full Service Map": "Die komplette Servicekarte",
+  "Every route, in one": "Jede Route, in einer",
+  "consultation": "Beratung",
+  "Most visa files start as something else — a degree, a job offer, an investment, a family reunion. Here is the whole desk.":
+    "Die meisten Visa-Akten beginnen anders - Studium, Jobangebot, Investition oder Familiennachzug. Hier ist der ganze Desk.",
+  "Visa questions,": "Visa-Fragen,",
+  "Not sure which visa you": "Unsicher, welches Visum Sie",
+  "actually need?": "wirklich brauchen?",
+  "A 20-minute call, an honest eligibility view and a written route plan with a fixed quotation within two working days. No empty guarantees.":
+    "Ein 20-minütiges Gespräch, eine ehrliche Eignungseinschätzung und ein schriftlicher Routenplan mit Festpreisangebot innerhalb von zwei Werktagen. Keine leeren Versprechen.",
+  "Business visa, visit visa & eVisas": "Geschäftsvisa, Besuchervisa & eVisas",
+  "Business and visit visas end-to-end": "Geschäfts- und Besuchervisa durchgängig",
+  "Company formation, investor & founder visas": "Firmengründung, Investoren- & Gründervisas",
+  "Tourist, business visit, family & eVisas": "Tourismus, Geschäftsreise, Familie & eVisas",
+  "Business & visit visas, eVisas": "Geschäfts- & Besuchervisa, eVisas",
   "The most-asked Germany questions from Pakistani applicants — visas, costs, family, recognition and settlement, answered honestly.":
     "Die häufigsten Deutschland-Fragen pakistanischer Bewerber – Visa, Kosten, Familie, Anerkennung und Niederlassung – ehrlich beantwortet.",
 };

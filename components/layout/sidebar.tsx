@@ -22,6 +22,8 @@ const groups = [
       { title: "Work Abroad", href: "/services/work-abroad" },
       { title: "Immigration", href: "/services/immigration" },
       { title: "Business Setup", href: "/services/business" },
+      { title: "Business Visa", href: "/services/visa#business-visa" },
+      { title: "Visit Visa", href: "/services/visa#visit-visa" },
       { title: "Nursing", href: "/countries/germany/nursing" },
       { title: "Ausbildung", href: "/countries/germany/ausbildung" },
       { title: "Attestation & Testing", href: "/services/attestation-testing" },

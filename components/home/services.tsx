@@ -10,6 +10,7 @@ import {
   BookOpen,
   HeartPulse,
   FileCheck,
+  Stamp,
   ArrowRight,
 } from "lucide-react";
 import { Container } from "@/components/ui/container";
@@ -48,6 +49,14 @@ const services = [
       "Company formation, business visas and investment advisory to establish and grow your business abroad.",
     href: "/services/business",
     tag: "Company Formation",
+  },
+  {
+    icon: Stamp,
+    title: "Visa Services",
+    description:
+      "Business visas and visit visas filed end-to-end — company formation, investor residence, business meetings, family travel and eVisas across the UAE, Germany, Europe, the UK and the Gulf.",
+    href: "/services/visa",
+    tag: "Business & Visit",
   },
   {
     icon: BookOpen,

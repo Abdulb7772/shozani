@@ -19,6 +19,9 @@ type SearchItem = {
 const pages: SearchItem[] = [
   { title: "Apply Now", description: "Start your free assessment", href: "/apply", type: "page" },
   { title: "All Services", description: "Study, work, immigration, language & more", href: "/services", type: "page" },
+  { title: "Business Visa", description: "Company formation, investor & founder visas", href: "/services/visa#business-visa", type: "page" },
+  { title: "Visit Visa", description: "Tourist, business visit, family & eVisas", href: "/services/visa#visit-visa", type: "page" },
+  { title: "Visa Services", description: "Business and visit visas end to end", href: "/services/visa", type: "page" },
   { title: "All Countries", description: "Every destination we serve", href: "/countries", type: "page" },
   { title: "About Us", description: "Who we are and what guides us", href: "/about", type: "page" },
   { title: "Why Shozani", description: "What makes us different", href: "/why-shozani", type: "page" },

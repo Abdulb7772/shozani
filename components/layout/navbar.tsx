@@ -69,6 +69,11 @@ const MEGA: MegaGroup[] = [
         href: "/services/business",
         description: "Company formation, visas & investment advisory",
       },
+      {
+        title: "Visa Services",
+        href: "/services/visa",
+        description: "Business visa, visit visa & eVisas",
+      },
     ],
   },
   {

@@ -1,6 +1,6 @@
 "use client";
 
-import { Sparkles, ArrowRight, GraduationCap, Briefcase, Building2, BookOpen, HeartPulse, FileCheck } from "lucide-react";
+import { Sparkles, ArrowRight, GraduationCap, Briefcase, Building2, BookOpen, HeartPulse, FileCheck, Stamp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
@@ -60,6 +60,17 @@ const groups = [
       { title: "Permanent Residence", href: "/services/immigration/permanent-residence" },
       { title: "Family Immigration", href: "/services/immigration/family" },
       { title: "Business & Investment", href: "/services/immigration/business" },
+    ],
+  },
+  {
+    icon: Stamp,
+    label: "Visa Services",
+    href: "/services/visa",
+    items: [
+      { title: "Visa Services", href: "/services/visa" },
+      { title: "Business Visa", href: "/services/visa#business-visa" },
+      { title: "Visit Visa", href: "/services/visa#visit-visa" },
+      { title: "Visa Eligibility Check", href: "/ai/visa-eligibility" },
     ],
   },
   {

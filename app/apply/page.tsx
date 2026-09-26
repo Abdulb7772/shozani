@@ -41,6 +41,7 @@ const visaTypes = [
   "PR / Immigration",
   "Family Visa",
   "Business Visa",
+  "Visit Visa",
   "Language Course",
   "Opportunity Card",
 ];
